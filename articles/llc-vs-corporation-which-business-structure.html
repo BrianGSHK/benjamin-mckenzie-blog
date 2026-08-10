@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LLC vs Corporation: Which Business Structure Should You Choose? | Benjamin McKenzie</title>
+    <title>Limited Company vs Sole Proprietorship: Which Should You Choose? | Benjamin McKenzie</title>
     <link rel="canonical" href="https://benjaminmckenzie.com/articles/llc-vs-corporation-which-business-structure">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,8 +14,8 @@
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "LLC vs Corporation: Which Business Structure Should You Choose?",
-        "description": "Compare LLC and Corporation: liability protection, tax treatment, compliance requirements, and costs.",
+        "headline": "Limited Company vs Sole Proprietorship: Which Should You Choose?",
+        "description": "Compare Limited Company and Sole Proprietorship: liability, taxes, compliance, costs, and credibility. Find the right structure for your business.",
         "author": {
             "@type": "Person",
             "name": "Benjamin McKenzie",
@@ -41,34 +41,34 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "What is the main difference between an LLC and a corporation?",
+                "name": "What is the main difference between a Limited Company and Sole Proprietorship?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "An LLC (Limited Liability Company) offers flexible management and pass-through taxation, while a corporation has a rigid board structure and is subject to double taxation unless it elects S-corp status. Both provide limited liability protection."
+                    "text": "A Limited Company is a separate legal entity that provides limited liability protection to its owners. A Sole Proprietorship is owned and run by one person with no legal distinction between the owner and the business — the owner is personally liable for all business debts."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Which is better for taxes: LLC or corporation?",
+                "name": "Which is cheaper to set up: Limited Company or Sole Proprietorship?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "LLCs typically offer pass-through taxation where business income flows to owners' personal returns. C-corporations face double taxation (corporate tax + dividend tax). However, S-corporations also allow pass-through taxation while maintaining corporate structure."
+                    "text": "Sole Proprietorship is cheaper and simpler to set up. In Hong Kong, business registration costs approximately HK$2,150. A Limited Company costs HK$1,720 for government fees plus HK$5,000–15,000 with a formation agent (including company secretary and registered address)."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Can a single person own both an LLC and a corporation?",
+                "name": "Which has better tax treatment?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Yes. A single person can own an LLC, a corporation, or both simultaneously. Many entrepreneurs use LLCs to hold corporate stock or use corporations to hold LLC membership interests for asset protection and tax planning."
+                    "text": "In Hong Kong, both are taxed at the same rates (8.25% on first HK$2M profits, 16.5% thereafter). However, Limited Companies can more easily claim offshore tax exemption and have more flexibility in tax planning through dividends and retained earnings."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Which business structure is easier to set up?",
+                "name": "Can I convert from Sole Proprietorship to Limited Company later?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "LLCs are generally easier and cheaper to set up. They require fewer formalities, less paperwork, and have lower ongoing compliance costs compared to corporations."
+                    "text": "Yes. You can convert from Sole Proprietorship to Limited Company at any time. The process involves registering a new Limited Company and transferring business assets. Consult a professional to handle the transition smoothly."
                 }
             }
         ]
@@ -82,7 +82,7 @@
         "itemListElement": [
             {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://benjaminmckenzie.com"},
             {"@type": "ListItem", "position": 2, "name": "Articles", "item": "https://benjaminmckenzie.com/articles"},
-            {"@type": "ListItem", "position": 3, "name": "LLC vs Corporation"}
+            {"@type": "ListItem", "position": 3, "name": "Limited Company vs Sole Proprietorship"}
         ]
     }
     </script>
@@ -252,25 +252,32 @@
             text-decoration: none; font-weight: 600; font-size: 14px;
         }
         
-        .newsletter { background: var(--gray-100); padding: 80px 32px; text-align: center; }
-        .newsletter h2 { font-family: 'Newsreader', Georgia, serif; font-size: 28px; margin-bottom: 12px; }
-        .newsletter p { font-size: 16px; color: var(--gray-500); margin-bottom: 32px; }
-        
-        .footer { border-top: 1px solid var(--gray-200); padding: 48px 32px; }
-        .footer-inner {
-            max-width: 1120px; margin: 0 auto;
-            display: flex; justify-content: space-between; align-items: center;
-        }
-        .footer-left { font-size: 14px; color: var(--gray-400); }
-        .footer-left a { color: var(--gray-700); text-decoration: none; font-weight: 500; }
-        .footer-links { display: flex; gap: 28px; list-style: none; }
-        .footer-links a { font-size: 13px; color: var(--gray-400); text-decoration: none; }
-        .footer-links a:hover { color: var(--black); }
+        .footer { background: var(--gray-900); color: var(--white); padding: 64px 32px 32px; }
+        .footer-inner { max-width: 1120px; margin: 0 auto; }
+        .footer-main { display: grid; grid-template-columns: 1.2fr 2fr; gap: 64px; padding-bottom: 48px; border-bottom: 1px solid var(--gray-700); }
+        .footer-logo { font-weight: 700; font-size: 24px; color: var(--white); text-decoration: none; }
+        .footer-logo em { font-style: normal; color: var(--accent); }
+        .footer-desc { font-size: 14px; color: var(--gray-400); line-height: 1.6; margin-top: 16px; max-width: 280px; }
+        .footer-author { display: flex; align-items: center; gap: 12px; margin-top: 24px; font-size: 14px; }
+        .footer-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+        .footer-author small { color: var(--gray-400); font-size: 12px; }
+        .footer-nav { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .footer-col h4 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--white); margin-bottom: 20px; }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 12px; }
+        .footer-col a { font-size: 14px; color: var(--gray-400); text-decoration: none; transition: color 0.15s; }
+        .footer-col a:hover { color: var(--white); }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 32px; font-size: 13px; color: var(--gray-400); }
+        .footer-legal { display: flex; gap: 24px; list-style: none; }
+        .footer-legal a { color: var(--gray-400); text-decoration: none; }
+        .footer-legal a:hover { color: var(--white); }
         
         @media (max-width: 640px) {
             .nav-links { display: none; }
             .article-header, .article-body { padding-left: 20px; padding-right: 20px; }
-            .footer-inner { flex-direction: column; gap: 24px; text-align: center; }
+            .footer-main { grid-template-columns: 1fr; gap: 48px; }
+            .footer-nav { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
         }
     </style>
 </head>
@@ -291,8 +298,8 @@
             <a href="/">Home</a> / <a href="/articles">Articles</a> / Business Structure
         </div>
         <span class="article-tag">Business Structure</span>
-        <h1>LLC vs Corporation: Which Business Structure Should You Choose?</h1>
-        <p class="article-subtitle">A practical comparison of LLCs and corporations covering liability, taxes, compliance, and costs to help you make the right decision.</p>
+        <h1>Limited Company vs Sole Proprietorship: Which Should You Choose?</h1>
+        <p class="article-subtitle">A practical comparison of Limited Companies and Sole Proprietorships covering liability, taxes, compliance, and costs to help you make the right decision.</p>
         <div class="article-meta">
             <div class="article-avatar"><img src="/assets/images/benjamin-mckenzie.jpg" alt="Benjamin McKenzie"></div>
             <div>
@@ -303,222 +310,322 @@
     </header>
     
     <article class="article-body">
-        <p><strong>An LLC offers flexible management and pass-through taxation, while a corporation provides a formal governance structure and potential for raising capital.</strong> Both structures protect your personal assets from business liabilities, but they differ significantly in taxes, compliance, and operational flexibility.</p>
+        <p><strong>A Limited Company is a separate legal entity that protects your personal assets from business debts, while a Sole Proprietorship is simpler and cheaper but leaves you personally liable for all business obligations.</strong> Both structures are legitimate choices, but the right one depends on your business size, risk tolerance, and growth plans.</p>
         
         <div class="callout">
-            <p><strong>Quick Answer:</strong> Choose an LLC for simplicity, flexibility, and pass-through taxation. Choose a corporation if you plan to raise venture capital, issue stock options, or go public. Many startups begin as LLCs and convert to corporations when seeking investment.</p>
+            <p><strong>Quick Answer:</strong> Choose a <strong>Limited Company</strong> if you want liability protection, plan to grow, or work with corporate clients. Choose a <strong>Sole Proprietorship</strong> if you're a freelancer, consultant, or testing a business idea with minimal risk.</p>
         </div>
         
-        <h2>What Is an LLC?</h2>
-        <p>A <strong>Limited Liability Company (LLC)</strong> is a business structure that combines the liability protection of a corporation with the tax flexibility of a partnership. LLCs are available in most countries and are particularly popular in the United States.</p>
+        <h2>What Is a Limited Company?</h2>
+        <p>A <strong>Limited Company</strong> (Ltd) is a business entity that is legally separate from its owners. This means the company itself can own assets, enter contracts, and be sued — protecting your personal assets from business liabilities.</p>
         
-        <h3>Key Characteristics of an LLC:</h3>
+        <h3>Key Characteristics of a Limited Company:</h3>
         <ul>
-            <li><strong>Limited liability protection</strong> — Personal assets are protected from business debts and lawsuits</li>
-            <li><strong>Pass-through taxation</strong> — Business income flows to owners' personal tax returns</li>
-            <li><strong>Flexible management</strong> — No requirement for formal board meetings or corporate minutes</li>
-            <li><strong>Ownership flexibility</strong> — Can have unlimited members (individuals or other businesses)</li>
-            <li><strong>Less paperwork</strong> — Fewer ongoing compliance requirements than corporations</li>
-        </ul>
-        
-        <h2>What Is a Corporation?</h2>
-        <p>A <strong>corporation</strong> is a legal entity that is separate and distinct from its owners. Corporations can be C-corporations (default) or S-corporations (tax election). They are required to follow strict governance and reporting rules.</p>
-        
-        <h3>Key Characteristics of a Corporation:</h3>
-        <ul>
-            <li><strong>Separate legal entity</strong> — The corporation itself can own assets, enter contracts, and be sued</li>
-            <li><strong>Double taxation</strong> — Corporate profits taxed at corporate rate, then dividends taxed again at individual rate (C-corp only)</li>
-            <li><strong>Formal structure</strong> — Requires board of directors, officers, and annual meetings</li>
-            <li><strong>Stock issuance</strong> — Can issue different classes of stock to raise capital</li>
+            <li><strong>Limited liability</strong> — Shareholders' liability is limited to their unpaid share capital</li>
+            <li><strong>Separate legal entity</strong> — The company can own property, open bank accounts, and enter contracts</li>
+            <li><strong>Professional credibility</strong> — Looks more professional to clients, banks, and partners</li>
             <li><strong>Perpetual existence</strong> — Continues regardless of ownership changes</li>
+            <li><strong>Tax flexibility</strong> — Can retain profits, pay dividends, and plan tax more effectively</li>
         </ul>
         
-        <h2>LLC vs Corporation: Side-by-Side Comparison</h2>
+        <h2>What Is a Sole Proprietorship?</h2>
+        <p>A <strong>Sole Proprietorship</strong> (also called a sole trader or individual business) is a business owned and operated by one person. There is no legal distinction between the owner and the business.</p>
+        
+        <h3>Key Characteristics of a Sole Proprietorship:</h3>
+        <ul>
+            <li><strong>Unlimited liability</strong> — Owner is personally liable for all business debts</li>
+            <li><strong>Simple structure</strong> — No legal formalities, easy to set up and close</li>
+            <li><strong>Direct control</strong> — Owner makes all decisions without board approval</li>
+            <li><strong>Lower costs</strong> — Minimal registration and compliance costs</li>
+            <li><strong>Personal tax</strong> — Business income is taxed as personal income</li>
+        </ul>
+        
+        <h2>Limited Company vs Sole Proprietorship: Side-by-Side Comparison</h2>
         
         <table>
             <thead>
                 <tr>
                     <th>Feature</th>
-                    <th>LLC</th>
-                    <th>Corporation (C-Corp)</th>
+                    <th>Limited Company</th>
+                    <th>Sole Proprietorship</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td><strong>Limited Liability</strong></td>
-                    <td>Yes</td>
-                    <td>Yes</td>
+                    <td>✅ Yes — personal assets protected</td>
+                    <td>❌ No — owner personally liable</td>
                 </tr>
                 <tr>
-                    <td><strong>Taxation</strong></td>
-                    <td>Pass-through (default)</td>
-                    <td>Double taxation</td>
-                </tr>
-                <tr>
-                    <td><strong>Management</strong></td>
-                    <td>Flexible (member-managed or manager-managed)</td>
-                    <td>Board of directors + officers</td>
-                </tr>
-                <tr>
-                    <td><strong>Compliance</strong></td>
-                    <td>Minimal (annual report in most states)</td>
-                    <td>Extensive (meetings, minutes, resolutions)</td>
-                </tr>
-                <tr>
-                    <td><strong>Raising Capital</strong></td>
-                    <td>Limited (cannot issue stock)</td>
-                    <td>Can issue stock, attract investors</td>
+                    <td><strong>Legal Entity</strong></td>
+                    <td>Separate from owners</td>
+                    <td>Same as owner</td>
                 </tr>
                 <tr>
                     <td><strong>Setup Cost</strong></td>
-                    <td>$50–$500 (varies by state)</td>
-                    <td>$100–$800+ (varies by state)</td>
+                    <td>HK$5,000–15,000</td>
+                    <td>HK$2,150</td>
                 </tr>
                 <tr>
-                    <td><strong>Ongoing Costs</strong></td>
-                    <td>Lower (fewer requirements)</td>
-                    <td>Higher (annual fees, registered agent)</td>
+                    <td><strong>Annual Compliance</strong></td>
+                    <td>Higher (audit, annual return)</td>
+                    <td>Lower (business registration renewal)</td>
+                </tr>
+                <tr>
+                    <td><strong>Tax Rate (HK)</strong></td>
+                    <td>8.25% / 16.5%</td>
+                    <td>8.25% / 16.5%</td>
+                </tr>
+                <tr>
+                    <td><strong>Credibility</strong></td>
+                    <td>High — looks professional</td>
+                    <td>Lower — less formal</td>
+                </tr>
+                <tr>
+                    <td><strong>Banking</strong></td>
+                    <td>Easier to open corporate account</td>
+                    <td>Personal account often used</td>
+                </tr>
+                <tr>
+                    <td><strong>Growth Potential</strong></td>
+                    <td>Can raise capital, issue shares</td>
+                    <td>Limited to owner's resources</td>
                 </tr>
                 <tr>
                     <td><strong>Ownership</strong></td>
-                    <td>Unlimited members</td>
-                    <td>Unlimited shareholders</td>
+                    <td>One or more shareholders</td>
+                    <td>One person only</td>
                 </tr>
                 <tr>
                     <td><strong>Best For</strong></td>
-                    <td>Small businesses, freelancers, consultants</td>
-                    <td>Startups seeking investment, IPO-bound companies</td>
+                    <td>Growing businesses, risk protection</td>
+                    <td>Freelancers, consultants, startups</td>
                 </tr>
             </tbody>
         </table>
         
-        <h2>Tax Implications</h2>
-        <p>The tax treatment is often the deciding factor when choosing between an LLC and a corporation.</p>
+        <h2>Liability Protection</h2>
+        <p>The most significant difference is <strong>liability protection</strong>.</p>
         
-        <h3>LLC Taxation</h3>
-        <p>By default, LLCs are <strong>pass-through entities</strong>. The business itself does not pay federal income taxes. Instead, profits and losses flow through to members' personal tax returns. This avoids the double taxation problem that C-corporations face.</p>
+        <h3>Limited Company</h3>
+        <p>If your Limited Company goes bankrupt or is sued, your personal assets (home, savings, car) are protected. Creditors can only claim against the company's assets, not your personal财产.</p>
         
-        <p>Single-member LLCs report income on Schedule C of the owner's Form 1040. Multi-member LLCs file Form 1065 (partnership return) and issue K-1s to members.</p>
-        
-        <h3>Corporation Taxation</h3>
-        <p>C-corporations pay corporate income tax on their profits (currently 21% federal rate in the US). When dividends are distributed to shareholders, those dividends are taxed again at the individual level — this is called <strong>double taxation</strong>.</p>
-        
-        <p>S-corporations avoid double taxation by passing income through to shareholders, similar to LLCs. However, S-corps have stricter ownership rules (100 shareholders maximum, US residents only, one class of stock).</p>
+        <h3>Sole Proprietorship</h3>
+        <p>If your business cannot pay its debts, creditors can pursue your personal assets. There is no legal separation between you and your business. This means your home, savings, and other personal财产 are at risk.</p>
         
         <div class="callout">
-            <p><strong>Example:</strong> A business earns $100,000 in profit. As an LLC, the owner pays personal income tax on $100,000. As a C-corp, the company pays $21,000 corporate tax, and the remaining $79,000 distributed as dividends is taxed again at 15-20%.</p>
+            <p><strong>Example:</strong> A Sole Proprietorship takes a business loan of HK$500,000. If the business fails, the owner must repay from personal savings. A Limited Company with the same debt would only lose company assets — personal savings remain protected.</p>
         </div>
         
+        <h2>Tax Implications</h2>
+        <p>In Hong Kong, both structures are taxed at the same rates:</p>
+        <ul>
+            <li><strong>First HK$2,000,000</strong> of assessable profits: 8.25%</li>
+            <li><strong>Remaining profits</strong>: 16.5%</li>
+        </ul>
+        
+        <p>However, Limited Companies have more tax planning flexibility:</p>
+        <ul>
+            <li><strong>Retained earnings</strong> — Keep profits in the company for reinvestment</li>
+            <li><strong>Dividends</strong> — Distribute profits as dividends (no withholding tax in HK)</li>
+            <li><strong>Offshore exemption</strong> — Easier to claim for profits earned outside Hong Kong</li>
+            <li><strong>Expense deductions</strong> — More legitimate business expense deductions</li>
+        </ul>
+        
         <h2>Compliance Requirements</h2>
-        <p>Corporations face significantly more compliance requirements than LLCs:</p>
         
-        <h3>LLC Compliance</h3>
+        <h3>Limited Company Compliance</h3>
         <ul>
-            <li>File annual report with the state (most states)</li>
-            <li>Pay annual franchise tax or fee (varies by state)</li>
-            <li>Maintain registered agent in the state of formation</li>
-            <li>Keep basic financial records</li>
+            <li>Annual Return filing (within 42 days of anniversary)</li>
+            <li>Business Registration Renewal</li>
+            <li>Audited Financial Statements (within 3 months of year-end)</li>
+            <li>Profits Tax Return</li>
+            <li>Maintain company records and minutes</li>
         </ul>
         
-        <h3>Corporation Compliance</h3>
+        <h3>Sole Proprietorship Compliance</h3>
         <ul>
-            <li>Hold annual shareholder meetings</li>
-            <li>Hold regular board meetings</li>
-            <li>Document meeting minutes and resolutions</li>
-            <li>File annual reports with the state</li>
-            <li>Maintain corporate bylaws</li>
-            <li>Issue stock certificates</li>
-            <li>File separate corporate tax returns</li>
+            <li>Business Registration Renewal</li>
+            <li>Personal Tax Return ( PROFITS Tax)</li>
+            <li>Simpler record-keeping requirements</li>
         </ul>
         
-        <h2>When to Choose an LLC</h2>
-        <p>An LLC is typically the better choice when:</p>
+        <h2>Cost Comparison</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Cost Item</th>
+                    <th>Limited Company</th>
+                    <th>Sole Proprietorship</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Initial Registration</strong></td>
+                    <td>HK$1,720 (gov) + agent fees</td>
+                    <td>HK$2,150</td>
+                </tr>
+                <tr>
+                    <td><strong>Company Secretary</strong></td>
+                    <td>HK$2,000–5,000/year</td>
+                    <td>Not required</td>
+                </tr>
+                <tr>
+                    <td><strong>Registered Address</strong></td>
+                    <td>HK$2,000–4,000/year</td>
+                    <td>Not required</td>
+                </tr>
+                <tr>
+                    <td><strong>Annual Return</strong></td>
+                    <td>HK$105 (online)</td>
+                    <td>Not applicable</td>
+                </tr>
+                <tr>
+                    <td><strong>Audit</strong></td>
+                    <td>HK$8,000–30,000/year</td>
+                    <td>Not required</td>
+                </tr>
+                <tr>
+                    <td><strong>Total First Year</strong></td>
+                    <td><strong>HK$15,000–45,000</strong></td>
+                    <td><strong>HK$2,150</strong></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <h2>When to Choose a Limited Company</h2>
+        <p>A Limited Company is typically the better choice when:</p>
         <ul>
-            <li>You are a <strong>small business owner</strong> or <strong>freelancer</strong></li>
-            <li>You want <strong>simplicity</strong> and minimal paperwork</li>
-            <li>You prefer <strong>flexible management</strong> without formal board requirements</li>
-            <li>You want <strong>pass-through taxation</strong> to avoid double taxation</li>
-            <li>You are not planning to raise venture capital or go public</li>
-            <li>You have a <strong>single owner</strong> or small number of owners</li>
+            <li>You want to <strong>protect personal assets</strong> from business debts</li>
+            <li>You plan to <strong>grow the business</strong> and hire employees</li>
+            <li>You work with <strong>corporate clients</strong> who prefer dealing with companies</li>
+            <li>You need to <strong>raise capital</strong> from investors</li>
+            <li>You want to <strong>look more professional</strong> and credible</li>
+            <li>You're in an <strong>industry with liability risks</strong></li>
         </ul>
         
-        <h2>When to Choose a Corporation</h2>
-        <p>A corporation is typically the better choice when:</p>
+        <h2>When to Choose a Sole Proprietorship</h2>
+        <p>A Sole Proprietorship is typically the better choice when:</p>
         <ul>
-            <li>You plan to <strong>raise venture capital</strong> or seek outside investment</li>
-            <li>You want to issue <strong>stock options</strong> to employees</li>
-            <li>You plan to <strong>go public</strong> (IPO) in the future</li>
-            <li>You need to establish <strong>credibility</strong> with large corporate clients</li>
-            <li>You want to attract investors who expect a <strong>C-corp structure</strong></li>
-            <li>You are building a <strong>scalable startup</strong></li>
+            <li>You're a <strong>freelancer or consultant</strong> with low risk</li>
+            <li>You're <strong>testing a business idea</strong> before committing</li>
+            <li>You want the <strong>simplest and cheapest</strong> option</li>
+            <li>You're the <strong>sole owner</strong> and don't plan to raise capital</li>
+            <li>Your business has <strong>minimal liability risk</strong></li>
+            <li>You prefer <strong>minimal paperwork</strong> and compliance</li>
         </ul>
         
         <div class="callout">
-            <p><strong>Pro Tip:</strong> Many successful startups begin as LLCs and convert to C-corporations when they are ready to raise venture capital. This approach lets you save on compliance costs during the early stages while maintaining flexibility.</p>
+            <p><strong>Pro Tip:</strong> Many entrepreneurs start as Sole Proprietors to test their business idea with minimal cost. Once the business gains traction and risks increase, they convert to a Limited Company for liability protection.</p>
         </div>
         
         <h2>Can You Change Your Structure Later?</h2>
-        <p>Yes. You can convert an LLC to a corporation (or vice versa) if your business needs change. The process varies by state but generally involves filing conversion documents and updating your operating agreement or bylaws.</p>
+        <p>Yes. You can convert from a Sole Proprietorship to a Limited Company at any time. The process involves:</p>
         
-        <p>However, conversions can trigger tax events, so consult with a tax professional before making the switch.</p>
+        <ol>
+            <li><strong>Register a new Limited Company</strong> with the Companies Registry</li>
+            <li><strong>Transfer business assets</strong> from the Sole Proprietorship to the new company</li>
+            <li><strong>Notify banks</strong> and update account details</li>
+            <li><strong>Update contracts</strong> and business registrations</li>
+            <li><strong>Close the Sole Proprietorship</strong> (optional — can keep both)</li>
+        </ol>
+        
+        <p>Consult a professional to handle the transition smoothly and avoid tax implications.</p>
         
         <!-- Article FAQ -->
         <div class="article-faq">
             <h2>Frequently Asked Questions</h2>
             
             <div class="faq-item">
-                <button class="faq-q">What is the main difference between an LLC and a corporation?</button>
+                <button class="faq-q">What is the main difference between a Limited Company and Sole Proprietorship?</button>
                 <div class="faq-a">
-                    <p>An LLC (Limited Liability Company) offers flexible management and pass-through taxation, while a corporation has a rigid board structure and is subject to double taxation unless it elects S-corp status. Both provide limited liability protection.</p>
+                    <p>A Limited Company is a separate legal entity that provides limited liability protection to its owners. A Sole Proprietorship is owned and run by one person with no legal distinction between the owner and the business — the owner is personally liable for all business debts.</p>
                 </div>
             </div>
             
             <div class="faq-item">
-                <button class="faq-q">Which is better for taxes: LLC or corporation?</button>
+                <button class="faq-q">Which is cheaper to set up: Limited Company or Sole Proprietorship?</button>
                 <div class="faq-a">
-                    <p>LLCs typically offer pass-through taxation where business income flows to owners' personal returns. C-corporations face double taxation (corporate tax + dividend tax). However, S-corporations also allow pass-through taxation while maintaining corporate structure.</p>
+                    <p>Sole Proprietorship is cheaper and simpler to set up. In Hong Kong, business registration costs approximately HK$2,150. A Limited Company costs HK$1,720 for government fees plus HK$5,000–15,000 with a formation agent (including company secretary and registered address).</p>
                 </div>
             </div>
             
             <div class="faq-item">
-                <button class="faq-q">Can a single person own both an LLC and a corporation?</button>
+                <button class="faq-q">Which has better tax treatment?</button>
                 <div class="faq-a">
-                    <p>Yes. A single person can own an LLC, a corporation, or both simultaneously. Many entrepreneurs use LLCs to hold corporate stock or use corporations to hold LLC membership interests for asset protection and tax planning.</p>
+                    <p>In Hong Kong, both are taxed at the same rates (8.25% on first HK$2M profits, 16.5% thereafter). However, Limited Companies can more easily claim offshore tax exemption and have more flexibility in tax planning through dividends and retained earnings.</p>
                 </div>
             </div>
             
             <div class="faq-item">
-                <button class="faq-q">Which business structure is easier to set up?</button>
+                <button class="faq-q">Can I convert from Sole Proprietorship to Limited Company later?</button>
                 <div class="faq-a">
-                    <p>LLCs are generally easier and cheaper to set up. They require fewer formalities, less paperwork, and have lower ongoing compliance costs compared to corporations.</p>
-                </div>
-            </div>
-            
-            <div class="faq-item">
-                <button class="faq-q">Do I need a lawyer to form an LLC or corporation?</button>
-                <div class="faq-a">
-                    <p>While not legally required, consulting a lawyer is recommended, especially for corporations with multiple shareholders or complex ownership structures. Many states allow you to file formation documents online without legal assistance for simple LLCs.</p>
+                    <p>Yes. You can convert from Sole Proprietorship to Limited Company at any time. The process involves registering a new Limited Company and transferring business assets. Consult a professional to handle the transition smoothly.</p>
                 </div>
             </div>
         </div>
         
         <div class="article-cta">
             <h3>Need help choosing the right structure?</h3>
-            <p>Get expert guidance on LLCs, corporations, and international company formation.</p>
+            <p>Get expert guidance on Limited Companies, Sole Proprietorships, and business setup in Hong Kong.</p>
             <a href="/contact">Contact Benjamin</a>
         </div>
     </article>
     
     <footer class="footer">
         <div class="footer-inner">
-            <div class="footer-left">
-                <a href="/">Benjamin McKenzie</a> · Company Formation Specialist
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">Benjamin<em>.</em></a>
+                    <p class="footer-desc">Expert insights on Hong Kong company formation, compliance, and business setup for entrepreneurs.</p>
+                    <div class="footer-author">
+                        <img src="/assets/images/benjamin-mckenzie.jpg" alt="Benjamin McKenzie" class="footer-avatar">
+                        <span>Benjamin McKenzie<br><small>Company Formation Specialist</small></span>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <div class="footer-col">
+                        <h4>Company Formation</h4>
+                        <ul>
+                            <li><a href="/articles/hong-kong-company-registration-2026">HK Company Registration</a></li>
+                            <li><a href="/articles/how-to-register-hk-limited-company-non-resident">HK Ltd for Non-Residents</a></li>
+                            <li><a href="/articles/llc-vs-corporation-which-business-structure">Limited vs Sole Proprietorship</a></li>
+                            <li><a href="/articles/offshore-vs-onshore-company-differences">Offshore vs Onshore</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Business Setup</h4>
+                        <ul>
+                            <li><a href="/articles/how-much-does-it-cost-to-start-business-hong-kong">Business Costs in HK</a></li>
+                            <li><a href="/articles/how-to-open-hong-kong-bank-account-foreigner">HK Bank Account Guide</a></li>
+                            <li><a href="/articles/hong-kong-company-annual-compliance">Annual Compliance</a></li>
+                            <li><a href="/articles/osome-vs-sleek-vs-statrys-comparison">Osome vs Sleek vs Statrys</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="/about">About Benjamin</a></li>
+                            <li><a href="/guides">Guides</a></li>
+                            <li><a href="/privacy">Privacy Policy</a></li>
+                            <li><a href="mailto:hello@benjaminmckenzie.com">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <ul class="footer-links">
-                <li><a href="/privacy">Privacy</a></li>
-                <li><a href="/terms">Terms</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Benjamin McKenzie. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="/privacy">Privacy</a></li>
+                    <li><a href="/terms">Terms</a></li>
+                    <li><a href="mailto:hello@benjaminmckenzie.com">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
