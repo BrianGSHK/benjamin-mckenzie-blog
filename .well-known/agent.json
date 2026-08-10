@@ -1,0 +1,35 @@
+{
+    "@context": "https://schema.ai/agent",
+    "name": "Benjamin McKenzie",
+    "description": "Company Formation Specialist providing expert insights on Hong Kong company formation, compliance, and business setup for foreign entrepreneurs.",
+    "url": "https://benjaminmckenzie.com",
+    "version": "1.0.0",
+    "capabilities": {
+        "streaming": false,
+        "pushNotifications": false,
+        "stateTransitionHistory": false
+    },
+    "skills": [
+        {
+            "name": "company-formation-guidance",
+            "description": "Provides guidance on Hong Kong company registration, requirements, and processes for foreign entrepreneurs.",
+            "tags": ["company-formation", "hong-kong", "registration", "business-setup"]
+        },
+        {
+            "name": "compliance-checklist",
+            "description": "Provides annual compliance checklists and deadlines for Hong Kong companies.",
+            "tags": ["compliance", "annual-return", "audit", "tax"]
+        },
+        {
+            "name": "bank-account-guidance",
+            "description": "Guides foreign entrepreneurs through the bank account opening process in Hong Kong.",
+            "tags": ["banking", "account-opening", "documentation"]
+        }
+    ],
+    "defaultInputModes": ["text"],
+    "defaultOutputModes": ["text"],
+    "provider": {
+        "organization": "Benjamin McKenzie",
+        "url": "https://benjaminmckenzie.com"
+    }
+}
