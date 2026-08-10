@@ -262,6 +262,27 @@
             color: var(--black);
         }
         
+        /* Hamburger button */
+        .nav-hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            z-index: 1002;
+        }
+        .nav-hamburger span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: var(--gray-700);
+            margin: 4px 0;
+            transition: transform 0.25s, opacity 0.25s;
+        }
+        .nav-hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+        .nav-hamburger.active span:nth-child(2) { opacity: 0; }
+        .nav-hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
         .nav-links .btn-subscribe {
             background: var(--black);
             color: var(--white);
@@ -867,10 +888,45 @@
         }
         
         @media (max-width: 640px) {
+            .nav-hamburger {
+                display: block;
+            }
             .nav-links {
                 display: none;
+                position: fixed;
+                top: 64px;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                border-bottom: 1px solid var(--gray-200);
+                flex-direction: column;
+                padding: 16px 24px;
+                gap: 16px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.08);
             }
-            
+            .nav-links.open {
+                display: flex;
+            }
+            .nav-links li {
+                width: 100%;
+            }
+            .nav-links a {
+                display: block;
+                padding: 8px 0;
+            }
+            .nav-dropdown-menu {
+                position: static;
+                box-shadow: none;
+                border: none;
+                padding-left: 16px;
+                min-width: auto;
+            }
+            .nav-dropdown:hover .nav-dropdown-menu {
+                display: none;
+            }
+            .nav-dropdown.open .nav-dropdown-menu {
+                display: block;
+            }
             .hero h1 {
                 font-size: 36px;
             }
@@ -900,7 +956,10 @@
     <nav class="nav">
         <div class="nav-inner">
             <a href="/" class="nav-logo">Benjamin<em>.</em></a>
-            <ul class="nav-links">
+            <button class="nav-hamburger" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li class="nav-dropdown">
                     <a href="/articles">Articles ▾</a>
                     <ul class="nav-dropdown-menu">
@@ -1171,6 +1230,25 @@
                 const wasActive = item.classList.contains('active');
                 document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
                 if (!wasActive) item.classList.add('active');
+            });
+        });
+
+        // Mobile hamburger menu
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('open');
+            });
+        }
+        // Mobile dropdown toggle
+        document.querySelectorAll('.nav-dropdown > a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                if (window.innerWidth <= 640) {
+                    e.preventDefault();
+                    link.parentElement.classList.toggle('open');
+                }
             });
         });
     </script>
