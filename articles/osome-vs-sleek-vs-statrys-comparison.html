@@ -120,6 +120,12 @@
         }
         .nav-logo { font-weight: 700; font-size: 18px; color: var(--black); text-decoration: none; letter-spacing: -0.5px; }
         .nav-logo em { font-style: normal; color: var(--accent); }
+        /* Hamburger button */
+        .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; z-index: 1002; }
+        .nav-hamburger span { display: block; width: 20px; height: 2px; background: var(--gray-700); margin: 4px 0; transition: transform 0.25s, opacity 0.25s; }
+        .nav-hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+        .nav-hamburger.active span:nth-child(2) { opacity: 0; }
+        .nav-hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
         .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
         .nav-links a { font-size: 14px; font-weight: 500; color: var(--gray-500); text-decoration: none; }
         .nav-links a:hover { color: var(--black); }
@@ -292,7 +298,10 @@
     <nav class="nav">
         <div class="nav-inner">
             <a href="/" class="nav-logo">Benjamin<em>.</em></a>
-            <ul class="nav-links">
+            <button class="nav-hamburger" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="/articles">Articles</a></li>
                 <li><a href="/guides">Guides</a></li>
                 <li><a href="/about">About</a></li>

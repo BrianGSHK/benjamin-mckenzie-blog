@@ -16,6 +16,12 @@
         .nav-inner { max-width: 1120px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
         .nav-logo { font-weight: 700; font-size: 18px; color: var(--black); text-decoration: none; letter-spacing: -0.5px; }
         .nav-logo em { font-style: normal; color: var(--accent); }
+        /* Hamburger button */
+        .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; z-index: 1002; }
+        .nav-hamburger span { display: block; width: 20px; height: 2px; background: var(--gray-700); margin: 4px 0; transition: transform 0.25s, opacity 0.25s; }
+        .nav-hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+        .nav-hamburger.active span:nth-child(2) { opacity: 0; }
+        .nav-hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
         .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
         .nav-links a { font-size: 14px; font-weight: 500; color: var(--gray-500); text-decoration: none; }
         .nav-links a:hover { color: var(--black); }
@@ -48,14 +54,34 @@
         .footer-legal { display: flex; gap: 24px; list-style: none; }
         .footer-legal a { color: var(--gray-400); text-decoration: none; }
         .footer-legal a:hover { color: var(--white); }
-        @media (max-width: 640px) { .nav-links { display: none; } .page-header, .page-body { padding-left: 20px; padding-right: 20px; } .footer-main { grid-template-columns: 1fr; gap: 48px; } .footer-nav { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; gap: 16px; text-align: center; } }
+        @media (max-width: 640px) {
+            .nav-hamburger { display: block; }
+            .nav-links {
+                display: none;
+                position: fixed;
+                top: 64px;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                border-bottom: 1px solid var(--gray-200);
+                flex-direction: column;
+                padding: 16px 24px;
+                gap: 16px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            }
+            .nav-links.open { display: flex; }
+            .nav-links li { width: 100%; }
+            .nav-links a { display: block; padding: 8px 0; } .page-header, .page-body { padding-left: 20px; padding-right: 20px; } .footer-main { grid-template-columns: 1fr; gap: 48px; } .footer-nav { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; gap: 16px; text-align: center; } }
     </style>
 </head>
 <body>
     <nav class="nav">
         <div class="nav-inner">
             <a href="/" class="nav-logo">Benjamin<em>.</em></a>
-            <ul class="nav-links">
+            <button class="nav-hamburger" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="/articles">Articles</a></li>
                 <li><a href="/guides">Guides</a></li>
                 <li><a href="/about">About</a></li>
