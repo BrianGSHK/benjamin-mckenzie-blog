@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles | Benjamin McKenzie</title>
+    <link rel="canonical" href="https://benjaminmckenzie.com/articles/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root { --black: #0a0a0a; --gray-900: #1a1a1a; --gray-700: #404040; --gray-500: #6b6b6b; --gray-400: #8a8a8a; --gray-300: #b0b0b0; --gray-200: #e5e5e5; --gray-100: #f5f5f5; --white: #ffffff; --accent: #0066ff; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--white); color: var(--gray-900); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+        .nav { position: fixed; top: 0; left: 0; right: 0; background: rgba(255,255,255,0.92); backdrop-filter: blur(24px); border-bottom: 1px solid var(--gray-200); z-index: 1000; }
+        .nav-inner { max-width: 1120px; margin: 0 auto; padding: 0 32px; display: flex; align-items: center; justify-content: space-between; height: 64px; }
+        .nav-logo { font-weight: 700; font-size: 18px; color: var(--black); text-decoration: none; }
+        .nav-logo em { font-style: normal; color: var(--accent); }
+        .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+        .nav-links a { font-size: 14px; font-weight: 500; color: var(--gray-500); text-decoration: none; }
+        .nav-links a:hover { color: var(--black); }
+        .page-header { padding: 140px 32px 48px; max-width: 1120px; margin: 0 auto; }
+        .page-header h1 { font-family: 'Newsreader', Georgia, serif; font-size: clamp(32px, 5vw, 48px); font-weight: 500; line-height: 1.15; color: var(--black); letter-spacing: -1px; margin-bottom: 12px; }
+        .page-header p { font-size: 18px; color: var(--gray-500); line-height: 1.6; }
+        .articles-grid { max-width: 1120px; margin: 0 auto; padding: 0 32px 80px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+        .article-card { display: flex; flex-direction: column; }
+        .article-card-image { aspect-ratio: 16/10; background: var(--gray-100); border-radius: 6px; overflow: hidden; margin-bottom: 20px; }
+        .article-card-image img { width: 100%; height: 100%; object-fit: cover; }
+        .article-card-tag { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); margin-bottom: 12px; }
+        .article-card h3 { font-family: 'Newsreader', Georgia, serif; font-size: 22px; font-weight: 500; line-height: 1.3; color: var(--black); margin-bottom: 12px; }
+        .article-card h3 a { color: inherit; text-decoration: none; }
+        .article-card h3 a:hover { color: var(--accent); }
+        .article-card p { font-size: 15px; color: var(--gray-500); line-height: 1.65; flex: 1; }
+        .article-card-meta { margin-top: 16px; font-size: 13px; color: var(--gray-400); }
+        .footer { background: var(--gray-900); color: var(--white); padding: 64px 32px 32px; }
+        .footer-inner { max-width: 1120px; margin: 0 auto; }
+        .footer-main { display: grid; grid-template-columns: 1.2fr 2fr; gap: 64px; padding-bottom: 48px; border-bottom: 1px solid var(--gray-700); }
+        .footer-logo { font-weight: 700; font-size: 24px; color: var(--white); text-decoration: none; }
+        .footer-logo em { font-style: normal; color: var(--accent); }
+        .footer-desc { font-size: 14px; color: var(--gray-400); line-height: 1.6; margin-top: 16px; max-width: 280px; }
+        .footer-author { display: flex; align-items: center; gap: 12px; margin-top: 24px; font-size: 14px; }
+        .footer-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+        .footer-author small { color: var(--gray-400); font-size: 12px; }
+        .footer-nav { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .footer-col h4 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--white); margin-bottom: 20px; }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 12px; }
+        .footer-col a { font-size: 14px; color: var(--gray-400); text-decoration: none; }
+        .footer-col a:hover { color: var(--white); }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 32px; font-size: 13px; color: var(--gray-400); }
+        .footer-legal { display: flex; gap: 24px; list-style: none; }
+        .footer-legal a { color: var(--gray-400); text-decoration: none; }
+        @media (max-width: 968px) { .articles-grid { grid-template-columns: repeat(2, 1fr); } .footer-main { grid-template-columns: 1fr; gap: 48px; } }
+        @media (max-width: 640px) { .nav-links { display: none; } .articles-grid { grid-template-columns: 1fr; padding-left: 20px; padding-right: 20px; } .footer-nav { grid-template-columns: 1fr; } .footer-bottom { flex-direction: column; gap: 16px; text-align: center; } }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">Benjamin<em>.</em></a>
+            <ul class="nav-links">
+                <li><a href="/articles">Articles</a></li>
+                <li><a href="/guides">Guides</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <h1>Articles</h1>
+        <p>Practical guides, regulatory analysis, and step-by-step walkthroughs for entrepreneurs setting up in Hong Kong.</p>
+    </section>
+
+    <section class="articles-grid">
+        <article class="article-card">
+            <div class="article-card-image">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=375&fit=crop" alt="Hong Kong skyline" loading="lazy">
+            </div>
+            <span class="article-card-tag">Company Formation</span>
+            <h3><a href="/articles/hong-kong-company-registration-2026">How to Register a Hong Kong Company in 2026</a></h3>
+            <p>A complete walkthrough from choosing your business structure to opening a bank account.</p>
+            <div class="article-card-meta">Aug 10, 2026 · 8 min</div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-card-image">
+                <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&h=375&fit=crop" alt="Business structure" loading="lazy">
+            </div>
+            <span class="article-card-tag">Business Structure</span>
+            <h3><a href="/articles/llc-vs-corporation-which-business-structure">Limited Company vs Sole Proprietorship</a></h3>
+            <p>Compare Limited Company and Sole Proprietorship: liability, taxes, compliance, and costs.</p>
+            <div class="article-card-meta">Aug 11, 2026 · 7 min</div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-card-image">
+                <img src="https://images.unsplash.com/photo-1554224154-26032ffc0d07?w=600&h=375&fit=crop" alt="Business costs" loading="lazy">
+            </div>
+            <span class="article-card-tag">Business Costs</span>
+            <h3><a href="/articles/how-much-does-it-cost-to-start-business-hong-kong">How Much Does It Cost to Start a Business in Hong Kong?</a></h3>
+            <p>Complete breakdown of Hong Kong business startup costs: government fees, registration, and ongoing expenses.</p>
+            <div class="article-card-meta">Aug 11, 2026 · 6 min</div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-card-image">
+                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600&h=375&fit=crop" alt="Banking" loading="lazy">
+            </div>
+            <span class="article-card-tag">Banking</span>
+            <h3><a href="/articles/how-to-open-hong-kong-bank-account-foreigner">How to Open a Hong Kong Bank Account as a Foreigner</a></h3>
+            <p>Complete guide to opening a Hong Kong bank account as a non-resident. Compare traditional banks vs virtual banks.</p>
+            <div class="article-card-meta">Aug 11, 2026 · 9 min</div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-card-image">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=375&fit=crop" alt="Compliance" loading="lazy">
+            </div>
+            <span class="article-card-tag">Compliance</span>
+            <h3><a href="/articles/hong-kong-company-annual-compliance">Hong Kong Company Annual Compliance Guide</a></h3>
+            <p>Complete guide to keeping your Hong Kong company in good standing: annual returns, audits, and tax filing.</p>
+            <div class="article-card-meta">Aug 11, 2026 · 7 min</div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-card-image">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=375&fit=crop" alt="Offshore company" loading="lazy">
+            </div>
+            <span class="article-card-tag">Business Structure</span>
+            <h3><a href="/articles/offshore-vs-onshore-company-differences">Offshore Company vs Onshore Company Explained</a></h3>
+            <p>Compare offshore and onshore companies: tax, compliance, privacy, and costs. Choose the right jurisdiction.</p>
+            <div class="article-card-meta">Aug 11, 2026 · 8 min</div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-card-image">
+                <img src="https://images.unsplash.com/photo-1501167786227-4cba60f6d58f?w=600&h=375&fit=crop" alt="HK Limited Company" loading="lazy">
+            </div>
+            <span class="article-card-tag">Company Formation</span>
+            <h3><a href="/articles/how-to-register-hk-limited-company-non-resident">HK Limited Company for Non-Residents</a></h3>
+            <p>Complete guide to forming a Hong Kong Limited Company as a non-resident. Requirements, costs, and timelines.</p>
+            <div class="article-card-meta">Aug 11, 2026 · 9 min</div>
+        </article>
+
+        <article class="article-card">
+            <div class="article-card-image">
+                <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=375&fit=crop" alt="Company formation comparison" loading="lazy">
+            </div>
+            <span class="article-card-tag">Comparisons</span>
+            <h3><a href="/articles/osome-vs-sleek-vs-statrys-comparison">Osome vs Sleek vs Statrys Compared</a></h3>
+            <p>Honest comparison of the three most popular Hong Kong company formation services based on real online reviews.</p>
+            <div class="article-card-meta">Aug 11, 2026 · 10 min</div>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">Benjamin<em>.</em></a>
+                    <p class="footer-desc">Expert insights on Hong Kong company formation, compliance, and business setup for entrepreneurs.</p>
+                    <div class="footer-author">
+                        <img src="/assets/images/benjamin-mckenzie.jpg" alt="Benjamin McKenzie" class="footer-avatar">
+                        <span>Benjamin McKenzie<br><small>Company Formation Specialist</small></span>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-col">
+                        <h4>Company Formation</h4>
+                        <ul>
+                            <li><a href="/articles/hong-kong-company-registration-2026">HK Company Registration</a></li>
+                            <li><a href="/articles/how-to-register-hk-limited-company-non-resident">HK Ltd for Non-Residents</a></li>
+                            <li><a href="/articles/llc-vs-corporation-which-business-structure">Limited vs Sole Proprietorship</a></li>
+                            <li><a href="/articles/offshore-vs-onshore-company-differences">Offshore vs Onshore</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Business Setup</h4>
+                        <ul>
+                            <li><a href="/articles/how-much-does-it-cost-to-start-business-hong-kong">Business Costs in HK</a></li>
+                            <li><a href="/articles/how-to-open-hong-kong-bank-account-foreigner">HK Bank Account Guide</a></li>
+                            <li><a href="/articles/hong-kong-company-annual-compliance">Annual Compliance</a></li>
+                            <li><a href="/articles/osome-vs-sleek-vs-statrys-comparison">Osome vs Sleek vs Statrys</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="/about">About Benjamin</a></li>
+                            <li><a href="/guides">Guides</a></li>
+                            <li><a href="/privacy">Privacy Policy</a></li>
+                            <li><a href="mailto:info@benjaminmckenzie.com">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Benjamin McKenzie. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="/privacy">Privacy</a></li>
+                    <li><a href="/terms">Terms</a></li>
+                    <li><a href="mailto:info@benjaminmckenzie.com">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
