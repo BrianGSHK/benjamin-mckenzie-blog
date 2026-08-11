@@ -27,42 +27,56 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Benjamin McKenzie",
-        "jobTitle": "Startup Mentor",
-        "description": "Startup Mentor based in Hong Kong helping entrepreneurs with company formation, compliance, and business setup in Asia.",
-        "url": "https://benjaminmckenzie.com/about",
-        "image": "https://benjaminmckenzie.com/assets/images/benjamin-mckenzie.jpg",
-        "email": "info@benjaminmckenzie.com",
-        "nationality": {
-            "@type": "Country",
-            "name": "United Kingdom"
-        },
-        "alumniOf": {
-            "@type": "CollegeOrUniversity",
-            "name": "University of Cambridge"
-        },
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Hong Kong",
-            "addressCountry": "HK"
-        },
-        "sameAs": [
-            "https://www.linkedin.com/in/benjaminmckenzie",
-            "https://twitter.com/benjaminmckenzie"
-        ],
-        "knowsAbout": [
-            "Hong Kong Company Formation",
-            "Business Compliance",
-            "Venture Capital",
-            "Private Equity",
-            "Entrepreneurship"
-        ],
-        "hasOccupation": {
-            "@type": "Occupation",
-            "name": "Startup Mentor",
-            "skills": "Company formation, Business compliance, Venture capital, Private equity"
-        }
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://benjaminmckenzie.com/#person",
+                "name": "Benjamin McKenzie",
+                "jobTitle": "Startup Mentor",
+                "description": "Benjamin McKenzie is a Startup Mentor based in Hong Kong who helps entrepreneurs navigate company formation, compliance, and business setup across Asia. With over a decade of experience in venture capital and private equity, he founded this blog to demystify Hong Kong company registration, annual compliance, banking, and business structuring for founders worldwide.",
+                "url": "https://benjaminmckenzie.com/about",
+                "image": "https://benjaminmckenzie.com/assets/images/benjamin-mckenzie.jpg",
+                "email": "info@benjaminmckenzie.com",
+                "nationality": {
+                    "@type": "Country",
+                    "name": "United Kingdom"
+                },
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "University of Cambridge"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Hong Kong",
+                    "addressCountry": "HK"
+                },
+                "sameAs": [
+                    "https://www.linkedin.com/in/benjaminmckenzie",
+                    "https://twitter.com/benjaminmckenzie"
+                ],
+                "knowsAbout": [
+                    "Hong Kong company formation",
+                    "Business compliance",
+                    "Startup mentoring",
+                    "Company registration",
+                    "Annual compliance"
+                ],
+                "hasOccupation": {
+                    "@type": "Occupation",
+                    "name": "Startup Mentor",
+                    "skills": "Company formation, Business compliance, Venture capital, Private equity"
+                }
+            },
+            {
+                "@type": "ProfilePage",
+                "@id": "https://benjaminmckenzie.com/about/#webpage",
+                "url": "https://benjaminmckenzie.com/about",
+                "name": "About Benjamin McKenzie — Startup Mentor",
+                "mainEntity": {
+                    "@id": "https://benjaminmckenzie.com/#person"
+                }
+            }
+        ]
     }
     </script>
     

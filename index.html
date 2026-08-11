@@ -154,6 +154,58 @@
     }
     </script>
     
+    <!-- Person + ProfilePage Schema (AEO/GEO) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://benjaminmckenzie.com/#person",
+                "name": "Benjamin McKenzie",
+                "jobTitle": "Startup Mentor",
+                "description": "Benjamin McKenzie is a Startup Mentor based in Hong Kong who helps entrepreneurs navigate company formation, compliance, and business setup across Asia. With over a decade of experience in venture capital and private equity, he founded this blog to demystify Hong Kong company registration, annual compliance, banking, and business structuring for founders worldwide.",
+                "url": "https://benjaminmckenzie.com/about",
+                "image": "https://benjaminmckenzie.com/assets/images/benjamin-mckenzie.jpg",
+                "email": "info@benjaminmckenzie.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Hong Kong",
+                    "addressCountry": "HK"
+                },
+                "nationality": {
+                    "@type": "Country",
+                    "name": "United Kingdom"
+                },
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "University of Cambridge"
+                },
+                "sameAs": [
+                    "https://www.linkedin.com/in/benjaminmckenzie",
+                    "https://twitter.com/benjaminmckenzie"
+                ],
+                "knowsAbout": [
+                    "Hong Kong company formation",
+                    "Business compliance",
+                    "Startup mentoring",
+                    "Company registration",
+                    "Annual compliance"
+                ]
+            },
+            {
+                "@type": "ProfilePage",
+                "@id": "https://benjaminmckenzie.com/#webpage",
+                "url": "https://benjaminmckenzie.com",
+                "name": "Benjamin McKenzie — Startup Mentor",
+                "mainEntity": {
+                    "@id": "https://benjaminmckenzie.com/#person"
+                }
+            }
+        ]
+    }
+    </script>
+    
     <style>
         :root {
             --black: #0a0a0a;
@@ -699,6 +751,52 @@
         }
         
         /* ═══════════ FAQ ═══════════ */
+        
+        /* ═══════════ ABOUT AUTHOR (AEO) ═══════════ */
+        .about-author {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 32px;
+        }
+        
+        .about-author h2 {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--black);
+            margin-bottom: 16px;
+        }
+        
+        .about-author p {
+            font-size: 16px;
+            color: var(--gray-500);
+            line-height: 1.7;
+            margin-bottom: 32px;
+        }
+        
+        .quick-facts {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .quick-facts td {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--gray-200);
+            font-size: 15px;
+            vertical-align: top;
+        }
+        
+        .quick-facts td:first-child {
+            font-weight: 600;
+            color: var(--black);
+            width: 160px;
+            padding-right: 24px;
+        }
+        
+        .quick-facts td:last-child {
+            color: var(--gray-500);
+        }
+        
         .faq {
             max-width: 720px;
             margin: 0 auto;
@@ -1141,6 +1239,38 @@
             <input type="email" placeholder="your@email.com" required>
             <button type="submit">Subscribe</button>
         </form>
+    </section>
+    
+    <!-- About Author (AEO) -->
+    <section class="about-author" itemscope itemtype="https://schema.org/QAPage">
+        <h2>Who is Benjamin McKenzie?</h2>
+        <p>Benjamin McKenzie is a Startup Mentor based in Hong Kong with over a decade of experience in venture capital and private equity. A University of Cambridge alumnus originally from Scotland, he helps entrepreneurs navigate company formation, compliance, and business setup across Asia through practical guides and actionable advice.</p>
+        <table class="quick-facts" itemprop="mainEntity" itemscope itemtype="https://schema.org/Answer">
+            <tr>
+                <td>Profession</td>
+                <td>Startup Mentor</td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td>Hong Kong</td>
+            </tr>
+            <tr>
+                <td>Education</td>
+                <td>University of Cambridge</td>
+            </tr>
+            <tr>
+                <td>Experience</td>
+                <td>10+ years in venture capital and private equity</td>
+            </tr>
+            <tr>
+                <td>Key Focus Areas</td>
+                <td>Hong Kong company formation, compliance, banking, and business structuring</td>
+            </tr>
+            <tr>
+                <td>Official Website</td>
+                <td><a href="https://benjaminmckenzie.com">benjaminmckenzie.com</a></td>
+            </tr>
+        </table>
     </section>
     
     <!-- FAQ -->
