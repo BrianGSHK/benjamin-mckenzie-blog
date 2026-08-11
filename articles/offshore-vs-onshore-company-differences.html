@@ -294,6 +294,46 @@
             .article-header, .article-body { padding-left: 20px; padding-right: 20px; }
             .footer-inner { flex-direction: column; gap: 24px; text-align: center; }
         }
+
+        /* RELATED ARTICLES */
+        .related-articles {
+            background: var(--gray-100);
+            border-radius: 12px;
+            padding: 48px 32px;
+            margin: 48px auto;
+            max-width: 720px;
+        }
+        .related-articles h2 {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 24px; margin: 0 0 24px;
+            color: var(--black);
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .related-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+            padding: 20px;
+            text-decoration: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .related-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 2px 8px rgba(0,102,255,0.08);
+        }
+        .related-card h3 {
+            font-size: 15px; font-weight: 600;
+            color: var(--black); margin: 0 0 8px;
+            line-height: 1.4;
+        }
+        .related-card p {
+            font-size: 13px; color: var(--gray-500);
+            margin: 0; line-height: 1.5;
+        }
     </style>
 </head>
 <body>
@@ -322,14 +362,14 @@
         <div class="article-meta">
             <div class="article-avatar"><img src="/assets/images/benjamin-mckenzie.jpg" alt="Benjamin McKenzie"></div>
             <div>
-                <span class="article-author-name">Benjamin McKenzie</span><br>
+                <span class="article-author-name"><a href="/biography" style="color:inherit;text-decoration:none">Benjamin McKenzie</a></span><br>
                 <span>Aug 11, 2026 · 8 min read</span>
             </div>
         </div>
     </header>
     
     <article class="article-body">
-        <p><strong>An offshore company is registered in a jurisdiction where it does not conduct business, often for tax optimization or asset protection. An onshore company operates in the same country where it is registered and is subject to local taxes and regulations.</strong> Both structures are legal when properly compliant with tax laws.</p>
+        <p><strong>An offshore company is registered in a jurisdiction where it does not conduct business, often for tax optimization or asset protection. An onshore company operates in the same country where it is registered and is subject to local taxes and regulations.</strong> Both structures are legal when properly compliant with tax laws. If youre ready to <a href="/articles/hong-kong-company-registration-2026">register a Hong Kong company</a>, our guide walks you through the entire process.</p>
         
         <div class="callout">
             <p><strong>Quick Answer:</strong> Choose an offshore company for tax optimization, asset protection, and privacy. Choose an onshore company for local credibility, easier banking, and operating in your home market. Many international businesses use both structures.</p>
@@ -516,6 +556,7 @@
         <!-- Article FAQ -->
         <div class="article-faq">
             <h2>Frequently Asked Questions</h2>
+            <p style="font-size:14px;color:var(--gray-500);margin:-16px 0 24px"><a href="/faq" style="color:var(--accent)">View all FAQs →</a></p>
             
             <div class="faq-item">
                 <button class="faq-q">What is the difference between an offshore and onshore company?</button>
@@ -559,6 +600,30 @@
             <a href="/contact">Contact Benjamin</a>
         </div>
     </article>
+    
+    
+    <!-- Related Articles -->
+    <section class="related-articles">
+        <h2>Related Articles</h2>
+        <div class="related-grid">
+            <a href="/articles/hong-kong-company-registration-2026" class="related-card">
+                <h3>How to Register a Hong Kong Company in 2026</h3>
+                <p>Step-by-step walkthrough of the registration process, requirements, and timelines.</p>
+            </a>
+            <a href="/articles/hong-kong-company-annual-compliance" class="related-card">
+                <h3>Hong Kong Company Annual Compliance</h3>
+                <p>Annual returns, audits, tax filing, and deadlines for keeping your HK company in good standing.</p>
+            </a>
+            <a href="/articles/how-much-does-it-cost-to-start-business-hong-kong" class="related-card">
+                <h3>How Much Does It Cost to Start a Business in Hong Kong?</h3>
+                <p>Complete breakdown of all costs involved in forming and maintaining a Hong Kong company.</p>
+            </a>
+            <a href="/articles/llc-vs-corporation-which-business-structure" class="related-card">
+                <h3>Limited Company vs Sole Proprietorship</h3>
+                <p>Compare liability, taxes, compliance, and costs to find the right structure for your business.</p>
+            </a>
+        </div>
+    </section>
     
     <footer class="footer">
         <div class="footer-inner">

@@ -305,6 +305,46 @@
             .footer-nav { grid-template-columns: 1fr; }
             .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
         }
+
+        /* RELATED ARTICLES */
+        .related-articles {
+            background: var(--gray-100);
+            border-radius: 12px;
+            padding: 48px 32px;
+            margin: 48px auto;
+            max-width: 720px;
+        }
+        .related-articles h2 {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 24px; margin: 0 0 24px;
+            color: var(--black);
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .related-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+            padding: 20px;
+            text-decoration: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .related-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 2px 8px rgba(0,102,255,0.08);
+        }
+        .related-card h3 {
+            font-size: 15px; font-weight: 600;
+            color: var(--black); margin: 0 0 8px;
+            line-height: 1.4;
+        }
+        .related-card p {
+            font-size: 13px; color: var(--gray-500);
+            margin: 0; line-height: 1.5;
+        }
     </style>
 </head>
 <body>
@@ -333,14 +373,14 @@
         <div class="article-meta">
             <div class="article-avatar"><img src="/assets/images/benjamin-mckenzie.jpg" alt="Benjamin McKenzie"></div>
             <div>
-                <span class="article-author-name">Benjamin McKenzie</span><br>
+                <span class="article-author-name"><a href="/biography" style="color:inherit;text-decoration:none">Benjamin McKenzie</a></span><br>
                 <span>Aug 11, 2026 · 7 min read</span>
             </div>
         </div>
     </header>
     
     <article class="article-body">
-        <p><strong>A Limited Company is a separate legal entity that protects your personal assets from business debts, while a Sole Proprietorship is simpler and cheaper but leaves you personally liable for all business obligations.</strong> Both structures are legitimate choices, but the right one depends on your business size, risk tolerance, and growth plans.</p>
+        <p><strong>A Limited Company is a separate legal entity that protects your personal assets from business debts, while a Sole Proprietorship is simpler and cheaper but leaves you personally liable for all business obligations.</strong> Both structures are legitimate choices, but the right one depends on your business size, risk tolerance, and growth plans. For a step-by-step guide to <a href="/articles/hong-kong-company-registration-2026">registering a Hong Kong company</a>, see our complete walkthrough.</p>
         
         <div class="callout">
             <p><strong>Quick Answer:</strong> Choose a <strong>Limited Company</strong> if you want liability protection, plan to grow, or work with corporate clients. Choose a <strong>Sole Proprietorship</strong> if you're a freelancer, consultant, or testing a business idea with minimal risk.</p>
@@ -366,7 +406,7 @@
             <li><strong>Unlimited liability</strong> — Owner is personally liable for all business debts</li>
             <li><strong>Simple structure</strong> — No legal formalities, easy to set up and close</li>
             <li><strong>Direct control</strong> — Owner makes all decisions without board approval</li>
-            <li><strong>Lower costs</strong> — Minimal registration and compliance costs</li>
+            <li><strong>Lower costs</strong> — Minimal registration and compliance costs (see our <a href="/articles/how-much-does-it-cost-to-start-business-hong-kong">complete cost breakdown</a>)</li>
             <li><strong>Personal tax</strong> — Business income is taxed as personal income</li>
         </ul>
         
@@ -458,7 +498,7 @@
         <ul>
             <li><strong>Retained earnings</strong> — Keep profits in the company for reinvestment</li>
             <li><strong>Dividends</strong> — Distribute profits as dividends (no withholding tax in HK)</li>
-            <li><strong>Offshore exemption</strong> — Easier to claim for profits earned outside Hong Kong</li>
+            <li><strong>Offshore exemption</strong> — Easier to claim for profits earned outside Hong Kong (learn more in our <a href="/articles/offshore-vs-onshore-company-differences">Offshore vs Onshore guide</a>)</li>
             <li><strong>Expense deductions</strong> — More legitimate business expense deductions</li>
         </ul>
         
@@ -566,6 +606,7 @@
         <!-- Article FAQ -->
         <div class="article-faq">
             <h2>Frequently Asked Questions</h2>
+            <p style="font-size:14px;color:var(--gray-500);margin:-16px 0 24px"><a href="/faq" style="color:var(--accent)">View all FAQs →</a></p>
             
             <div class="faq-item">
                 <button class="faq-q">What is the main difference between a Limited Company and Sole Proprietorship?</button>
@@ -602,6 +643,30 @@
             <a href="/contact">Contact Benjamin</a>
         </div>
     </article>
+    
+    
+    <!-- Related Articles -->
+    <section class="related-articles">
+        <h2>Related Articles</h2>
+        <div class="related-grid">
+            <a href="/articles/hong-kong-company-registration-2026" class="related-card">
+                <h3>How to Register a Hong Kong Company in 2026</h3>
+                <p>Step-by-step walkthrough of the registration process, from choosing your structure to opening a bank account.</p>
+            </a>
+            <a href="/articles/how-much-does-it-cost-to-start-business-hong-kong" class="related-card">
+                <h3>How Much Does It Cost to Start a Business in Hong Kong?</h3>
+                <p>Complete breakdown of all costs involved in forming and maintaining a Hong Kong company.</p>
+            </a>
+            <a href="/articles/offshore-vs-onshore-company-differences" class="related-card">
+                <h3>Offshore vs Onshore Company: Key Differences</h3>
+                <p>Understand the fundamental differences between offshore and onshore companies.</p>
+            </a>
+            <a href="/articles/how-to-register-hk-limited-company-non-resident" class="related-card">
+                <h3>How to Register as a Non-Resident</h3>
+                <p>Complete guide to forming a Hong Kong Limited Company as a foreign entrepreneur.</p>
+            </a>
+        </div>
+    </section>
     
     <footer class="footer">
         <div class="footer-inner">

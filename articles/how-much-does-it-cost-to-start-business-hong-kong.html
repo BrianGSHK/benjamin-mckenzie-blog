@@ -286,6 +286,46 @@
             .article-header, .article-body { padding-left: 20px; padding-right: 20px; }
             .footer-inner { flex-direction: column; gap: 24px; text-align: center; }
         }
+
+        /* RELATED ARTICLES */
+        .related-articles {
+            background: var(--gray-100);
+            border-radius: 12px;
+            padding: 48px 32px;
+            margin: 48px auto;
+            max-width: 720px;
+        }
+        .related-articles h2 {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 24px; margin: 0 0 24px;
+            color: var(--black);
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .related-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+            padding: 20px;
+            text-decoration: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .related-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 2px 8px rgba(0,102,255,0.08);
+        }
+        .related-card h3 {
+            font-size: 15px; font-weight: 600;
+            color: var(--black); margin: 0 0 8px;
+            line-height: 1.4;
+        }
+        .related-card p {
+            font-size: 13px; color: var(--gray-500);
+            margin: 0; line-height: 1.5;
+        }
     </style>
 </head>
 <body>
@@ -314,14 +354,14 @@
         <div class="article-meta">
             <div class="article-avatar"><img src="/assets/images/benjamin-mckenzie.jpg" alt="Benjamin McKenzie"></div>
             <div>
-                <span class="article-author-name">Benjamin McKenzie</span><br>
+                <span class="article-author-name"><a href="/biography" style="color:inherit;text-decoration:none">Benjamin McKenzie</a></span><br>
                 <span>Aug 11, 2026 · 6 min read</span>
             </div>
         </div>
     </header>
     
     <article class="article-body">
-        <p><strong>The total cost to start a business in Hong Kong ranges from HK$5,000 to HK$15,000 for the first year.</strong> This includes government registration fees, company secretary services, and a registered address. Ongoing annual costs typically run HK$8,000 to HK$20,000.</p>
+        <p><strong>The total cost to start a business in Hong Kong ranges from HK$5,000 to HK$15,000 for the first year.</strong> This includes government registration fees, company secretary services, and a registered address. For a complete walkthrough, see our <a href="/articles/hong-kong-company-registration-2026">HK Company Registration Guide</a>. Ongoing annual costs typically run HK$8,000 to HK$20,000.</p>
         
         <div class="callout">
             <p><strong>Quick Answer:</strong> Government fees are approximately HK$1,720. With a formation agent (including registered address and company secretary), expect HK$5,000–15,000 total for the first year. Annual maintenance costs HK$8,000–20,000.</p>
@@ -414,7 +454,7 @@
                     <td>Annually</td>
                 </tr>
                 <tr>
-                    <td><strong>Audited Financial Statements</strong></td>
+                    <td><strong>Audited Financial Statements</strong> (see our <a href="/articles/hong-kong-company-annual-compliance">Annual Compliance Guide</a>)</td>
                     <td>HK$8,000–30,000+</td>
                     <td>Within 3 months of fiscal year-end</td>
                 </tr>
@@ -430,7 +470,7 @@
         <p>Beyond the basic formation and compliance fees, keep these potential costs in mind:</p>
         
         <ul>
-            <li><strong>Bank Account Opening</strong> — Some banks charge account opening fees (HK$0–1,000). Virtual banks are typically free.</li>
+            <li><strong>Bank Account Opening</strong> — Some banks charge account opening fees (see our <a href="/articles/how-to-open-hong-kong-bank-account-foreigner">Bank Account Guide</a> for details) (HK$0–1,000). Virtual banks are typically free.</li>
             <li><strong>Virtual Office</strong> — If you don't need physical space, virtual office services cost HK$100–500/month.</li>
             <li><strong>Corporate Seal</strong> — HK$200–500 for a company chop.</li>
             <li><strong>Translation Services</strong> — If documents need to be translated (e.g., for Mainland China use).</li>
@@ -501,6 +541,7 @@
         <!-- Article FAQ -->
         <div class="article-faq">
             <h2>Frequently Asked Questions</h2>
+            <p style="font-size:14px;color:var(--gray-500);margin:-16px 0 24px"><a href="/faq" style="color:var(--accent)">View all FAQs →</a></p>
             
             <div class="faq-item">
                 <button class="faq-q">How much does it cost to register a company in Hong Kong?</button>
@@ -537,6 +578,30 @@
             <a href="/contact">Get a Quote</a>
         </div>
     </article>
+    
+    
+    <!-- Related Articles -->
+    <section class="related-articles">
+        <h2>Related Articles</h2>
+        <div class="related-grid">
+            <a href="/articles/hong-kong-company-registration-2026" class="related-card">
+                <h3>How to Register a Hong Kong Company in 2026</h3>
+                <p>Step-by-step walkthrough of the registration process, requirements, and timelines.</p>
+            </a>
+            <a href="/articles/how-to-open-hong-kong-bank-account-foreigner" class="related-card">
+                <h3>How to Open a Hong Kong Bank Account as a Foreigner</h3>
+                <p>Compare virtual and traditional banks, documents required, and tips for approval.</p>
+            </a>
+            <a href="/articles/hong-kong-company-annual-compliance" class="related-card">
+                <h3>Hong Kong Company Annual Compliance</h3>
+                <p>Annual returns, audits, tax filing, and deadlines for keeping your HK company in good standing.</p>
+            </a>
+            <a href="/articles/llc-vs-corporation-which-business-structure" class="related-card">
+                <h3>Limited Company vs Sole Proprietorship</h3>
+                <p>Compare liability, taxes, compliance, and costs to find the right structure for your business.</p>
+            </a>
+        </div>
+    </section>
     
     <footer class="footer">
         <div class="footer-inner">

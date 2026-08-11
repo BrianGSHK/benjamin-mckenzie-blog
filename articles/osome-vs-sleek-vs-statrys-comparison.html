@@ -312,6 +312,46 @@
             .article-header, .article-body { padding-left: 20px; padding-right: 20px; }
             .footer-inner { flex-direction: column; gap: 24px; text-align: center; }
         }
+
+        /* RELATED ARTICLES */
+        .related-articles {
+            background: var(--gray-100);
+            border-radius: 12px;
+            padding: 48px 32px;
+            margin: 48px auto;
+            max-width: 720px;
+        }
+        .related-articles h2 {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 24px; margin: 0 0 24px;
+            color: var(--black);
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .related-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+            padding: 20px;
+            text-decoration: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .related-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 2px 8px rgba(0,102,255,0.08);
+        }
+        .related-card h3 {
+            font-size: 15px; font-weight: 600;
+            color: var(--black); margin: 0 0 8px;
+            line-height: 1.4;
+        }
+        .related-card p {
+            font-size: 13px; color: var(--gray-500);
+            margin: 0; line-height: 1.5;
+        }
     </style>
 </head>
 <body>
@@ -340,14 +380,14 @@
         <div class="article-meta">
             <div class="article-avatar"><img src="/assets/images/benjamin-mckenzie.jpg" alt="Benjamin McKenzie"></div>
             <div>
-                <span class="article-author-name">Benjamin McKenzie</span><br>
+                <span class="article-author-name"><a href="/biography" style="color:inherit;text-decoration:none">Benjamin McKenzie</a></span><br>
                 <span>Aug 11, 2026 · 10 min read</span>
             </div>
         </div>
     </header>
     
     <article class="article-body">
-        <p><strong>Sleek has the highest Trustpilot rating (4.2/5) with over 3,700 reviews, Osome offers the lowest starting price at HK$6,195, and Statrys uniquely combines company formation with multi-currency business banking.</strong> All three are legitimate, regulated service providers — but they differ significantly in pricing, customer support quality, and included services.</p>
+        <p><strong>Sleek has the highest Trustpilot rating (4.2/5) with over 3,700 reviews, Osome offers the lowest starting price at HK$6,195, and Statrys uniquely combines company formation with multi-currency business banking.</strong> All three are legitimate, regulated service providers — but they differ significantly in pricing, customer support quality, and included services. For a complete walkthrough of the <a href="/articles/hong-kong-company-registration-2026">registration process</a>, see our guide.</p>
         
         <div class="callout">
             <p><strong>Quick Answer:</strong> Choose <strong>Sleek</strong> for the most proven track record (3,700+ reviews). Choose <strong>Osome</strong> for the lowest starting price (HK$6,195). Choose <strong>Statrys</strong> if you also need a multi-currency business account. All three are legitimate and regulated.</p>
@@ -396,7 +436,7 @@
                     <td>✅ Included</td>
                 </tr>
                 <tr>
-                    <td><strong>Business Banking</strong></td>
+                    <td><strong>Business Banking</strong> (compare all options in our <a href="/articles/how-to-open-hong-kong-bank-account-foreigner">Bank Account Guide</a>)</td>
                     <td>❌ Not offered</td>
                     <td>✅ Aspire/Airwallex partnership</td>
                     <td>⚠️ MSO account (not a bank)</td>
@@ -458,7 +498,7 @@
             <li><strong>Incorporation (Foreigners):</strong> From HK$6,973</li>
             <li><strong>Company Secretary:</strong> Included in all plans</li>
             <li><strong>Registered Address:</strong> Included (HK$2,000/year value)</li>
-            <li><strong>Annual Return:</strong> Worth HK$105 — included</li>
+            <li><strong>Annual Return:</strong> Worth HK$105 — included (see our <a href="/articles/hong-kong-company-annual-compliance">Annual Compliance Guide</a>)</li>
             <li><strong>Business Account:</strong> Free with Aspire or Airwallex (subject to approval)</li>
             <li><strong>Ad-hoc Changes:</strong> HK$2,500 per share or director change (Standard tier)</li>
         </ul>
@@ -629,6 +669,7 @@
         <p><strong>Important Note:</strong> This comparison is based on publicly available online reviews and pricing as of August 2026. Prices and services may change. Always verify current pricing directly with each provider before making a decision.</p>
         
         <h2>Frequently Asked Questions</h2>
+            <p style="font-size:14px;color:var(--gray-500);margin:-16px 0 24px"><a href="/faq" style="color:var(--accent)">View all FAQs →</a></p>
         
         <div class="article-faq">
             <div class="faq-item">
@@ -673,6 +714,30 @@
             <a href="/contact">Contact Benjamin</a>
         </div>
     </article>
+    
+    
+    <!-- Related Articles -->
+    <section class="related-articles">
+        <h2>Related Articles</h2>
+        <div class="related-grid">
+            <a href="/articles/hong-kong-company-registration-2026" class="related-card">
+                <h3>How to Register a Hong Kong Company in 2026</h3>
+                <p>Step-by-step walkthrough of the registration process, requirements, and timelines.</p>
+            </a>
+            <a href="/articles/how-to-open-hong-kong-bank-account-foreigner" class="related-card">
+                <h3>How to Open a Hong Kong Bank Account as a Foreigner</h3>
+                <p>Compare virtual and traditional banks, documents required, and tips for approval.</p>
+            </a>
+            <a href="/articles/hong-kong-company-annual-compliance" class="related-card">
+                <h3>Hong Kong Company Annual Compliance</h3>
+                <p>Annual returns, audits, tax filing, and deadlines for keeping your HK company in good standing.</p>
+            </a>
+            <a href="/articles/how-much-does-it-cost-to-start-business-hong-kong" class="related-card">
+                <h3>How Much Does It Cost to Start a Business in Hong Kong?</h3>
+                <p>Complete breakdown of all costs involved in forming and maintaining a Hong Kong company.</p>
+            </a>
+        </div>
+    </section>
     
     <footer class="footer">
         <div class="footer-inner">

@@ -315,6 +315,50 @@
         .footer-links { display: flex; gap: 28px; list-style: none; }
         .footer-links a { font-size: 13px; color: var(--gray-400); text-decoration: none; }
         .footer-links a:hover { color: var(--black); }
+
+        /* RELATED ARTICLES */
+        .related-articles {
+            background: var(--gray-100);
+            border-radius: 12px;
+            padding: 48px 32px;
+            margin: 48px auto;
+            max-width: 720px;
+        }
+        .related-articles h2 {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 24px; margin: 0 0 24px;
+            color: var(--black);
+        }
+        .related-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .related-card {
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+            padding: 20px;
+            text-decoration: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .related-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 2px 8px rgba(0,102,255,0.08);
+        }
+        .related-card h3 {
+            font-size: 15px; font-weight: 600;
+            color: var(--black); margin: 0 0 8px;
+            line-height: 1.4;
+        }
+        .related-card p {
+            font-size: 13px; color: var(--gray-500);
+            margin: 0; line-height: 1.5;
+        }
+        
+        @media (max-width: 640px) {
+            .related-grid { grid-template-columns: 1fr; }
+        }
         
         @media (max-width: 640px) {
             .nav-links { display: none; }
@@ -351,7 +395,7 @@
         <div class="article-meta">
             <div class="article-avatar"><img src="/assets/images/benjamin-mckenzie.jpg" alt="Benjamin McKenzie"></div>
             <div>
-                <span class="article-author-name">Benjamin McKenzie</span><br>
+                <span class="article-author-name"><a href="/biography" style="color:inherit;text-decoration:none">Benjamin McKenzie</a></span><br>
                 <span>Aug 10, 2026 · 8 min read</span>
             </div>
         </div>
@@ -365,7 +409,7 @@
         
         <!-- LLM Summary -->
         <div class="callout">
-            <p><strong>Key Takeaway:</strong> Hong Kong company registration takes 1-3 business days. Foreign entrepreneurs can complete the process remotely. Basic setup costs range from HK$5,000 to HK$15,000. You need a registered address and company secretary in Hong Kong.</p>
+            <p><strong>Key Takeaway:</strong> Hong Kong company registration takes 1-3 business days. Foreign entrepreneurs can complete the process remotely. Basic setup costs range from HK$5,000 to HK$15,000 (see our <a href="/articles/how-much-does-it-cost-to-start-business-hong-kong">complete cost breakdown</a>). You need a registered address and company secretary in Hong Kong.</p>
         </div>
         
         <h2>Why Hong Kong?</h2>
@@ -434,7 +478,7 @@
         <p>Once approved, you'll receive your <strong>Certificate of Incorporation</strong> and <strong>Business Registration Certificate</strong>.</p>
         
         <h2>Step 4: Open a Bank Account</h2>
-        <p>This is often the most challenging step. Hong Kong banks have increased their due diligence requirements in recent years.</p>
+        <p>This is often the most challenging step. Hong Kong banks have increased their due diligence requirements in recent years. For a detailed guide on opening a bank account as a foreigner, see our <a href="/articles/how-to-open-hong-kong-bank-account-foreigner">Hong Kong Bank Account Guide</a>.</p>
         
         <div class="callout">
             <p><strong>Tip:</strong> Prepare a detailed business plan, proof of business activities (invoices, contracts, website), and personal bank references. Having a company formation agent who maintains a relationship with specific banks can significantly improve your chances.</p>
@@ -452,7 +496,7 @@
         </ul>
         
         <h2>Step 5: Ongoing Compliance</h2>
-        <p>After registration, your company must meet these annual requirements:</p>
+        <p>After registration, your company must meet these annual requirements. Our <a href="/articles/hong-kong-company-annual-compliance">Annual Compliance Guide</a> covers each obligation in detail.</p>
         
         <table>
             <thead>
@@ -489,6 +533,7 @@
         <!-- Article FAQ -->
         <div class="article-faq">
             <h2>Frequently Asked Questions</h2>
+            <p style="font-size:14px;color:var(--gray-500);margin:-16px 0 24px"><a href="/faq" style="color:var(--accent)">View all FAQs →</a></p>
             
             <div class="faq-item">
                 <button class="faq-q">What documents do I need to register a Hong Kong company?</button>
@@ -535,6 +580,30 @@
             <input type="email" placeholder="your@email.com" required>
             <button type="submit">Subscribe</button>
         </form>
+    </section>
+    
+    
+    <!-- Related Articles -->
+    <section class="related-articles">
+        <h2>Related Articles</h2>
+        <div class="related-grid">
+            <a href="/articles/hong-kong-company-annual-compliance" class="related-card">
+                <h3>Hong Kong Company Annual Compliance</h3>
+                <p>Annual returns, audits, tax filing, and deadlines for keeping your HK company in good standing.</p>
+            </a>
+            <a href="/articles/how-to-open-hong-kong-bank-account-foreigner" class="related-card">
+                <h3>How to Open a Hong Kong Bank Account as a Foreigner</h3>
+                <p>Step-by-step guide to opening a corporate or personal bank account in Hong Kong as a non-resident.</p>
+            </a>
+            <a href="/articles/how-much-does-it-cost-to-start-business-hong-kong" class="related-card">
+                <h3>How Much Does It Cost to Start a Business in Hong Kong?</h3>
+                <p>Complete breakdown of all costs involved in forming and maintaining a Hong Kong company.</p>
+            </a>
+            <a href="/articles/how-to-register-hk-limited-company-non-resident" class="related-card">
+                <h3>How to Register as a Non-Resident</h3>
+                <p>Complete guide to forming a Hong Kong Limited Company as a foreign entrepreneur.</p>
+            </a>
+        </div>
     </section>
     
     <!-- Footer -->
