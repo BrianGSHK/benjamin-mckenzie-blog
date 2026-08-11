@@ -1,501 +1,575 @@
-1|<!DOCTYPE html>
-2|<html lang="en">
-3|<head>
-4|    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-5|    <meta charset="UTF-8">
-6|    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-7|    <title>About Benjamin McKenzie | Startup Mentor</title>
-8|    <link rel="canonical" href="https://benjaminmckenzie.com/about">
-9|    <meta name="description" content="Learn about Benjamin McKenzie — Startup Mentor based in Hong Kong helping entrepreneurs with company formation, compliance, and business setup.">
-10|    
-11|    <!-- OpenGraph Meta Tags -->
-12|    <meta property="og:title" content="About Benjamin McKenzie | Startup Mentor in Hong Kong">
-13|    <meta property="og:description" content="Benjamin McKenzie is a Startup Mentor based in Hong Kong, helping entrepreneurs navigate company formation, compliance, and business setup in Asia.">
-14|    <meta property="og:url" content="https://benjaminmckenzie.com/about">
-15|    <meta property="og:type" content="profile">
-16|    <meta property="og:site_name" content="Benjamin McKenzie">
-17|    <meta property="og:image" content="https://benjaminmckenzie.com/assets/images/benjamin-mckenzie.jpg">
-18|    <meta property="og:image:alt" content="Benjamin McKenzie - Startup Mentor in Hong Kong">
-19|    <meta property="og:locale" content="en_US">
-20|    
-21|    <!-- Twitter Card Meta Tags -->
-22|    <meta name="twitter:card" content="summary">
-23|    <meta name="twitter:title" content="About Benjamin McKenzie | Startup Mentor in Hong Kong">
-24|    <meta name="twitter:description" content="Benjamin McKenzie is a Startup Mentor based in Hong Kong, helping entrepreneurs navigate company formation, compliance, and business setup in Asia.">
-25|    <meta name="twitter:image" content="https://benjaminmckenzie.com/assets/images/benjamin-mckenzie.jpg">
-26|    
-27|    <!-- Person JSON-LD Schema -->
-28|    <script type="application/ld+json">
-29|    {
-30|        "@context": "https://schema.org",
-31|        "@graph": [
-32|            {
-33|                "@type": "Person",
-34|                "@id": "https://benjaminmckenzie.com/biography#person",
-35|                "name": "Benjamin McKenzie",
-36|                "jobTitle": "Startup Mentor",
-37|                "description": "Benjamin McKenzie is a Startup Mentor based in Hong Kong who helps entrepreneurs navigate company formation, compliance, and business setup across Asia. He grew up in Fraserburgh, Scotland, before studying at the University of Cambridge and building a career in venture capital and private equity.",
-38|                "url": "https://benjaminmckenzie.com/about",
-39|                "image": "https://benjaminmckenzie.com/assets/images/benjamin-mckenzie.jpg",
-40|                "email": "info@benjaminmckenzie.com",
-41|                "nationality": {
-42|                    "@type": "Country",
-43|                    "name": "United Kingdom"
-44|                },
-45|                "birthPlace": {
-46|                    "@type": "City",
-47|                    "name": "Fraserburgh",
-48|                    "containedInPlace": {"@type": "Country", "name": "Scotland"}
-49|                },
-50|                "alumniOf": {
-51|                    "@type": "CollegeOrUniversity",
-52|                    "name": "University of Cambridge",
-53|                    "description": "BA in Economics"
-54|                },
-55|                "address": {
-56|                    "@type": "PostalAddress",
-57|                    "addressLocality": "Hong Kong",
-58|                    "addressCountry": "HK"
-59|                },
-60|                "sameAs": [
-61|                    "https://www.linkedin.com/in/benjaminmckenzie",
-62|                    "https://twitter.com/benjaminmckenzie"
-63|                ],
-64|                "knowsAbout": [
-65|                    "Hong Kong company formation",
-66|                    "Business compliance",
-67|                    "Startup mentoring",
-68|                    "Company registration",
-69|                    "Annual compliance"
-70|                ],
-71|                "hasOccupation": {
-72|                    "@type": "Occupation",
-73|                    "name": "Startup Mentor",
-74|                    "skills": "Company formation, Business compliance, Venture capital, Private equity"
-75|                }
-76|            },
-77|            {
-78|                "@type": "ProfilePage",
-79|                "@id": "https://benjaminmckenzie.com/about/#webpage",
-80|                "url": "https://benjaminmckenzie.com/about",
-81|                "name": "About Benjamin McKenzie — Startup Mentor",
-82|                "mainEntity": {
-83|                    "@id": "https://benjaminmckenzie.com/biography#person"
-84|                }
-85|            }
-86|        ]
-87|    }
-88|    </script>
-89|    
-90|    <link rel="preconnect" href="https://fonts.googleapis.com">
-91|    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-92|    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
-93|    
-94|    <style>
-95|        :root {
-96|            --black: #0a0a0a;
-97|            --gray-900: #1a1a1a;
-98|            --gray-700: #404040;
-99|            --gray-500: #6b6b6b;
-100|            --gray-400: #8a8a8a;
-101|            --gray-300: #b0b0b0;
-102|            --gray-200: #e5e5e5;
-103|            --gray-100: #f5f5f5;
-104|            --white: #ffffff;
-105|            --accent: #0066ff;
-106|        }
-107|        
-108|        * { margin: 0; padding: 0; box-sizing: border-box; }
-109|        html { scroll-behavior: smooth; }
-110|        
-111|        body {
-112|            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-113|            background: var(--white);
-114|            color: var(--gray-900);
-115|            line-height: 1.6;
-116|            -webkit-font-smoothing: antialiased;
-117|        }
-118|        
-119|        .nav {
-120|            position: fixed; top: 0; left: 0; right: 0;
-121|            background: rgba(255,255,255,0.92);
-122|            backdrop-filter: blur(24px);
-123|            border-bottom: 1px solid var(--gray-200);
-124|            z-index: 1000;
-125|        }
-126|        .nav-inner {
-127|            max-width: 1120px; margin: 0 auto; padding: 0 32px;
-128|            display: flex; align-items: center; justify-content: space-between; height: 64px;
-129|        }
-130|        .nav-logo { font-weight: 700; font-size: 18px; color: var(--black); text-decoration: none; letter-spacing: -0.5px; }
-131|        .nav-logo em { font-style: normal; color: var(--accent); }
-132|        /* Hamburger button */
-133|        .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; z-index: 1002; }
-134|        .nav-hamburger span { display: block; width: 20px; height: 2px; background: var(--gray-700); margin: 4px 0; transition: transform 0.25s, opacity 0.25s; }
-135|        .nav-hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
-136|        .nav-hamburger.active span:nth-child(2) { opacity: 0; }
-137|        .nav-hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
-138|        .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
-139|        .nav-links a { font-size: 14px; font-weight: 500; color: var(--gray-500); text-decoration: none; }
-140|        .nav-links a:hover { color: var(--black); }
-141|        
-142|        /* Hero */
-143|        .about-hero {
-144|            padding: 140px 32px 80px;
-145|            max-width: 1120px;
-146|            margin: 0 auto;
-147|            display: grid;
-148|            grid-template-columns: 1fr 1fr;
-149|            gap: 80px;
-150|            align-items: center;
-151|        }
-152|        
-153|        .about-hero-content h1 {
-154|            font-family: 'Newsreader', Georgia, serif;
-155|            font-size: clamp(36px, 5vw, 52px);
-156|            font-weight: 500;
-157|            line-height: 1.15;
-158|            color: var(--black);
-159|            letter-spacing: -1px;
-160|            margin-bottom: 24px;
-161|        }
-162|        
-163|        .about-hero-content p {
-164|            font-size: 18px;
-165|            color: var(--gray-500);
-166|            line-height: 1.7;
-167|            margin-bottom: 16px;
-168|        }
-169|        
-170|        .about-hero-image {
-171|            aspect-ratio: 3/4;
-172|            border-radius: 12px;
-173|            overflow: hidden;
-174|            background: var(--gray-100);
-175|        }
-176|        
-177|        .about-hero-image img {
-178|            width: 100%;
-179|            height: 100%;
-180|            object-fit: cover;
-181|        }
-182|        
-183|        /* Stats */
-184|        .about-stats {
-185|            max-width: 1120px;
-186|            margin: 0 auto;
-187|            padding: 60px 32px;
-188|            display: grid;
-189|            grid-template-columns: repeat(4, 1fr);
-190|            gap: 40px;
-191|            border-top: 1px solid var(--gray-200);
-192|            border-bottom: 1px solid var(--gray-200);
-193|        }
-194|        
-195|        .stat-item {
-196|            text-align: center;
-197|        }
-198|        
-199|        .stat-number {
-200|            font-family: 'Newsreader', Georgia, serif;
-201|            font-size: 48px;
-202|            font-weight: 500;
-203|            color: var(--black);
-204|            letter-spacing: -1px;
-205|        }
-206|        
-207|        .stat-label {
-208|            font-size: 14px;
-209|            color: var(--gray-400);
-210|            margin-top: 8px;
-211|        }
-212|        
-213|        /* Journey */
-214|        .about-journey {
-215|            max-width: 720px;
-216|            margin: 0 auto;
-217|            padding: 80px 32px;
-218|        }
-219|        
-220|        .about-journey h2 {
-221|            font-family: 'Newsreader', Georgia, serif;
-222|            font-size: 32px;
-223|            font-weight: 500;
-224|            color: var(--black);
-225|            margin-bottom: 32px;
-226|            letter-spacing: -0.5px;
-227|        }
-228|        
-229|        .about-journey p {
-230|            font-size: 17px;
-231|            color: var(--gray-700);
-232|            line-height: 1.8;
-233|            margin-bottom: 24px;
-234|        }
-235|        
-236|        .timeline {
-237|            margin: 48px 0;
-238|        }
-239|        
-240|        .timeline-item {
-241|            display: grid;
-242|            grid-template-columns: 120px 1fr;
-243|            gap: 32px;
-244|            padding: 32px 0;
-245|            border-bottom: 1px solid var(--gray-200);
-246|        }
-247|        
-248|        .timeline-year {
-249|            font-family: 'Newsreader', Georgia, serif;
-250|            font-size: 24px;
-251|            font-weight: 500;
-252|            color: var(--accent);
-253|        }
-254|        
-255|        .timeline-content h3 {
-256|            font-size: 18px;
-257|            font-weight: 600;
-258|            color: var(--black);
-259|            margin-bottom: 8px;
-260|        }
-261|        
-262|        .timeline-content p {
-263|            font-size: 15px;
-264|            color: var(--gray-500);
-265|            margin: 0;
-266|        }
-267|        
-268|        /* Values */
-269|        .about-values {
-270|            background: var(--gray-100);
-271|            padding: 80px 32px;
-272|        }
-273|        
-274|        .about-values-inner {
-275|            max-width: 1120px;
-276|            margin: 0 auto;
-277|        }
-278|        
-279|        .about-values h2 {
-280|            font-family: 'Newsreader', Georgia, serif;
-281|            font-size: 32px;
-282|            font-weight: 500;
-283|            color: var(--black);
-284|            margin-bottom: 48px;
-285|            text-align: center;
-286|        }
-287|        
-288|        .values-grid {
-289|            display: grid;
-290|            grid-template-columns: repeat(3, 1fr);
-291|            gap: 40px;
-292|        }
-293|        
-294|        .value-card {
-295|            background: var(--white);
-296|            padding: 32px;
-297|            border-radius: 8px;
-298|        }
-299|        
-300|        .value-card h3 {
-301|            font-size: 18px;
-302|            font-weight: 600;
-303|            color: var(--black);
-304|            margin-bottom: 12px;
-305|        }
-306|        
-307|        .value-card p {
-308|            font-size: 15px;
-309|            color: var(--gray-500);
-310|            line-height: 1.7;
-311|            margin: 0;
-312|        }
-313|        
-314|        /* CTA */
-315|        .about-cta {
-316|            max-width: 720px;
-317|            margin: 0 auto;
-318|            padding: 80px 32px;
-319|            text-align: center;
-320|        }
-321|        
-322|        .about-cta h2 {
-323|            font-family: 'Newsreader', Georgia, serif;
-324|            font-size: 32px;
-325|            font-weight: 500;
-326|            color: var(--black);
-327|            margin-bottom: 16px;
-328|        }
-329|        
-330|        .about-cta p {
-331|            font-size: 17px;
-332|            color: var(--gray-500);
-333|            margin-bottom: 32px;
-334|        }
-335|        
-336|        .about-cta a {
-337|            display: inline-block;
-338|            background: var(--accent);
-339|            color: var(--white);
-340|            padding: 14px 32px;
-341|            border-radius: 8px;
-342|            text-decoration: none;
-343|            font-weight: 600;
-344|            font-size: 15px;
-345|            transition: background 0.15s;
-346|        }
-347|        
-348|        .about-cta a:hover {
-349|            background: #0052cc;
-350|        }
-351|        
-352|        /* Footer */
-353|        .footer { background: var(--gray-900); color: var(--white); padding: 64px 32px 32px; }
-354|        .footer-inner { max-width: 1120px; margin: 0 auto; }
-355|        .footer-main { display: grid; grid-template-columns: 1.2fr 2fr; gap: 64px; padding-bottom: 48px; border-bottom: 1px solid var(--gray-700); }
-356|        .footer-logo { font-weight: 700; font-size: 24px; color: var(--white); text-decoration: none; }
-357|        .footer-logo em { font-style: normal; color: var(--accent); }
-358|        .footer-desc { font-size: 14px; color: var(--gray-400); line-height: 1.6; margin-top: 16px; max-width: 280px; }
-359|        .footer-author { display: flex; align-items: center; gap: 12px; margin-top: 24px; font-size: 14px; }
-360|        .footer-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
-361|        .footer-author small { color: var(--gray-400); font-size: 12px; }
-362|        .footer-nav { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
-363|        .footer-col h4 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--white); margin-bottom: 20px; }
-364|        .footer-col ul { list-style: none; }
-365|        .footer-col li { margin-bottom: 12px; }
-366|        .footer-col a { font-size: 14px; color: var(--gray-400); text-decoration: none; transition: color 0.15s; }
-367|        .footer-col a:hover { color: var(--white); }
-368|        .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 32px; font-size: 13px; color: var(--gray-400); }
-369|        .footer-legal { display: flex; gap: 24px; list-style: none; }
-370|        .footer-legal a { color: var(--gray-400); text-decoration: none; }
-371|        .footer-legal a:hover { color: var(--white); }
-372|        
-373|        @media (max-width: 968px) {
-374|            .about-hero {
-375|                grid-template-columns: 1fr;
-376|                gap: 48px;
-377|            }
-378|            .about-stats {
-379|                grid-template-columns: repeat(2, 1fr);
-380|            }
-381|            .values-grid {
-382|                grid-template-columns: 1fr;
-383|            }
-384|            .footer-main {
-385|                grid-template-columns: 1fr;
-386|                gap: 48px;
-387|            }
-388|            .footer-nav {
-389|                grid-template-columns: repeat(2, 1fr);
-390|            }
-391|        }
-392|        
-393|        @media (max-width: 640px) {
-394|            .nav-links { display: none; }
-395|            .about-hero, .about-journey, .about-cta { padding-left: 20px; padding-right: 20px; }
-396|            .about-stats { grid-template-columns: 1fr; padding: 40px 20px; }
-397|            .timeline-item { grid-template-columns: 1fr; gap: 8px; }
-398|            .footer-nav { grid-template-columns: 1fr; }
-399|            .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
-400|        }
-401|    </style>
-402|</head>
-403|<body>
-404|    <nav class="nav">
-405|        <div class="nav-inner">
-406|            <a href="/" class="nav-logo">Benjamin<em>.</em></a>
-407|            <button class="nav-hamburger" id="navToggle" aria-label="Toggle menu">
-408|                <span></span><span></span><span></span>
-409|            </button>
-410|            <ul class="nav-links" id="navLinks">
-411|                <li><a href="/articles">Articles</a></li>
-412|                <li><a href="/guides">Guides</a></li>
-413|                <li><a href="/biography">Biography</a></li>
-414|                <li><a href="/about">About</a></li>
-415|            </ul>
-416|        </div>
-417|    </nav>
-418|    
-419|    <section class="about-hero">
-420|        <div class="about-hero-content">
-421|            <h1>From Fraserburgh to Hong Kong — helping founders build with clarity</h1>
-422|            <p>I'm Benjamin McKenzie, a Startup Mentor based in Hong Kong. I grew up in the small Scottish town of Fraserburgh, where the harbour, lighthouse, and local football shaped many of my early memories. Today, I help entrepreneurs navigate the complexities of setting up and running businesses in Asia.</p>
-423|            <p>After a decade in venture capital and private equity, I now focus on empowering founders to make informed decisions about their business structures, compliance, and growth.</p>
-424|        </div>
-425|        <div class="about-hero-image">
-426|            <img src="/assets/images/benjamin-mckenzie.jpg" alt="Benjamin McKenzie">
-427|        </div>
-428|    </section>
-429|    
-430|    <section class="about-stats">
-431|        <div class="stat-item">
-432|            <div class="stat-number">10+</div>
-433|            <div class="stat-label">Years in Hong Kong</div>
-434|        </div>
-435|        <div class="stat-item">
-436|            <div class="stat-number">500+</div>
-437|            <div class="stat-label">Companies Formed</div>
-438|        </div>
-439|        <div class="stat-item">
-440|            <div class="stat-number">VC/PE</div>
-441|            <div class="stat-label">Background</div>
-442|        </div>
-443|        <div class="stat-item">
-444|            <div class="stat-number">Fraserburgh</div>
-445|            <div class="stat-label">Growing up</div>
-446|        </div>
-447|    </section>
-448|    
-449|    <section class="about-journey">
-450|        <h2>My Journey</h2>
-451|        
-452|        <p>Growing up in Fraserburgh, a small town on Scotland’s north-east coast, I developed a passion for understanding how businesses work. I still miss Fraserburgh Harbour Lighthouse and the old days playing football at Bellslea Park. Those early surroundings taught me to value community, persistence, and practical problem-solving. This led me to study at the University of Cambridge, where I completed a BA in Economics.</p>
-453|        
-454|        <p>After graduating, I moved to Hong Kong over a decade ago, drawn by the city's dynamic energy and its position as a gateway to Asia. I spent several years working in venture capital and private equity, evaluating hundreds of startups and growth-stage companies across the region.</p>
-455|        
-456|        <p>Through this experience, I saw firsthand how many promising founders struggled with the administrative and regulatory complexities of company formation. I realized I could make a bigger impact by helping entrepreneurs get their foundations right from the start.</p>
-457|        
-458|        <p>Today, I focus on demystifying company formation, compliance, and business setup for founders who want to build with confidence. Whether you're a first-time entrepreneur or an experienced founder expanding into Asia, I'm here to help you navigate the process with clarity.</p>
-459|        
-460|        <div class="timeline">
-461|            <div class="timeline-item">
-462|                <div class="timeline-year">Fraserburgh</div>
-463|                <div class="timeline-content">
-464|                    <h3>Early Years</h3>
-465|                    <p>Grew up in the small town of Fraserburgh, with memories of Fraserburgh Harbour Lighthouse and playing football at Bellslea Park.</p>
-466|                </div>
-467|            </div>
-468|            
-469|            <div class="timeline-item">
-470|                <div class="timeline-year">2010s</div>
-471|                <div class="timeline-content">
-472|                    <h3>Venture Capital & Private Equity</h3>
-473|                    <p>Worked with renowned VC and PE firms in Hong Kong, evaluating startups and growth companies across Asia.</p>
-474|                </div>
-475|            </div>
-476|            
-477|            <div class="timeline-item">
-478|                <div class="timeline-year">Today</div>
-479|                <div class="timeline-content">
-480|                    <h3>Entrepreneur & Mentor</h3>
-481|                    <p>Active entrepreneur and motivator, helping founders navigate company formation and build successful businesses.</p>
-482|                </div>
-483|            </div>
-484|        </div>
-485|    </section>
-486|    
-487|    <section class="about-values">
-488|        <div class="about-values-inner">
-489|            <h2>What I Believe</h2>
-490|            
-491|            <div class="values-grid">
-492|                <div class="value-card">
-493|                    <h3>Clarity Over Complexity</h3>
-494|                    <p>Company formation doesn't have to be confusing. I break down complex regulations into clear, actionable guidance that founders can actually use.</p>
-495|                </div>
-496|                
-497|                <div class="value-card">
-498|                    <h3>Founder-First Approach</h3>
-499|                    <p>Every founder's situation is unique. I provide personalized advice that considers your specific goals, industry, and risk tolerance.</p>
-500|                </div>
-501|
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Benjamin McKenzie | Startup Mentor</title>
+    <link rel="canonical" href="https://benjaminmckenzie.com/about">
+    <meta name="description" content="Learn about Benjamin McKenzie — Startup Mentor based in Hong Kong helping entrepreneurs with company formation, compliance, and business setup.">
+    
+    <!-- OpenGraph Meta Tags -->
+    <meta property="og:title" content="About Benjamin McKenzie | Startup Mentor in Hong Kong">
+    <meta property="og:description" content="Benjamin McKenzie is a Startup Mentor based in Hong Kong, helping entrepreneurs navigate company formation, compliance, and business setup in Asia.">
+    <meta property="og:url" content="https://benjaminmckenzie.com/about">
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Benjamin McKenzie">
+    <meta property="og:image" content="https://benjaminmckenzie.com/assets/images/benjamin-mckenzie.jpg">
+    <meta property="og:image:alt" content="Benjamin McKenzie - Startup Mentor in Hong Kong">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="About Benjamin McKenzie | Startup Mentor in Hong Kong">
+    <meta name="twitter:description" content="Benjamin McKenzie is a Startup Mentor based in Hong Kong, helping entrepreneurs navigate company formation, compliance, and business setup in Asia.">
+    <meta name="twitter:image" content="https://benjaminmckenzie.com/assets/images/benjamin-mckenzie.jpg">
+    
+    <!-- Person JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://benjaminmckenzie.com/biography#person",
+                "name": "Benjamin McKenzie",
+                "jobTitle": "Startup Mentor",
+                "description": "Benjamin McKenzie is a Startup Mentor based in Hong Kong who helps entrepreneurs navigate company formation, compliance, and business setup across Asia. He grew up in Fraserburgh, Scotland, before studying at the University of Cambridge and building a career in venture capital and private equity.",
+                "url": "https://benjaminmckenzie.com/about",
+                "image": "https://benjaminmckenzie.com/assets/images/benjamin-mckenzie.jpg",
+                "email": "info@benjaminmckenzie.com",
+                "nationality": {
+                    "@type": "Country",
+                    "name": "United Kingdom"
+                },
+                "birthPlace": {
+                    "@type": "City",
+                    "name": "Fraserburgh",
+                    "containedInPlace": {"@type": "Country", "name": "Scotland"}
+                },
+                "alumniOf": {
+                    "@type": "CollegeOrUniversity",
+                    "name": "University of Cambridge",
+                    "description": "BA in Economics"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Hong Kong",
+                    "addressCountry": "HK"
+                },
+                "sameAs": [
+                    "https://www.linkedin.com/in/benjaminmckenzie",
+                    "https://twitter.com/benjaminmckenzie"
+                ],
+                "knowsAbout": [
+                    "Hong Kong company formation",
+                    "Business compliance",
+                    "Startup mentoring",
+                    "Company registration",
+                    "Annual compliance"
+                ],
+                "hasOccupation": {
+                    "@type": "Occupation",
+                    "name": "Startup Mentor",
+                    "skills": "Company formation, Business compliance, Venture capital, Private equity"
+                }
+            },
+            {
+                "@type": "ProfilePage",
+                "@id": "https://benjaminmckenzie.com/about/#webpage",
+                "url": "https://benjaminmckenzie.com/about",
+                "name": "About Benjamin McKenzie — Startup Mentor",
+                "mainEntity": {
+                    "@id": "https://benjaminmckenzie.com/biography#person"
+                }
+            }
+        ]
+    }
+    </script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --black: #0a0a0a;
+            --gray-900: #1a1a1a;
+            --gray-700: #404040;
+            --gray-500: #6b6b6b;
+            --gray-400: #8a8a8a;
+            --gray-300: #b0b0b0;
+            --gray-200: #e5e5e5;
+            --gray-100: #f5f5f5;
+            --white: #ffffff;
+            --accent: #0066ff;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: var(--white);
+            color: var(--gray-900);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .nav {
+            position: fixed; top: 0; left: 0; right: 0;
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(24px);
+            border-bottom: 1px solid var(--gray-200);
+            z-index: 1000;
+        }
+        .nav-inner {
+            max-width: 1120px; margin: 0 auto; padding: 0 32px;
+            display: flex; align-items: center; justify-content: space-between; height: 64px;
+        }
+        .nav-logo { font-weight: 700; font-size: 18px; color: var(--black); text-decoration: none; letter-spacing: -0.5px; }
+        .nav-logo em { font-style: normal; color: var(--accent); }
+        /* Hamburger button */
+        .nav-hamburger { display: none; background: none; border: none; cursor: pointer; padding: 8px; z-index: 1002; }
+        .nav-hamburger span { display: block; width: 20px; height: 2px; background: var(--gray-700); margin: 4px 0; transition: transform 0.25s, opacity 0.25s; }
+        .nav-hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(4px, 4px); }
+        .nav-hamburger.active span:nth-child(2) { opacity: 0; }
+        .nav-hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+        .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+        .nav-links a { font-size: 14px; font-weight: 500; color: var(--gray-500); text-decoration: none; }
+        .nav-links a:hover { color: var(--black); }
+        
+        /* Hero */
+        .about-hero {
+            padding: 140px 32px 80px;
+            max-width: 1120px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+        
+        .about-hero-content h1 {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: clamp(36px, 5vw, 52px);
+            font-weight: 500;
+            line-height: 1.15;
+            color: var(--black);
+            letter-spacing: -1px;
+            margin-bottom: 24px;
+        }
+        
+        .about-hero-content p {
+            font-size: 18px;
+            color: var(--gray-500);
+            line-height: 1.7;
+            margin-bottom: 16px;
+        }
+        
+        .about-hero-image {
+            aspect-ratio: 3/4;
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--gray-100);
+        }
+        
+        .about-hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Stats */
+        .about-stats {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 60px 32px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            border-top: 1px solid var(--gray-200);
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 48px;
+            font-weight: 500;
+            color: var(--black);
+            letter-spacing: -1px;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: var(--gray-400);
+            margin-top: 8px;
+        }
+        
+        /* Journey */
+        .about-journey {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 80px 32px;
+        }
+        
+        .about-journey h2 {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 32px;
+            font-weight: 500;
+            color: var(--black);
+            margin-bottom: 32px;
+            letter-spacing: -0.5px;
+        }
+        
+        .about-journey p {
+            font-size: 17px;
+            color: var(--gray-700);
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+        
+        .timeline {
+            margin: 48px 0;
+        }
+        
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 32px;
+            padding: 32px 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+        
+        .timeline-year {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--accent);
+        }
+        
+        .timeline-content h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--black);
+            margin-bottom: 8px;
+        }
+        
+        .timeline-content p {
+            font-size: 15px;
+            color: var(--gray-500);
+            margin: 0;
+        }
+        
+        /* Values */
+        .about-values {
+            background: var(--gray-100);
+            padding: 80px 32px;
+        }
+        
+        .about-values-inner {
+            max-width: 1120px;
+            margin: 0 auto;
+        }
+        
+        .about-values h2 {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 32px;
+            font-weight: 500;
+            color: var(--black);
+            margin-bottom: 48px;
+            text-align: center;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+        }
+        
+        .value-card {
+            background: var(--white);
+            padding: 32px;
+            border-radius: 8px;
+        }
+        
+        .value-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--black);
+            margin-bottom: 12px;
+        }
+        
+        .value-card p {
+            font-size: 15px;
+            color: var(--gray-500);
+            line-height: 1.7;
+            margin: 0;
+        }
+        
+        /* CTA */
+        .about-cta {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 80px 32px;
+            text-align: center;
+        }
+        
+        .about-cta h2 {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 32px;
+            font-weight: 500;
+            color: var(--black);
+            margin-bottom: 16px;
+        }
+        
+        .about-cta p {
+            font-size: 17px;
+            color: var(--gray-500);
+            margin-bottom: 32px;
+        }
+        
+        .about-cta a {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: 14px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            transition: background 0.15s;
+        }
+        
+        .about-cta a:hover {
+            background: #0052cc;
+        }
+        
+        /* Footer */
+        .footer { background: var(--gray-900); color: var(--white); padding: 64px 32px 32px; }
+        .footer-inner { max-width: 1120px; margin: 0 auto; }
+        .footer-main { display: grid; grid-template-columns: 1.2fr 2fr; gap: 64px; padding-bottom: 48px; border-bottom: 1px solid var(--gray-700); }
+        .footer-logo { font-weight: 700; font-size: 24px; color: var(--white); text-decoration: none; }
+        .footer-logo em { font-style: normal; color: var(--accent); }
+        .footer-desc { font-size: 14px; color: var(--gray-400); line-height: 1.6; margin-top: 16px; max-width: 280px; }
+        .footer-author { display: flex; align-items: center; gap: 12px; margin-top: 24px; font-size: 14px; }
+        .footer-avatar { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+        .footer-author small { color: var(--gray-400); font-size: 12px; }
+        .footer-nav { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+        .footer-col h4 { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: var(--white); margin-bottom: 20px; }
+        .footer-col ul { list-style: none; }
+        .footer-col li { margin-bottom: 12px; }
+        .footer-col a { font-size: 14px; color: var(--gray-400); text-decoration: none; transition: color 0.15s; }
+        .footer-col a:hover { color: var(--white); }
+        .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 32px; font-size: 13px; color: var(--gray-400); }
+        .footer-legal { display: flex; gap: 24px; list-style: none; }
+        .footer-legal a { color: var(--gray-400); text-decoration: none; }
+        .footer-legal a:hover { color: var(--white); }
+        
+        @media (max-width: 968px) {
+            .about-hero {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+            .about-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+            .footer-nav {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 640px) {
+            .nav-links { display: none; }
+            .about-hero, .about-journey, .about-cta { padding-left: 20px; padding-right: 20px; }
+            .about-stats { grid-template-columns: 1fr; padding: 40px 20px; }
+            .timeline-item { grid-template-columns: 1fr; gap: 8px; }
+            .footer-nav { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">Benjamin<em>.</em></a>
+            <button class="nav-hamburger" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/articles">Articles</a></li>
+                <li><a href="/guides">Guides</a></li>
+                <li><a href="/biography">Biography</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section class="about-hero">
+        <div class="about-hero-content">
+            <h1>From Fraserburgh to Hong Kong — helping founders build with clarity</h1>
+            <p>I'm Benjamin McKenzie, a Startup Mentor based in Hong Kong. I grew up in the small Scottish town of Fraserburgh, where the harbour, lighthouse, and local football shaped many of my early memories. Today, I help entrepreneurs navigate the complexities of setting up and running businesses in Asia.</p>
+            <p>After a decade in venture capital and private equity, I now focus on empowering founders to make informed decisions about their business structures, compliance, and growth.</p>
+        </div>
+        <div class="about-hero-image">
+            <img src="/assets/images/benjamin-mckenzie.jpg" alt="Benjamin McKenzie">
+        </div>
+    </section>
+    
+    <section class="about-stats">
+        <div class="stat-item">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Years in Hong Kong</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-label">Companies Formed</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">VC/PE</div>
+            <div class="stat-label">Background</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">Fraserburgh</div>
+            <div class="stat-label">Growing up</div>
+        </div>
+    </section>
+    
+    <section class="about-journey">
+        <h2>My Journey</h2>
+        
+        <p>Growing up in Fraserburgh, a small town on Scotland’s north-east coast, I developed a passion for understanding how businesses work. I still miss Fraserburgh Harbour Lighthouse and the old days playing football at Bellslea Park. Those early surroundings taught me to value community, persistence, and practical problem-solving. This led me to study at the University of Cambridge, where I completed a BA in Economics.</p>
+        
+        <p>After graduating, I moved to Hong Kong over a decade ago, drawn by the city's dynamic energy and its position as a gateway to Asia. I spent several years working in venture capital and private equity, evaluating hundreds of startups and growth-stage companies across the region.</p>
+        
+        <p>Through this experience, I saw firsthand how many promising founders struggled with the administrative and regulatory complexities of company formation. I realized I could make a bigger impact by helping entrepreneurs get their foundations right from the start.</p>
+        
+        <p>Today, I focus on demystifying company formation, compliance, and business setup for founders who want to build with confidence. Whether you're a first-time entrepreneur or an experienced founder expanding into Asia, I'm here to help you navigate the process with clarity.</p>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-year">Fraserburgh</div>
+                <div class="timeline-content">
+                    <h3>Early Years</h3>
+                    <p>Grew up in the small town of Fraserburgh, with memories of Fraserburgh Harbour Lighthouse and playing football at Bellslea Park.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">2010s</div>
+                <div class="timeline-content">
+                    <h3>Venture Capital & Private Equity</h3>
+                    <p>Worked with renowned VC and PE firms in Hong Kong, evaluating startups and growth companies across Asia.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-year">Today</div>
+                <div class="timeline-content">
+                    <h3>Entrepreneur & Mentor</h3>
+                    <p>Active entrepreneur and motivator, helping founders navigate company formation and build successful businesses.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about-values">
+        <div class="about-values-inner">
+            <h2>What I Believe</h2>
+            
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Clarity Over Complexity</h3>
+                    <p>Company formation doesn't have to be confusing. I break down complex regulations into clear, actionable guidance that founders can actually use.</p>
+                </div>
+                
+                <div class="value-card">
+                    <h3>Founder-First Approach</h3>
+                    <p>Every founder's situation is unique. I provide personalized advice that considers your specific goals, industry, and risk tolerance.</p>
+                </div>
+                
+                <div class="value-card">
+                    <h3>Transparency & Trust</h3>
+                    <p>No hidden fees, no jargon. I believe in honest, straightforward communication so you can make informed decisions about your business.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about-cta">
+        <h2>Let's Build Something Together</h2>
+        <p>Whether you're setting up your first company or expanding into Hong Kong, I'm here to help you get it right.</p>
+        <a href="mailto:info@benjaminmckenzie.com">Get in Touch</a>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">Benjamin<em>.</em></a>
+                    <p class="footer-desc">Expert insights on Hong Kong company formation, compliance, and business setup for entrepreneurs.</p>
+                    <div class="footer-author">
+                        <img src="/assets/images/benjamin-mckenzie.jpg" alt="Benjamin McKenzie" class="footer-avatar">
+                        <span>Benjamin McKenzie<br><small>Startup Mentor</small></span>
+                    </div>
+                </div>
+                
+                <div class="footer-nav">
+                    <div class="footer-col">
+                        <h4>Company Formation</h4>
+                        <ul>
+                            <li><a href="/articles/hong-kong-company-registration-2026">HK Company Registration</a></li>
+                            <li><a href="/articles/how-to-register-hk-limited-company-non-resident">HK Ltd for Non-Residents</a></li>
+                            <li><a href="/articles/llc-vs-corporation-which-business-structure">Limited vs Sole Proprietorship</a></li>
+                            <li><a href="/articles/offshore-vs-onshore-company-differences">Offshore vs Onshore</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Business Setup</h4>
+                        <ul>
+                            <li><a href="/articles/how-much-does-it-cost-to-start-business-hong-kong">Business Costs in HK</a></li>
+                            <li><a href="/articles/how-to-open-hong-kong-bank-account-foreigner">HK Bank Account Guide</a></li>
+                            <li><a href="/articles/hong-kong-company-annual-compliance">Annual Compliance</a></li>
+                            <li><a href="/articles/osome-vs-sleek-vs-statrys-comparison">Osome vs Sleek vs Statrys</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="/biography">Biography</a></li>
+                            <li><a href="/faq">FAQ</a></li>
+                            <li><a href="/about">About Benjamin</a></li>
+                            <li><a href="/guides">Guides</a></li>
+                            <li><a href="/privacy">Privacy Policy</a></li>
+                            <li><a href="mailto:info@benjaminmckenzie.com">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2026 Benjamin McKenzie. All rights reserved.</p>
+                <ul class="footer-legal">
+                    <li><a href="/privacy">Privacy</a></li>
+                    <li><a href="/terms">Terms</a></li>
+                    <li><a href="mailto:info@benjaminmckenzie.com">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script>const navToggle=document.getElementById('navToggle'),navLinks=document.getElementById('navLinks');if(navToggle&&navLinks)navToggle.addEventListener('click',()=>{navToggle.classList.toggle('active');navLinks.classList.toggle('open');navToggle.setAttribute('aria-expanded',navLinks.classList.contains('open'))});</script>
+</body>
+</html>
