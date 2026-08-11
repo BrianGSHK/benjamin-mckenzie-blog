@@ -41,14 +41,14 @@ Benjamin McKenzie is a Startup Mentor based in Hong Kong who helps foreign entre
 - Limited company vs sole proprietorship structures
 
 ## Latest Articles
-- [How to Register a Hong Kong Company in 2026](https://benjaminmckenzie.com/articles/hong-kong-company-registration-2026.html) — Complete guide covering registration process, requirements, timelines, and costs.
-- [Limited Company vs Sole Proprietorship: Which Should You Choose?](https://benjaminmckenzie.com/articles/llc-vs-corporation-which-business-structure.html) — Compare structures, benefits, costs, and tax implications.
-- [How Much Does It Cost to Start a Business in Hong Kong?](https://benjaminmckenzie.com/articles/how-much-does-it-cost-to-start-business-hong-kong.html) — Detailed breakdown of startup costs including government fees and annual maintenance.
-- [How to Open a Hong Kong Bank Account as a Foreigner](https://benjaminmckenzie.com/articles/how-to-open-hong-kong-bank-account-foreigner.html) — Step-by-step guide for non-residents to open bank accounts in Hong Kong.
-- [Hong Kong Company Annual Compliance: What You Need to Know](https://benjaminmckenzie.com/articles/hong-kong-company-annual-compliance.html) — Essential compliance requirements including Annual Returns, audits, and Profits Tax.
-- [Offshore Company vs Onshore Company: Key Differences](https://benjaminmckenzie.com/articles/offshore-vs-onshore-company-differences.html) — Tax implications, compliance requirements, and which structure suits your business.
-- [Osome vs Sleek vs Statrys: HK Company Formation Compared](https://benjaminmckenzie.com/articles/osome-vs-sleek-vs-statrys-comparison.html) — Platform comparison for pricing, features, and ease of use.
-- [How to Register a HK Limited Company as a Non-Resident](https://benjaminmckenzie.com/articles/how-to-register-hk-limited-company-non-resident.html) — Requirements and procedures for foreign entrepreneurs.
+- [How to Register a Hong Kong Company in 2026](https://benjaminmckenzie.com/articles/hong-kong-company-registration-2026) — Complete guide covering registration process, requirements, timelines, and costs.
+- [Limited Company vs Sole Proprietorship: Which Should You Choose?](https://benjaminmckenzie.com/articles/llc-vs-corporation-which-business-structure) — Compare structures, benefits, costs, and tax implications.
+- [How Much Does It Cost to Start a Business in Hong Kong?](https://benjaminmckenzie.com/articles/how-much-does-it-cost-to-start-business-hong-kong) — Detailed breakdown of startup costs including government fees and annual maintenance.
+- [How to Open a Hong Kong Bank Account as a Foreigner](https://benjaminmckenzie.com/articles/how-to-open-hong-kong-bank-account-foreigner) — Step-by-step guide for non-residents to open bank accounts in Hong Kong.
+- [Hong Kong Company Annual Compliance: What You Need to Know](https://benjaminmckenzie.com/articles/hong-kong-company-annual-compliance) — Essential compliance requirements including Annual Returns, audits, and Profits Tax.
+- [Offshore Company vs Onshore Company: Key Differences](https://benjaminmckenzie.com/articles/offshore-vs-onshore-company-differences) — Tax implications, compliance requirements, and which structure suits your business.
+- [Osome vs Sleek vs Statrys: HK Company Formation Compared](https://benjaminmckenzie.com/articles/osome-vs-sleek-vs-statrys-comparison) — Platform comparison for pricing, features, and ease of use.
+- [How to Register a HK Limited Company as a Non-Resident](https://benjaminmckenzie.com/articles/how-to-register-hk-limited-company-non-resident) — Requirements and procedures for foreign entrepreneurs.
 
 ## Site Structure
 - Homepage: https://benjaminmckenzie.com
