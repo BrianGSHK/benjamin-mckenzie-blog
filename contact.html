@@ -81,6 +81,23 @@
             font-style: normal;
             color: var(--accent);
         }
+
+        /* Mobile navigation */
+        .site-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: rgba(255,255,255,0.94); border-bottom: 1px solid var(--gray-200); }
+        .site-nav-inner { max-width: 1120px; margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
+        .site-nav-logo { font-weight: 700; font-size: 18px; color: var(--black); text-decoration: none; }
+        .site-nav-logo em { font-style: normal; color: var(--accent); }
+        .nav-hamburger { display: none; background: none; border: 0; cursor: pointer; padding: 8px; }
+        .nav-hamburger span { display: block; width: 20px; height: 2px; margin: 4px 0; background: var(--gray-700); }
+        .nav-links { display: flex; gap: 24px; list-style: none; }
+        .nav-links a { color: var(--gray-500); text-decoration: none; font-size: 14px; }
+        @media (max-width: 640px) {
+            .site-nav { display: block; }
+            .nav-hamburger { display: block; }
+            .nav-links { display: none; position: fixed; top: 64px; left: 0; right: 0; padding: 16px 24px; flex-direction: column; background: var(--white); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+            .nav-links.open { display: flex; }
+            .container { padding-top: 104px; }
+        }
         
         .icon {
             width: 80px;
@@ -155,6 +172,20 @@
     </style>
 </head>
 <body>
+    <nav class="site-nav" aria-label="Main navigation">
+        <div class="site-nav-inner">
+            <a href="/" class="site-nav-logo">Benjamin<em>.</em></a>
+            <button class="nav-hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="/articles">Articles</a></li>
+                <li><a href="/guides">Guides</a></li>
+                <li><a href="/biography">Biography</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <a href="/" class="logo">Benjamin<em>.</em></a>
         
@@ -180,6 +211,7 @@
             navToggle.addEventListener('click', () => {
                 navToggle.classList.toggle('active');
                 navLinks.classList.toggle('open');
+                navToggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
             });
         }
     </script>
