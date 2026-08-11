@@ -246,6 +246,13 @@
             border-left: 3px solid var(--yellow);
         }
 
+        .review-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 24px 0 32px; }
+        .review-pair blockquote { margin: 0; padding: 18px 20px; border: 1px solid var(--gray-200); border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0; background: #fafafa; }
+        .review-pair blockquote p { font-size: 15px; line-height: 1.65; margin-bottom: 12px; }
+        .review-pair cite { display: block; font-size: 13px; line-height: 1.5; color: var(--gray-500); font-style: normal; }
+        .review-pair a { color: var(--accent); }
+        @media (max-width: 640px) { .review-pair { grid-template-columns: 1fr; } }
+
         .callout-success {
             background: #dcfce7;
             border-left: 3px solid var(--green);
@@ -509,12 +516,12 @@
             <li><strong>Annual Return:</strong> Included</li>
         </ul>
 
-        <h3>What Reviews Say</h3>
-        <ul>
-            <li><strong>Positive:</strong> Easy-to-use platform, good automation, decent pricing</li>
-            <li><strong>Negative:</strong> Bot-like communication, heavy reliance on auto-replies, lacking human touch</li>
-            <li><strong>Concern:</strong> Only responds to 42–55% of negative reviews on Trustpilot</li>
-        </ul>
+        <h3>What Osome customers say about service</h3>
+        <p>The review record is mixed rather than uniformly positive. One 4-star reviewer, Stan Karpenko, described a dedicated account manager, timely accounting and replies within a few hours. By contrast, Annabel Law’s 1-star review described a two-month onboarding delay, no account manager and difficulty reaching the support line. Read the <a href="https://www.trustpilot.com/reviews/65f1ae05cf2a75bfc736d540" target="_blank" rel="noopener">4-star review</a> and <a href="https://www.trustpilot.com/reviews/65e9429b98efc56c7923652d" target="_blank" rel="noopener">1-star review</a> in full.</p>
+        <div class="review-pair">
+            <blockquote><p>“I always have a dedicated account manager (Gordon) who I can rely on to get it all sorted.”</p><cite>Stan Karpenko · 4 stars · 13 March 2024 · <a href="https://www.trustpilot.com/reviews/65f1ae05cf2a75bfc736d540" target="_blank" rel="noopener">Trustpilot source</a></cite></blockquote>
+            <blockquote><p>“They did not even onboard me for more than 2 months. I didnt have an account manager and their hotline goes to an automatic voice mail every single time of the day.”</p><cite>Annabel Law · 1 star · 7 March 2024 · <a href="https://www.trustpilot.com/reviews/65e9429b98efc56c7923652d" target="_blank" rel="noopener">Trustpilot source</a></cite></blockquote>
+        </div>
 
         <div class="callout callout-warning">
             <p><strong>⚠️ Watch Out:</strong> The Essential package does NOT include a registered address. You'll need to add this separately, which increases the total cost.</p>
@@ -535,12 +542,12 @@
             <li><strong>Ad-hoc Changes:</strong> HK$2,500 per share or director change (Standard tier)</li>
         </ul>
 
-        <h3>What Reviews Say</h3>
-        <ul>
-            <li><strong>Positive:</strong> Most reviewed service (3,700+), generally positive feedback, B Corp certified</li>
-            <li><strong>Negative:</strong> Some complaints about hidden fees for changes, customer support response times</li>
-            <li><strong>Strength:</strong> Highest number of reviews gives the most reliable picture</li>
-        </ul>
+        <h3>What Sleek customers say about service and refunds</h3>
+        <p>Sleek’s larger review base includes both strong service feedback and serious complaints. Gianna Colombo’s 4-star review praised long-term support, professionalism and fast replies. A separate 1-star review from Y. described a two-month refund delay and repeated requests for payment proof. These are individual accounts, not a finding that every customer has the same experience; read the <a href="https://www.trustpilot.com/reviews/69aab457faf2742a43c44f8b" target="_blank" rel="noopener">4-star review</a> and <a href="https://www.trustpilot.com/reviews/69930b8a3d5b9fc63c52df43" target="_blank" rel="noopener">1-star refund review</a>.</p>
+        <div class="review-pair">
+            <blockquote><p>“The personel is very friendly, polite, professional and efficient. Reply to your questions are always fast and precise.”</p><cite>Gianna Colombo · 4 stars · 6 March 2026 · <a href="https://www.trustpilot.com/reviews/69aab457faf2742a43c44f8b" target="_blank" rel="noopener">Trustpilot source</a></cite></blockquote>
+            <blockquote><p>“2 months and still no refund despite all their promises.”</p><cite>Y. · 1 star · 16 February 2026 · <a href="https://www.trustpilot.com/reviews/69930b8a3d5b9fc63c52df43" target="_blank" rel="noopener">Trustpilot source</a></cite></blockquote>
+        </div>
 
         <div class="callout callout-success">
             <p><strong>✅ Best For:</strong> Founders who want the most proven service with the largest review base. B Corp certification shows commitment to social responsibility.</p>
@@ -560,12 +567,12 @@
             <li><strong>Business Account:</strong> Statrys Business Account included</li>
         </ul>
 
-        <h3>What Reviews Say</h3>
-        <ul>
-            <li><strong>Positive:</strong> Good for multi-currency business banking, regulated (MSO licence), integrated platform</li>
-            <li><strong>Negative:</strong> Lower Trustpilot rating (3.9/5), hasn't replied to negative reviews on Trustpilot</li>
-            <li><strong>Strength:</strong> Only service that offers its own business account (not third-party partnership)</li>
-        </ul>
+        <h3>What Statrys customers say about onboarding and support</h3>
+        <p>Statrys reviews also show contrasting experiences. Andrew’s verified 4-star review praised a fast online setup, clear fees and responsive support, while a 1-star review from a customer described a funds-transfer review as “very bad service”. The two accounts point to different experiences of onboarding and compliance handling; read the <a href="https://www.trustpilot.com/reviews/68cd5714ff736dce2b4122aa" target="_blank" rel="noopener">4-star review</a> and <a href="https://www.trustpilot.com/reviews/664b28733961cd74f426af12" target="_blank" rel="noopener">1-star review</a>.</p>
+        <div class="review-pair">
+            <blockquote><p>“Fees are clear, support is responsive, and the overall service feels reliable and efficient.”</p><cite>Andrew · 4 stars · 22 September 2025 · <a href="https://www.trustpilot.com/reviews/68cd5714ff736dce2b4122aa" target="_blank" rel="noopener">Trustpilot source</a></cite></blockquote>
+            <blockquote><p>“very bad service,I transferred funds from my company's other bank account to the bank account opened by Starys.”</p><cite>customer · 1 star · 20 May 2024 · <a href="https://www.trustpilot.com/reviews/664b28733961cd74f426af12" target="_blank" rel="noopener">Trustpilot source</a></cite></blockquote>
+        </div>
 
         <div class="callout callout-warning">
             <p><strong>⚠️ Important Note:</strong> Statrys is NOT a bank. It holds an MSO (Money Service Operator) licence, not a banking licence. This means client funds are NOT protected by the Hong Kong Deposit Protection Scheme (which covers up to HK$500,000 at licensed banks). MSO funds are subject to different regulatory requirements than bank deposits.</p>
@@ -587,47 +594,8 @@
             <p><strong>⚠️ Risk Assessment:</strong> If you keep significant funds in a Statrys account, understand that these funds are NOT bank deposits. They are subject to MSO regulations, not banking regulations. In a worst-case scenario (e.g., Statrys insolvency), recovery of funds may be more difficult than with a licensed bank.</p>
         </div>
 
-        <h2>Verified Trustpilot Review Samples: Service and Refund Experience</h2>
-        <p>The following excerpts are reproduced from individual Trustpilot reviews and selected for references to service delivery, support, compliance handling, payment or refund-related experience. Each source is linked to the original review page. Review dates and provider ratings can change, so verify the live source before relying on this comparison.</p>
-
-        <h3>Osome: 1-star service review</h3>
-        <blockquote>
-            <p>“Every five star review here and on google is FAKE. This is the most terrible company who DO NOT CARE ABOUT THIER CUSTOMERS.”</p>
-            <p>“They dont even know what package I signed up for, can’t get my name right, and did not even onboard me for more than 2 months. I didnt have an account manager and their hotline goes to an automatic voice mail every single time of the day.”</p>
-            <cite>Annabel Law, 7 March 2024 — <a href="https://www.trustpilot.com/reviews/65e9429b98efc56c7923652d" target="_blank" rel="noopener">read the original Trustpilot review</a></cite>
-        </blockquote>
-
-        <h3>Osome: 4-star service review</h3>
-        <blockquote>
-            <p>“I have been using OSOME UK since 2020 and while (like with any service) there were some glitches/bugs on the app/tech side I always have a dedicated account manager (Gordon) who I can rely on to get it all sorted.”</p>
-            <p>“all my accounting and bookeeping is done and submitted on time” and “for any queries I have - average response time is less than few hours.”</p>
-            <cite>Stan Karpenko, 13 March 2024 — <a href="https://www.trustpilot.com/reviews/65f1ae05cf2a75bfc736d540" target="_blank" rel="noopener">read the original Trustpilot review</a></cite>
-        </blockquote>
-
-        <h3>Sleek: 1-star refund review</h3>
-        <blockquote>
-            <p>“2 months and still no refund despite all their promises. They keep asking me to prove I did the payment, and do not accept THEIR OWN RECEIPT as proof of payment nor my bank statements. At every interaction, a promise to solve the matter... then nothing unless I chase them... only for them to ask for more proof!”</p>
-            <cite>Y., 16 February 2026 — <a href="https://www.trustpilot.com/reviews/69930b8a3d5b9fc63c52df43" target="_blank" rel="noopener">read the original Trustpilot review</a></cite>
-        </blockquote>
-
-        <h3>Sleek: 4-star service review</h3>
-        <blockquote>
-            <p>“Sleek is my consultant going on 15 years and I never had anything to complain about. The personel is very friendly, polite, professional and efficient. Reply to your questions are always fast and precise. They can really take care of their customers.”</p>
-            <cite>Gianna Colombo, 6 March 2026 — <a href="https://www.trustpilot.com/reviews/69aab457faf2742a43c44f8b" target="_blank" rel="noopener">read the original Trustpilot review</a></cite>
-        </blockquote>
-
-        <h3>Statrys: 1-star service review</h3>
-        <blockquote>
-            <p>“very bad service,I transferred funds from my company's other bank account to the bank account opened by Starys. I encountered an incomprehensible review, including transaction information from your company's other accounts and your personal bank account.”</p>
-            <cite>customer, 20 May 2024 — <a href="https://www.trustpilot.com/reviews/664b28733961cd74f426af12" target="_blank" rel="noopener">read the original Trustpilot review</a></cite>
-        </blockquote>
-
-        <h3>Statrys: 4-star service review</h3>
-        <blockquote>
-            <p>“The process was fast — it took about a week to set up the company and another week to open the business bank account. Everything was managed online, which was extremely convenient since I live abroad.”</p>
-            <p>“Fees are clear, support is responsive, and the overall service feels reliable and efficient.”</p>
-            <cite>Andrew, 22 September 2025 — <a href="https://www.trustpilot.com/reviews/68cd5714ff736dce2b4122aa" target="_blank" rel="noopener">read the original Trustpilot review</a></cite>
-        </blockquote>
+        <h2>How do the customer reviews change the comparison?</h2>
+        <p>The review excerpts below are placed beside each provider’s description so readers can compare the advertised service model with real customer accounts. They are individual experiences rather than a complete statistical analysis. Each quotation links to its original Trustpilot review, with the rating, reviewer and date shown where publicly available.</p>
 
         <h2>Head-to-Head: Pricing Comparison</h2>
 
