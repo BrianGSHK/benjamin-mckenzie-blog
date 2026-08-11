@@ -320,16 +320,6 @@
             </div>
         </div>
     </footer>
-    <script>
-        const navToggle = document.getElementById('navToggle');
-        const navLinks = document.getElementById('navLinks');
-        if (navToggle && navLinks) {
-            navToggle.addEventListener('click', () => {
-                navToggle.classList.toggle('active');
-                navLinks.classList.toggle('open');
-                navToggle.setAttribute('aria-expanded', navLinks.classList.contains('open'));
-            });
-        }
-    </script>
+    <script>const navToggle=document.getElementById('navToggle'),navLinks=document.getElementById('navLinks');if(navToggle&&navLinks)navToggle.addEventListener('click',()=>{navToggle.classList.toggle('active');navLinks.classList.toggle('open');navToggle.setAttribute('aria-expanded',navLinks.classList.contains('open'))});</script>
 </body>
 </html>
