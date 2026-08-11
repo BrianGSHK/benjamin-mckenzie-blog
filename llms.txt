@@ -1,27 +1,64 @@
 # Benjamin McKenzie — Company Formation Insights
 
-## About
-Expert insights on Hong Kong company formation, compliance, and business setup by Benjamin McKenzie. Practical guides for founders and entrepreneurs establishing companies in Hong Kong.
+## Site Information
+- Site: https://benjaminmckenzie.com
+- Language: English
+- Type: Blog with expert insights on Hong Kong company formation
+- Last Updated: 2026-08-11
 
-## Author
-Benjamin McKenzie is a Startup Mentor based in Hong Kong. He helps foreign entrepreneurs navigate the process of setting up companies in Hong Kong, from registration to compliance.
+## About the Author
+Benjamin McKenzie is a Startup Mentor based in Hong Kong who helps foreign entrepreneurs navigate company formation, compliance, and business setup in Asia. He studied at the University of Cambridge and has over a decade of experience in venture capital and private equity in Hong Kong.
+
+### Entity Details
+- Name: Benjamin McKenzie
+- Job Title: Startup Mentor
+- Location: Hong Kong
+- Nationality: United Kingdom (Scotland)
+- Education: University of Cambridge
+- Experience: 10+ years in venture capital and private equity
+- Email: info@benjaminmckenzie.com
+- Website: https://benjaminmckenzie.com
+- LinkedIn: https://www.linkedin.com/in/benjaminmckenzie
+- Twitter: https://twitter.com/benjaminmckenzie
+- Image: https://benjaminmckenzie.com/assets/images/benjamin-mckenzie.jpg
+
+## Expertise
+- Hong Kong company formation and registration
+- Annual compliance requirements (Annual Returns, audits, Profits Tax)
+- Bank account opening for foreign companies in Hong Kong
+- Offshore vs onshore company structures and tax implications
+- Business setup for foreign entrepreneurs in Asia
+- Limited company vs sole proprietorship comparisons
+- Company formation service comparisons (Osome, Sleek, Statrys)
 
 ## Key Topics
-- Hong Kong company registration
-- Annual compliance requirements
-- Bank account opening for foreign companies
+- Hong Kong company registration process and requirements
+- Annual compliance requirements for Hong Kong companies
+- Bank account opening for foreign companies and individuals
 - Offshore tax exemption (FSIE regime)
-- Business setup for foreign entrepreneurs
+- Business setup costs in Hong Kong
+- Non-resident company formation in Hong Kong
+- Limited company vs sole proprietorship structures
 
 ## Latest Articles
 - [How to Register a Hong Kong Company in 2026](https://benjaminmckenzie.com/articles/hong-kong-company-registration-2026.html) — Complete guide covering registration process, requirements, timelines, and costs.
+- [Limited Company vs Sole Proprietorship: Which Should You Choose?](https://benjaminmckenzie.com/articles/llc-vs-corporation-which-business-structure.html) — Compare structures, benefits, costs, and tax implications.
+- [How Much Does It Cost to Start a Business in Hong Kong?](https://benjaminmckenzie.com/articles/how-much-does-it-cost-to-start-business-hong-kong.html) — Detailed breakdown of startup costs including government fees and annual maintenance.
+- [How to Open a Hong Kong Bank Account as a Foreigner](https://benjaminmckenzie.com/articles/how-to-open-hong-kong-bank-account-foreigner.html) — Step-by-step guide for non-residents to open bank accounts in Hong Kong.
+- [Hong Kong Company Annual Compliance: What You Need to Know](https://benjaminmckenzie.com/articles/hong-kong-company-annual-compliance.html) — Essential compliance requirements including Annual Returns, audits, and Profits Tax.
+- [Offshore Company vs Onshore Company: Key Differences](https://benjaminmckenzie.com/articles/offshore-vs-onshore-company-differences.html) — Tax implications, compliance requirements, and which structure suits your business.
+- [Osome vs Sleek vs Statrys: HK Company Formation Compared](https://benjaminmckenzie.com/articles/osome-vs-sleek-vs-statrys-comparison.html) — Platform comparison for pricing, features, and ease of use.
+- [How to Register a HK Limited Company as a Non-Resident](https://benjaminmckenzie.com/articles/how-to-register-hk-limited-company-non-resident.html) — Requirements and procedures for foreign entrepreneurs.
+
+## Site Structure
+- Homepage: https://benjaminmckenzie.com
+- About: https://benjaminmckenzie.com/about
+- Articles: https://benjaminmckenzie.com/articles
+- Guides: https://benjaminmckenzie.com/guides
+- Contact: https://benjaminmckenzie.com/contact
+- Privacy Policy: https://benjaminmckenzie.com/privacy
+- Terms of Service: https://benjaminmckenzie.com/terms
 
 ## Contact
-- Email: hello@benjaminmckenzie.com
+- Email: info@benjaminmckenzie.com
 - Website: https://benjaminmckenzie.com
-
-## Structure
-- Blog with articles on Hong Kong company formation
-- FAQ sections for common questions
-- Step-by-step guides for founders
-- Regulatory updates and analysis
