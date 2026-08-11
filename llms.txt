@@ -52,6 +52,8 @@ Benjamin McKenzie is a Startup Mentor based in Hong Kong who helps foreign entre
 
 ## Site Structure
 - Homepage: https://benjaminmckenzie.com
+- Biography: https://benjaminmckenzie.com/biography
+- FAQ: https://benjaminmckenzie.com/faq
 - About: https://benjaminmckenzie.com/about
 - Articles: https://benjaminmckenzie.com/articles
 - Guides: https://benjaminmckenzie.com/guides
@@ -62,3 +64,7 @@ Benjamin McKenzie is a Startup Mentor based in Hong Kong who helps foreign entre
 ## Contact
 - Email: info@benjaminmckenzie.com
 - Website: https://benjaminmckenzie.com
+
+## Additional Pages
+- Biography: https://benjaminmckenzie.com/biography — Full biography of Benjamin McKenzie covering his education at the University of Cambridge, career in venture capital and private equity in Hong Kong, and current work as a Startup Mentor. Includes timeline, quick facts, and entity disambiguation to distinguish him from the American actor Ben McKenzie.
+- FAQ: https://benjaminmckenzie.com/faq — Frequently asked questions covering Hong Kong company formation, compliance requirements, banking, tax rates, and Benjamin McKenzie's background. Includes 14 Q&A pairs organized by category with links to relevant articles.
