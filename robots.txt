@@ -13,6 +13,10 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
+# Explicit Gemini token (the wildcard rule above also permits all crawlers)
+User-agent: Gemini
+Allow: /
+
 User-agent: PerplexityBot
 Allow: /
 
