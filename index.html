@@ -347,6 +347,9 @@
             background: var(--gray-100);
             color: var(--black);
         }
+        .nav-subscribe { background: var(--black); color: var(--white) !important; padding: 10px 16px; border-radius: 3px; font-size: 13px !important; }
+        .nav-subscribe:hover { background: var(--gray-700); color: var(--white) !important; }
+        @media (max-width: 900px) { .nav-links { gap: 18px; } .nav-subscribe { display: none; } }
         
         /* Hamburger button */
         .nav-hamburger {
@@ -1125,7 +1128,7 @@
 <!-- newsletter-brevo-v2 -->
 <body>
     <!-- Navigation -->
-    <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo">Benjamin<em>.</em></a><button class="nav-hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button><ul class="nav-links" id="navLinks"><li><a href="/articles">Articles</a></li><li><a href="/guides">Guides</a></li><li><a href="/resources">Founder Tools</a></li><li><a href="/biography">Biography</a></li><li><a href="/about">About</a></li><li><a href="/press-media">Press &amp; Media</a></li></ul></div></nav>
+    <nav class="nav"><div class="nav-inner"><a href="/" class="nav-logo">Benjamin<em>.</em></a><button class="nav-hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button><ul class="nav-links" id="navLinks"><li class="nav-dropdown"><a href="/articles">Articles <span aria-hidden="true">⌄</span></a><ul class="nav-dropdown-menu"><li><a href="/articles/hong-kong-company-registration-2026">HK Company Registration</a></li><li><a href="/articles/how-to-register-hk-limited-company-non-resident">HK Ltd for Non-Residents</a></li><li><a href="/articles/llc-vs-corporation-which-business-structure">LLC vs Corporation</a></li><li><a href="/articles/how-much-does-it-cost-to-start-business-hong-kong">Business Costs in HK</a></li><li><a href="/articles/how-to-open-hong-kong-bank-account-foreigner">HK Bank Account Guide</a></li><li><a href="/articles/hong-kong-company-annual-compliance">Annual Compliance</a></li><li><a href="/articles/offshore-vs-onshore-company-differences">Offshore vs Onshore</a></li><li><a href="/articles/osome-vs-sleek-vs-statrys-comparison">Osome vs Sleek vs Statrys</a></li><li><a href="/articles/first-profits-tax-return-hong-kong">First Profits Tax Return</a></li><li><a href="/articles/anonymised-bank-account-approval-times-non-residents">Corporate Banking Research</a></li></ul></li><li><a href="/guides">Guides</a></li><li><a href="/resources">Founder Tools</a></li><li><a href="/biography">Biography</a></li><li><a href="/about">About</a></li><li><a href="/press-media">Press &amp; Media</a></li><li><a href="#subscribe" class="nav-subscribe">Subscribe</a></li></ul></div></nav>
     
     <!-- Hero -->
     <section class="hero">
