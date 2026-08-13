@@ -399,6 +399,58 @@
             .footer-bottom { flex-direction: column; gap: 16px; text-align: center; }
         }
     </style>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://benjaminmckenzie.com/#organization",
+            "name": "Benjamin McKenzie",
+            "url": "https://benjaminmckenzie.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://benjaminmckenzie.com/assets/images/benjamin-mckenzie.jpg"
+            }
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://benjaminmckenzie.com/#website",
+            "url": "https://benjaminmckenzie.com/",
+            "name": "Benjamin McKenzie",
+            "publisher": {
+                "@id": "https://benjaminmckenzie.com/#organization"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://benjaminmckenzie.com/about#webpage",
+            "url": "https://benjaminmckenzie.com/about",
+            "name": "About",
+            "isPartOf": {
+                "@id": "https://benjaminmckenzie.com/#website"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://benjaminmckenzie.com/"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "About",
+                    "item": "https://benjaminmckenzie.com/about"
+                }
+            ]
+        }
+    ]
+}
+</script>
 </head>
 <body>
     <nav class="nav">
@@ -409,9 +461,9 @@
             </button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="/articles">Articles</a></li>
-                <li><a href="/guides">Guides</a></li>
+                <li><a href="/guides">Guides</a></li><li><a href="/resources">Founder Tools</a></li>
                 <li><a href="/biography">Biography</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="/about">About</a></li><li><a href="/press-media">Press &amp; Media</a></li>
             </ul>
         </div>
     </nav>
@@ -550,9 +602,9 @@
                         <h4>Company</h4>
                         <ul>
                             <li><a href="/biography">Biography</a></li>
-                            <li><a href="/faq">FAQ</a></li>
+                            <li><a href="/faq">FAQ</a></li><li id="footer-press-link"><a href="/press-media">Press &amp; Media</a></li>
                             <li><a href="/about">About Benjamin</a></li>
-                            <li><a href="/guides">Guides</a></li>
+                            <li><a href="/guides">Guides</a></li><li><a href="/resources">Founder Tools</a></li>
                             <li><a href="/privacy">Privacy Policy</a></li>
                             <li><a href="mailto:info@benjaminmckenzie.com">Contact</a></li>
                         </ul>

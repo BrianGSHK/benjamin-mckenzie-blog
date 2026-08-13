@@ -1077,6 +1077,43 @@
             .brevo-newsletter-embed { display: block; width: 540px; max-width: 100%; height: 520px; margin: 0 auto; border: 0; background: transparent; }
         @media (max-width: 640px) { .brevo-newsletter-embed { height: 620px; } }
     </style>
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "Organization",
+            "@id": "https://benjaminmckenzie.com/#organization",
+            "name": "Benjamin McKenzie",
+            "url": "https://benjaminmckenzie.com/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://benjaminmckenzie.com/assets/images/benjamin-mckenzie.jpg"
+            }
+        },
+        {
+            "@type": "WebPage",
+            "@id": "https://benjaminmckenzie.com/#webpage",
+            "url": "https://benjaminmckenzie.com/",
+            "name": "Index",
+            "isPartOf": {
+                "@id": "https://benjaminmckenzie.com/#website"
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://benjaminmckenzie.com/"
+                }
+            ]
+        }
+    ]
+}
+</script>
 </head>
 <!-- newsletter-brevo-v2 -->
 <body>
@@ -1102,9 +1139,9 @@
                         <li><a href="/articles/first-profits-tax-return-hong-kong">First Profits Tax Return</a></li>
                     </ul>
                 </li>
-                <li><a href="/guides">Guides</a></li>
+                <li><a href="/guides">Guides</a></li><li><a href="/resources">Founder Tools</a></li>
                 <li><a href="/biography">Biography</a></li>
-                <li><a href="/about">About</a></li>
+                <li><a href="/about">About</a></li><li><a href="/press-media">Press &amp; Media</a></li>
                 <li><a href="#subscribe" class="btn-subscribe">Subscribe</a></li>
             </ul>
         </div>
@@ -1369,9 +1406,9 @@
                         <h4>Company</h4>
                         <ul>
                             <li><a href="/biography">Biography</a></li>
-                            <li><a href="/faq">FAQ</a></li>
+                            <li><a href="/faq">FAQ</a></li><li id="footer-press-link"><a href="/press-media">Press &amp; Media</a></li>
                             <li><a href="/about">About Benjamin</a></li>
-                            <li><a href="/guides">Guides</a></li>
+                            <li><a href="/guides">Guides</a></li><li><a href="/resources">Founder Tools</a></li>
                             <li><a href="/privacy">Privacy Policy</a></li>
                             <li><a href="mailto:info@benjaminmckenzie.com">Contact</a></li>
                         </ul>
