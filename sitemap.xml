@@ -103,6 +103,18 @@
         <priority>0.7</priority>
     </url>
     <url>
+        <loc>https://benjaminmckenzie.com/resources/hsic-code-search</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://benjaminmckenzie.com/resources/margin-calculator</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://benjaminmckenzie.com/press-media</loc>
         <lastmod>2026-08-13</lastmod>
         <changefreq>monthly</changefreq>
