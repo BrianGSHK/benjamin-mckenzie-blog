@@ -1,0 +1,5 @@
+metric,value,unit,scope,note
+Corporate application attempts,805,attempts,overall supplied anonymised dataset,Corporate accounts only
+Anonymised company records,96,companies,overall supplied anonymised dataset,No row-level identifiers
+Application-weighted approval rate,74.7,percent,overall supplied anonymised dataset,Descriptive; not a forecast
+Application-weighted mean processing time,21.7,days,overall supplied anonymised dataset,Reporting period not specified in source workbook
