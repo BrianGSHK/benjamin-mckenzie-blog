@@ -59,6 +59,8 @@ Benjamin McKenzie is a Startup Mentor based in Hong Kong who helps foreign entre
 - Company compliance checklist: https://benjaminmckenzie.com/resources/compliance-checklist
 - Business banking comparison: https://benjaminmckenzie.com/resources/banking-comparison
 - TCSP licensing guide: https://benjaminmckenzie.com/resources/tcsp-licensing-guide
+- HSIC code search (external tool): https://osome.com/hk/hsic-code-search/
+- Margin calculator (external tool): https://osome.com/hk/margin-calculator/
 
 ## Site Structure
 - Homepage: https://benjaminmckenzie.com
