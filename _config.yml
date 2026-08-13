@@ -1,0 +1,9 @@
+title: Benjamin McKenzie
+url: https://benjaminmckenzie.com
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+exclude:
+  - external-articles/
+  - README.md
+  - tests/

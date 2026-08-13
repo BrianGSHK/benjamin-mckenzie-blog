@@ -1,0 +1,40 @@
+<!-- Shared Jekyll site header. Keep this navigation order and class structure unchanged. -->
+<header class="site-header" role="banner">
+  <div class="site-header__inner">
+    <a class="site-header__logo" href="{{ '/' | relative_url }}">Benjamin<span aria-hidden="true">.</span></a>
+    <button class="site-header__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-site-nav-toggle>
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-header__nav" aria-label="Primary navigation" data-site-nav>
+      <a href="{{ '/articles/' | relative_url }}">Articles</a>
+      <a href="{{ '/guides' | relative_url }}">Guides</a>
+      <a href="{{ '/resources' | relative_url }}">Founder Tools</a>
+      <a href="{{ '/biography' | relative_url }}">Biography</a>
+      <a href="{{ '/about' | relative_url }}">About</a>
+      <a href="{{ '/press-media' | relative_url }}">Press &amp; Media</a>
+    </nav>
+  </div>
+</header>
+<script>
+  (function () {
+    var toggle = document.querySelector('[data-site-nav-toggle]');
+    var nav = document.querySelector('[data-site-nav]');
+    if (!toggle || !nav) return;
+    toggle.addEventListener('click', function () {
+      var open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+  }());
+</script>
+<style>
+  .site-header{position:fixed;inset:0 0 auto;z-index:1000;height:64px;background:rgba(255,255,255,.94);backdrop-filter:blur(20px);border-bottom:1px solid #e5e5e5;font:400 16px/25.6px Inter,Arial,sans-serif}
+  .site-header__inner{width:100%;max-width:1120px;height:64px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between}
+  .site-header__logo{font:700 18px/18px Inter,Arial,sans-serif;letter-spacing:-.5px;color:#0a0a0a;text-decoration:none}
+  .site-header__logo span{color:#06f}
+  .site-header__nav{display:flex;align-items:center;gap:32px}
+  .site-header__nav a{font:400 16px/25.6px Inter,Arial,sans-serif;color:#6b6b6b;text-decoration:none}
+  .site-header__nav a:hover{color:#0a0a0a}
+  .site-header__toggle{display:none;background:none;border:0;padding:8px;cursor:pointer}
+  .site-header__toggle span{display:block;width:20px;height:2px;margin:4px 0;background:#404040}
+  @media(max-width:640px){.site-header__inner{padding:0 20px}.site-header__toggle{display:block}.site-header__nav{display:none;position:fixed;top:64px;left:0;right:0;padding:16px 20px;flex-direction:column;align-items:flex-start;gap:16px;background:#fff;border-bottom:1px solid #e5e5e5}.site-header__nav.is-open{display:flex}.site-header__nav a{display:block}}
+</style>
