@@ -73,6 +73,36 @@
         <priority>0.8</priority>
     </url>
     <url>
+        <loc>https://benjaminmckenzie.com/resources/formation-timeline</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://benjaminmckenzie.com/resources/tax-calculator</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://benjaminmckenzie.com/resources/compliance-checklist</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://benjaminmckenzie.com/resources/banking-comparison</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://benjaminmckenzie.com/resources/tcsp-licensing-guide</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
         <loc>https://benjaminmckenzie.com/press-media</loc>
         <lastmod>2026-08-13</lastmod>
         <changefreq>monthly</changefreq>

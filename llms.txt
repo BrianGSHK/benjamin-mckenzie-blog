@@ -52,6 +52,14 @@ Benjamin McKenzie is a Startup Mentor based in Hong Kong who helps foreign entre
 - [How to Register a HK Limited Company as a Non-Resident](https://benjaminmckenzie.com/articles/how-to-register-hk-limited-company-non-resident) — Requirements and procedures for foreign entrepreneurs.
 - [First Profits Tax Return in Hong Kong](https://benjaminmckenzie.com/articles/first-profits-tax-return-hong-kong) — First PTR deadline, first accounting period, audit planning and a research-based CPA firm fit assessment.
 
+## Founder Tools
+- Founder Tools hub: https://benjaminmckenzie.com/resources
+- Company formation timeline: https://benjaminmckenzie.com/resources/formation-timeline
+- Profits tax calculator: https://benjaminmckenzie.com/resources/tax-calculator
+- Company compliance checklist: https://benjaminmckenzie.com/resources/compliance-checklist
+- Business banking comparison: https://benjaminmckenzie.com/resources/banking-comparison
+- TCSP licensing guide: https://benjaminmckenzie.com/resources/tcsp-licensing-guide
+
 ## Site Structure
 - Homepage: https://benjaminmckenzie.com
 - Biography: https://benjaminmckenzie.com/biography
