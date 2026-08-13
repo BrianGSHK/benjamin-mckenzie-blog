@@ -78,4 +78,10 @@
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
+    <url>
+        <loc>https://benjaminmckenzie.com/articles/anonymised-bank-account-approval-times-non-residents</loc>
+        <lastmod>2026-08-13</lastmod>
+        <changefreq>quarterly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
