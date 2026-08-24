@@ -118,6 +118,22 @@ body{margin:0;background:#fff;color:var(--ink);font-family:Inter,Arial,sans-seri
 .footer{margin-top:0}.nav{font-family:Inter,Arial,sans-serif}
 @media(max-width:760px){.article-header{padding:84px 20px 34px}.article-header .article-hero-image{width:calc(100vw - 40px);height:260px}.article-hero-image{height:260px}.article-header h1{font-size:36px}.article-subtitle{font-size:16px}.article-body{padding:0 20px 56px;font-size:16px}.article-body h2{font-size:26px}.benchmark-table{display:block;overflow-x:auto;white-space:normal}.related-grid{grid-template-columns:1fr}}
 </style>
+<style id="shared-reference-header-footer">
+.nav{position:fixed;top:0;left:0;right:0;background:rgba(255,255,255,.92);backdrop-filter:blur(24px);border-bottom:1px solid #e5e5e5;z-index:1000}
+.nav-inner{max-width:1120px;margin:0 auto;padding:0 32px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav-logo{font-weight:700;font-size:18px;color:#0a0a0a;text-decoration:none;letter-spacing:-.5px}
+.nav-logo em{font-style:normal;color:#0066ff}
+.nav-hamburger{display:none;background:none;border:none;cursor:pointer;padding:8px;z-index:1002}
+.nav-hamburger span{display:block;width:20px;height:2px;background:#404040;margin:4px 0;transition:transform .25s,opacity .25s}
+.nav-links{display:flex;align-items:center;gap:32px;list-style:none;margin:0;padding:0}
+.nav-links a{font-size:14px;font-weight:500;color:#6b6b6b;text-decoration:none}
+.nav-links a:hover{color:#0a0a0a}
+.footer{border-top:1px solid #e5e5e5;padding:48px 32px;background:#fff;color:#8a8a8a;margin-top:0}
+.footer-inner{max-width:1120px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.footer-left{font-size:14px;color:#8a8a8a}.footer-left a{color:#0066ff;text-decoration:none;font-weight:500}
+.footer-links{display:flex;gap:28px;list-style:none;flex-wrap:wrap;margin:0;padding:0}.footer-links a{font-size:13px;color:#8a8a8a;text-decoration:none}.footer-links a:hover{color:#0066ff}
+@media(max-width:640px){.nav-links{display:none}.nav-hamburger{display:block}.article-header,.article-body{padding-left:20px;padding-right:20px}.footer-inner{flex-direction:column;gap:24px;text-align:center}.footer-links{justify-content:center;gap:12px 18px}}
+</style>
 </head>
 <body>
 <nav class="nav" style="height:64px;line-height:25.6px;font:400 16px/25.6px Inter,Arial,sans-serif"><div class="nav-inner" style="height:64px;max-width:1120px;padding:0 32px;line-height:25.6px;font:400 16px/25.6px Inter,Arial,sans-serif"><a href="/" class="nav-logo">Benjamin<em>.</em></a><button class="nav-hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button><ul class="nav-links" id="navLinks"><li><a href="/articles">Articles</a></li><li><a href="/guides">Guides</a></li><li><a href="/resources">Founder Tools</a></li><li><a href="/biography">Biography</a></li><li><a href="/about">About</a></li><li><a href="/press-media">Press &amp; Media</a></li></ul></div></nav>
