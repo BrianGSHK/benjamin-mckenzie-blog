@@ -100,6 +100,23 @@
     ]
 }
     </script>
+
+<style id="comparison-layout-fix">
+:root{--ink:#161616;--muted:#6f7280;--line:#e7e7e7;--blue:#1677b8}
+body{margin:0;background:#fff;color:var(--ink);font-family:Inter,Arial,sans-serif}
+.article-header{max-width:1120px;margin:96px auto 0;padding:0 32px}
+.article-hero-image{width:100%;height:420px;overflow:hidden;border-radius:2px;margin-bottom:28px}
+.article-hero-image img{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.article-breadcrumb{font-size:13px;color:var(--muted);margin-bottom:16px}.article-breadcrumb a{color:var(--blue);text-decoration:none}
+.article-tag{display:inline-block;color:#1682ba;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}
+.article-header h1{max-width:900px;font-family:Newsreader,Georgia,serif;font-size:48px;line-height:1.08;letter-spacing:-.02em;margin:0 0 16px;color:#111}
+.article-subtitle{max-width:820px;color:#666;font-size:18px;line-height:1.55;margin:0 0 22px}
+.article-meta{display:flex;align-items:center;gap:12px;font-size:13px;color:#777;margin-bottom:30px}.article-avatar{width:44px;height:44px;border-radius:50%;overflow:hidden;flex:none}.article-avatar img{width:100%;height:100%;object-fit:cover}.article-author-name{font-weight:600;color:#222}
+.article-body{max-width:820px;margin:0 auto;padding:0 32px 80px;font-size:17px;line-height:1.72}.article-body h2{font-family:Newsreader,Georgia,serif;font-size:30px;line-height:1.2;margin:42px 0 14px;color:#111}.article-body h3{font-size:20px;margin:28px 0 8px}.article-body p{margin:0 0 18px}.article-body a{color:#126da5}.callout,.research-callout,.evidence-note{background:#f5f8fa;border-left:4px solid #1682ba;padding:18px 20px;margin:24px 0 28px}.callout p,.research-callout,.evidence-note p{margin:0 0 10px}.callout p:last-child,.evidence-note p:last-child{margin-bottom:0}
+.benchmark-table{width:100%;border-collapse:collapse;margin:18px 0 30px;font-size:14px;line-height:1.45}.benchmark-table th,.benchmark-table td{border:1px solid var(--line);padding:12px 11px;text-align:left;vertical-align:top}.benchmark-table th{background:#f6f7f8;font-weight:700}.article-faq{margin-top:44px}.faq-item{border-bottom:1px solid var(--line)}.faq-q{width:100%;padding:16px 0;background:transparent;border:0;text-align:left;font:600 16px Inter,Arial,sans-serif;cursor:pointer}.faq-a{display:none;color:#555;padding:0 0 14px}.faq-item.open .faq-a{display:block}.related-links,.related-articles{margin-top:44px}.related-links ul{padding-left:20px}.related-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.related-card{display:block;padding:20px;border:1px solid var(--line);text-decoration:none;color:inherit}.related-card h3{margin:0 0 8px;font-family:Newsreader,Georgia,serif}.related-card p{margin:0;color:#666;font-size:14px}
+.footer{margin-top:0}.nav{font-family:Inter,Arial,sans-serif}
+@media(max-width:760px){.article-header{margin-top:84px;padding:0 20px}.article-hero-image{height:260px}.article-header h1{font-size:36px}.article-subtitle{font-size:16px}.article-body{padding:0 20px 56px;font-size:16px}.article-body h2{font-size:26px}.benchmark-table{display:block;overflow-x:auto;white-space:normal}.related-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <nav class="nav" style="height:64px;line-height:25.6px;font:400 16px/25.6px Inter,Arial,sans-serif"><div class="nav-inner" style="height:64px;max-width:1120px;padding:0 32px;line-height:25.6px;font:400 16px/25.6px Inter,Arial,sans-serif"><a href="/" class="nav-logo">Benjamin<em>.</em></a><button class="nav-hamburger" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button><ul class="nav-links" id="navLinks"><li><a href="/articles">Articles</a></li><li><a href="/guides">Guides</a></li><li><a href="/resources">Founder Tools</a></li><li><a href="/biography">Biography</a></li><li><a href="/about">About</a></li><li><a href="/press-media">Press &amp; Media</a></li></ul></div></nav>
