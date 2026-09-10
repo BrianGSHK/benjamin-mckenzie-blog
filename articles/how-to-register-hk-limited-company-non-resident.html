@@ -61,7 +61,7 @@
         },
         "speakable": {
             "@type": "SpeakableSpecification",
-            "cssSelector": [".tldr-callout", ".quick-answer", "h1", "h2"]
+            "cssSelector": [".quick-answer", "h1", "h2"]
         },
         "citation": [
             {"@type": "GovernmentDocument", "name": "Companies Registry — Local Company Incorporation FAQ", "url": "https://www.cr.gov.hk/en/faq/local-company/incorporation.htm", "publisher": "Companies Registry, HKSAR Government"},
@@ -430,8 +430,30 @@
         }
             .brevo-newsletter-embed { display: block; width: 540px; max-width: 100%; height: 520px; margin: 0 auto; border: 0; background: transparent; }
         @media (max-width: 640px) { .brevo-newsletter-embed { height: 620px; } }
-    </style>
+    
+        /* Sources reviewed — Monocle restraint + Bloomberg Businessweek intelligence */
+        .sources-section { max-width: 720px; margin: 64px auto 80px; padding: 0 32px; }
+        .sources-section h2 { font-family: 'Newsreader', Georgia, serif; font-size: 28px; font-weight: 500; color: var(--black); letter-spacing: -0.3px; margin: 0 0 12px; padding-bottom: 16px; border-bottom: 1px solid var(--gray-200); }
+        .sources-intro { font-size: 15px; color: var(--gray-500); line-height: 1.65; margin: 0 0 32px; font-style: italic; }
+        .sources-list { list-style: none; margin: 0; padding: 0; }
+        .source-item { display: grid; grid-template-columns: 48px 1fr; gap: 20px; padding: 24px 0; border-bottom: 1px solid var(--gray-200); align-items: start; }
+        .source-item:first-child { padding-top: 0; }
+        .source-item:last-child { border-bottom: none; }
+        .source-num { font-family: 'Newsreader', Georgia, serif; font-size: 22px; font-weight: 400; color: var(--gray-400); letter-spacing: -0.5px; line-height: 1; padding-top: 4px; }
+        .source-body { min-width: 0; }
+        .source-title { font-family: 'Newsreader', Georgia, serif; font-size: 17px; font-weight: 500; color: var(--black); margin: 0 0 4px; line-height: 1.35; }
+        .source-title a { color: var(--black); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color 0.15s ease; }
+        .source-title a:hover { border-bottom-color: var(--black); }
+        .source-publisher { font-size: 12px; color: var(--gray-500); margin: 0 0 6px; letter-spacing: 0.04em; font-variant: small-caps; }
+        .source-url { font-family: 'SF Mono', 'Menlo', 'Consolas', monospace; font-size: 12px; color: var(--gray-500); margin: 0 0 8px; word-break: break-all; line-height: 1.4; }
+        .source-note { font-size: 14px; color: var(--gray-700); margin: 0; line-height: 1.55; }
+        .source-official .source-num { color: var(--accent); }
+        .source-secondary .source-num { color: var(--gray-400); }
+        .source-provider .source-num { color: var(--gray-700); }
+        .sources-footer { font-size: 13px; color: var(--gray-500); margin: 24px 0 0; padding-top: 20px; border-top: 1px solid var(--gray-200); font-style: italic; }
+        @media (max-width: 640px) { .source-item { grid-template-columns: 32px 1fr; gap: 14px; } .source-num { font-size: 18px; } .source-title { font-size: 16px; } }
 
+</style>
 
 <script type="application/ld+json">
 {
@@ -459,7 +481,6 @@
     ]
 }
 </script>
-
 
 <style>.skip-link{position:absolute;left:-9999px;top:8px;z-index:2000;padding:8px 12px;background:#fff;color:#06f;border:2px solid #06f}.skip-link:focus{left:8px}</style>
   <link rel="stylesheet" href="/assets/site.css">
@@ -490,11 +511,7 @@
     <article id="main-content" class="article-body">
 
     <!-- TL;DR callout — AEO/GEO snippet bait -->
-    <div class="tldr-callout" role="note">
-    <p><strong>TL;DR — Hong Kong non-resident company formation in 60 seconds.</strong> Non-residents can register a Hong Kong Private Limited Company (Ltd) without visiting Hong Kong. Government fee is HK$1,720 for online filing via e-Registry (1-3 business days). With a TCSP-licensed formation agent covering registered address and company secretary, first-year total is HK$5,000–15,000. You need 1 director, 1 shareholder, a HK registered office and a HK company secretary. Bank account opening is a separate process and is never guaranteed.</p>
-    </div>
-
-    <p class="research-callout">For observed corporate-account processing times and approval outcomes, see our <a href="/articles/anonymised-bank-account-approval-times-non-residents">anonymised Hong Kong corporate banking research report</a>.</p>
+<p class="research-callout">For observed corporate-account processing times and approval outcomes, see our <a href="/articles/anonymised-bank-account-approval-times-non-residents">anonymised Hong Kong corporate banking research report</a>.</p>
 <p class="resource-callout"><strong>Founder tools:</strong> Start with the <a href="/resources#formation-timeline">HK company formation timeline</a> and <a href="/resources#tcsp-guide">TCSP licensing guide</a>.</p>
         <p><strong>Non-residents can generally apply to form and own a Hong Kong Private Limited Company (Ltd) without travelling to Hong Kong.</strong> The Companies Registry confirms in its <a href="https://www.cr.gov.hk/en/faq/local-company/incorporation.htm" target="_blank" rel="noopener">incorporation FAQ</a> that non-Hong Kong residents may incorporate a local limited company. Foreign ownership is generally permitted, directors may be based overseas subject to applicable rules, and Hong Kong applies a territorial tax system subject to specific conditions, Hong Kong remains one of the most attractive jurisdictions for international entrepreneurs. For a general overview, see our <a href="/articles/hong-kong-company-registration-2026">HK Company Registration Guide</a>.</p>
 
@@ -884,28 +901,109 @@
         </section>
 </article>
 
-
     <!-- Related Articles --><section class="related-articles"><h2>Related Articles</h2><div class="related-grid"><a href="/articles/hong-kong-company-registration-2026" class="related-card"><h3>How to Register a Hong Kong Company in 2026</h3><p>Step-by-step guide to registration, identity checks and incorporation compliance.</p></a><a href="/articles/hong-kong-company-annual-compliance" class="related-card"><h3>Hong Kong Company Annual Compliance</h3><p>Annual returns, audits, tax filing and key company deadlines.</p></a><a href="/articles/how-to-open-hong-kong-bank-account-foreigner" class="related-card"><h3>How to Open a Hong Kong Bank Account as a Foreigner</h3><p>Documents, due diligence and practical banking considerations.</p></a><a href="/articles/how-much-does-it-cost-to-start-business-hong-kong" class="related-card"><h3>How Much Does It Cost to Start a Business in Hong Kong?</h3><p>Formation, registered office and ongoing company costs.</p></a><a href="/articles/getstarted-hk-vs-osome-comparison" class="related-card"><h3>GetStarted.hk vs Osome: HK Company Services Compared</h3><p>Side-by-side pricing and scope review of two well-known formation providers.</p></a><a href="/articles/statrys-vs-getstarted-hk-comparison" class="related-card"><h3>GetStarted.hk vs Statrys: HK Formation Compared</h3><p>Compare TCSP licensing, package scope and banking support.</p></a></div></section>
 
-<section><h2>Sources and references</h2>
-<p>All sources were checked for accessibility on 10 September 2026.</p>
-<ul>
-<li><a href="https://www.cr.gov.hk/en/faq/local-company/incorporation.htm" target="_blank" rel="noopener">Companies Registry — Local Company Incorporation FAQ</a> — non-resident incorporation rules.</li>
-<li><a href="https://www.cr.gov.hk/en/faq/local-company/directors-secretary.htm" target="_blank" rel="noopener">Companies Registry — Directors and Company Secretary FAQ</a> — director and secretary requirements.</li>
-<li><a href="https://www.tcsp.cr.gov.hk/tcspls/index" target="_blank" rel="noopener">Companies Registry — TCSP Licence Search</a> — TCSP licence verification.</li>
-<li><a href="https://www.ird.gov.hk/eng/index.htm" target="_blank" rel="noopener">Inland Revenue Department</a> — Business Registration renewal.</li>
-<li><a href="https://www.dps.org.hk/en/" target="_blank" rel="noopener">Hong Kong Deposit Protection Scheme</a> — deposit protection context.</li>
-<li><a href="https://www.investhk.gov.hk/en.html" target="_blank" rel="noopener">InvestHK — Company Setup</a> — non-resident founder overview.</li>
-<li><a href="https://www.gov.hk/en/residents/taxes/etax/" target="_blank" rel="noopener">GovHK — e-Tax Services</a> — tax filing online services.</li>
-<li><a href="https://taxsummaries.pwc.com/hong-kong-sar/corporate/taxes-on-corporate-income" target="_blank" rel="noopener">PwC Tax Summaries — Hong Kong Corporate Income Tax</a> — territorial-source principles.</li>
-<li><a href="https://www.cr.gov.hk/" target="_blank" rel="noopener">Companies Registry Home</a> — main registry site.</li>
-</ul>
-<p class="update-note">This guide was first published on 11 August 2026 and last reviewed on 10 September 2026 against the live Companies Registry, IRD, TCSP, and related pages cited above. Methodology is unchanged from the original review.</p>
+<section class="sources-section" aria-labelledby="sources-heading">
+<h2 id="sources-heading">Sources reviewed</h2>
+<p class="sources-intro">Nine primary and authoritative sources were checked for accessibility on 10 September 2026. The methodology of this comparison is unchanged from the original review.</p>
+
+<ol class="sources-list">
+<li class="source-item source-official">
+<span class="source-num">01</span>
+<div class="source-body">
+<p class="source-title"><a href="https://www.cr.gov.hk/en/faq/local-company/incorporation.htm" target="_blank" rel="noopener">Local Company Incorporation FAQ</a></p>
+<p class="source-publisher">Companies Registry, HKSAR Government · Official</p>
+<p class="source-url">cr.gov.hk/en/faq/local-company/incorporation.htm</p>
+<p class="source-note">Non-resident incorporation rules.</p>
+</div>
+</li>
+
+<li class="source-item source-official">
+<span class="source-num">02</span>
+<div class="source-body">
+<p class="source-title"><a href="https://www.cr.gov.hk/en/faq/local-company/directors-secretary.htm" target="_blank" rel="noopener">Directors and Company Secretary FAQ</a></p>
+<p class="source-publisher">Companies Registry, HKSAR Government · Official</p>
+<p class="source-url">cr.gov.hk/en/faq/local-company/directors-secretary.htm</p>
+<p class="source-note">Director and secretary requirements.</p>
+</div>
+</li>
+
+<li class="source-item source-official">
+<span class="source-num">03</span>
+<div class="source-body">
+<p class="source-title"><a href="https://www.tcsp.cr.gov.hk/tcspls/index" target="_blank" rel="noopener">TCSP Licence Search</a></p>
+<p class="source-publisher">Companies Registry, HKSAR Government · Official</p>
+<p class="source-url">tcsp.cr.gov.hk/tcspls/index</p>
+<p class="source-note">TCSP licence verification under Cap 615.</p>
+</div>
+</li>
+
+<li class="source-item source-official">
+<span class="source-num">04</span>
+<div class="source-body">
+<p class="source-title"><a href="https://www.ird.gov.hk/eng/index.htm" target="_blank" rel="noopener">Inland Revenue Department</a></p>
+<p class="source-publisher">Inland Revenue Department, HKSAR Government · Official</p>
+<p class="source-url">ird.gov.hk/eng/index.htm</p>
+<p class="source-note">Business Registration renewal.</p>
+</div>
+</li>
+
+<li class="source-item source-official">
+<span class="source-num">05</span>
+<div class="source-body">
+<p class="source-title"><a href="https://www.dps.org.hk/en/" target="_blank" rel="noopener">Hong Kong Deposit Protection Scheme</a></p>
+<p class="source-publisher">Hong Kong Deposit Protection Board · Official</p>
+<p class="source-url">dps.org.hk/en/</p>
+<p class="source-note">Deposit protection context.</p>
+</div>
+</li>
+
+<li class="source-item source-official">
+<span class="source-num">06</span>
+<div class="source-body">
+<p class="source-title"><a href="https://www.investhk.gov.hk/en.html" target="_blank" rel="noopener">InvestHK — Company Setup</a></p>
+<p class="source-publisher">InvestHK, HKSAR Government · Official</p>
+<p class="source-url">investhk.gov.hk/en.html</p>
+<p class="source-note">Non-resident founder overview.</p>
+</div>
+</li>
+
+<li class="source-item source-official">
+<span class="source-num">07</span>
+<div class="source-body">
+<p class="source-title"><a href="https://www.gov.hk/en/residents/taxes/etax/" target="_blank" rel="noopener">GovHK — e-Tax Services</a></p>
+<p class="source-publisher">HKSAR Government · Official</p>
+<p class="source-url">gov.hk/en/residents/taxes/etax/</p>
+<p class="source-note">Tax filing online services.</p>
+</div>
+</li>
+
+<li class="source-item source-secondary">
+<span class="source-num">08</span>
+<div class="source-body">
+<p class="source-title"><a href="https://taxsummaries.pwc.com/hong-kong-sar/corporate/taxes-on-corporate-income" target="_blank" rel="noopener">PwC Tax Summaries — Hong Kong Corporate Income Tax</a></p>
+<p class="source-publisher">PricewaterhouseCoopers · Authoritative secondary</p>
+<p class="source-url">taxsummaries.pwc.com/hong-kong-sar/corporate/taxes-on-corporate-income</p>
+<p class="source-note">Territorial-source principles.</p>
+</div>
+</li>
+
+<li class="source-item source-official">
+<span class="source-num">09</span>
+<div class="source-body">
+<p class="source-title"><a href="https://www.cr.gov.hk/" target="_blank" rel="noopener">Companies Registry Home</a></p>
+<p class="source-publisher">Companies Registry, HKSAR Government · Official</p>
+<p class="source-url">cr.gov.hk</p>
+<p class="source-note">Main registry site.</p>
+</div>
+</li>
+</ol>
+
+<p class="sources-footer">This guide was first published on 11 August 2026 and last reviewed on 10 September 2026 against the live sources cited above.</p>
 </section>
 
 <!-- shared-footer-v1 -->
 <footer class="footer" role="contentinfo"><div class="footer-inner"><div class="footer-left">© 2026 <a href="/">Benjamin McKenzie</a> · Startup Mentor</div><nav aria-label="Footer navigation"><div class="footer-links"><a href="/articles/">Articles</a><a href="/biography">Biography</a><a href="/faq">FAQ</a><a href="/press-media">Press & Media</a><a href="/about">About</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="mailto:info@benjaminmckenzie.com">Contact</a></div></nav></div></footer>
-
 
 </body>
 </html>
