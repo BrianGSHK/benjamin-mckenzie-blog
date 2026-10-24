@@ -3,7 +3,7 @@
    footer and shared responsive behaviour here. */
 :root{--site-ink:#171717;--site-muted:#666;--site-line:#e5e5e5;--site-paper:#fff;--site-soft:#f7f5f1;--site-accent:#06f}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{margin:0;color:var(--site-ink);font-family:Inter,Arial,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
 .skip-link{position:absolute;left:-9999px;top:8px;z-index:2000;padding:8px 12px;background:#fff;color:var(--site-accent);border:2px solid var(--site-accent)}
 .skip-link:focus{left:8px}
