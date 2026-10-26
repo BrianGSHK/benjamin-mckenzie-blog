@@ -1,4 +1,3 @@
-<!-- v2 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,46 +128,44 @@
     </script>
 
     <!-- FAQ Schema -->
-    <script type="application/ld+json">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "How long does it take to register a Hong Kong company?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Hong Kong company registration typically takes 1-3 business days via the Companies Registry. Preparing documents and opening a bank account may take 1-2 additional weeks."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Do I need to be in Hong Kong to start a company?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "No. Foreign entrepreneurs can register a Hong Kong company remotely. You need a registered address and company secretary, but directors and shareholders can be based anywhere."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the annual compliance requirements for a Hong Kong company?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Hong Kong companies must file Annual Returns, prepare financial statements, conduct an audit if applicable, and file a Profits Tax Return with the IRD."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How much does it cost to set up a Hong Kong company?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Basic setup costs range from HK$5,000 to HK$15,000, including government fees, company secretary, and registered address. Annual maintenance is typically HK$8,000 to HK$20,000."
-                }
-            }
-        ]
+      "@type": "Question",
+      "name": "How long does it take to register a Hong Kong company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Registration typically takes 1-3 business days via the Companies Registry. Preparing documents and opening a bank account may take 1-2 additional weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to be in Hong Kong to start a company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Foreign entrepreneurs can register remotely. You need a registered address and company secretary in Hong Kong, but directors and shareholders can be based anywhere in the world."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the annual compliance requirements?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hong Kong companies must file Annual Returns with the Companies Registry, prepare financial statements, conduct an audit if applicable, and file a Profits Tax Return with the IRD."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does it cost to set up a Hong Kong company?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Basic setup costs range from HK$5,000 to HK$15,000, including government fees, company secretary, and registered address. Annual maintenance is typically HK$8,000 to HK$20,000."
+      }
     }
-    </script>
+  ]
+}</script>
 
     <!-- Website Schema -->
     <script type="application/ld+json">
@@ -212,8 +209,7 @@
                     "description": "BA in Economics"
                 },
                 "sameAs": [
-                    "https://www.linkedin.com/in/benjaminmckenzie",
-                    "https://twitter.com/benjaminmckenzie"
+                    "https://www.linkedin.com/in/benjaminmckenzie"
                 ],
                 "knowsAbout": [
                     "Hong Kong company formation",
@@ -1329,6 +1325,13 @@
                 <p>A complete walkthrough from choosing your business structure to opening a bank account. Everything you need to know about requirements, timelines, and costs.</p>
                 <div class="article-card-meta">Aug 10, 2026 · 8 min</div>
             </article>
+            <article class="article-card">
+                <div class="article-card-image"><img src="/assets/images/articles/banking-v2.jpg" alt="Hong Kong corporate banking approval-time analysis for non-resident founders"></div>
+                <span class="article-card-tag">Banking &amp; Compliance</span>
+                <h3><a href="/articles/hong-kong-bank-account-approval-times-anonymised-case-study">Hong Kong Corporate Bank Account Approval Times: 805-Application Anonymised Case Study</a></h3>
+                <p>An anonymised analysis of 805 corporate bank-account application attempts, including approval rates, processing times, methodology and the limits of the data.</p>
+                <div class="article-card-meta">Sep 30, 2026 · 14 min</div>
+            </article>
         </div>
     </section>
 
@@ -1341,30 +1344,30 @@
 <section class="about-author">
         <h2>Who is Benjamin McKenzie?</h2>
         <p>Benjamin McKenzie is a Startup Mentor based in Hong Kong with over a decade of experience in venture capital and private equity. A University of Cambridge alumnus with a BA in Economics who grew up in Fraserburgh, Scotland, he helps entrepreneurs navigate company formation, compliance, and business setup across Asia through practical guides and actionable advice.</p>
-        <table class="quick-facts">
+        <table class="quick-facts"><caption>Who is Benjamin McKenzie?</caption>
             <tr>
-                <td>Profession</td>
-                <td>Startup Mentor</td>
+                <td data-label="Fact">Profession</td>
+                <td data-label="Details">Startup Mentor</td>
             </tr>
             <tr>
-                <td>Location</td>
-                <td>Hong Kong</td>
+                <td data-label="Fact">Location</td>
+                <td data-label="Details">Hong Kong</td>
             </tr>
             <tr>
-                <td>Education</td>
-                <td>BA in Economics, University of Cambridge</td>
+                <td data-label="Fact">Education</td>
+                <td data-label="Details">BA in Economics, University of Cambridge</td>
             </tr>
             <tr>
-                <td>Experience</td>
-                <td>10+ years in venture capital and private equity</td>
+                <td data-label="Fact">Experience</td>
+                <td data-label="Details">10+ years in venture capital and private equity</td>
             </tr>
             <tr>
-                <td>Key Focus Areas</td>
-                <td>Hong Kong company formation, compliance, banking, and business structuring</td>
+                <td data-label="Fact">Key Focus Areas</td>
+                <td data-label="Details">Hong Kong company formation, compliance, banking, and business structuring</td>
             </tr>
             <tr>
-                <td>Official Website</td>
-                <td><a href="https://benjaminmckenzie.com">benjaminmckenzie.com</a></td>
+                <td data-label="Fact">Official Website</td>
+                <td data-label="Details"><a href="https://benjaminmckenzie.com">benjaminmckenzie.com</a></td>
             </tr>
         </table>
     </section>

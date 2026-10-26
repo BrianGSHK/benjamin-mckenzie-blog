@@ -159,6 +159,8 @@
 <style id="aeo-cluster-tools">.topic-cluster,.original-founder-tools{margin:2.5rem 0;padding:1.5rem;border:1px solid #dfe5ec;background:#fbfcfd}.topic-cluster h2,.original-founder-tools h2{margin-top:0}.topic-cluster ul,.original-founder-tools ol,.original-founder-tools ul{padding-left:1.4rem}.article-review-note{font-size:.86rem;color:#667085;margin:1rem 0 2rem}.topic-cluster-label{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:#315b7d;font-weight:700}</style>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to content</a>
+
 
 <header class="article-header">
     <div class="crumb"><a href="/">Home</a> / <a href="/articles/">Articles</a> / Hong Kong Banking and Compliance</div>
@@ -168,7 +170,7 @@
     <div class="meta">By Benjamin McKenzie · Published 30 September 2026 · Last reviewed by editor 30 September 2026 · 14 min read</div>
 </header>
 
-<article class="article">
+<article id="main-content" class="article">
 
 <p class="disclaimer"><strong>Data notice.</strong> This report summarises anonymised aggregate data supplied for analysis. It is not a survey of all Hong Kong banks, does not predict an individual application outcome, and should not be read as legal, compliance, tax or banking advice. Requirements and processing times vary by applicant and institution. The reporting period is not specified in the supplied workbook.</p>
 
@@ -179,24 +181,24 @@
 <p>Pooled, the application-weighted approval rate was <strong>74.7 percent</strong> and the application-weighted mean processing time was <strong>21.7 days</strong>. Both figures are descriptive of the supplied data — they are not a forecast of any individual application outcome, and they are not a guarantee from any Hong Kong bank.</p>
 
 <h2 id="dataset-summary">Dataset summary</h2>
-<div class="table-wrap"><table class="compare"><thead><tr><th>Metric</th><th>Value</th><th>Unit</th><th>Scope</th></tr></thead><tbody>
-<tr><td>Corporate application attempts</td><td>805</td><td>attempts</td><td>Overall supplied anonymised dataset</td></tr>
-<tr><td>Anonymised company records</td><td>96</td><td>companies</td><td>Overall supplied anonymised dataset (no row-level identifiers)</td></tr>
-<tr><td>Application-weighted approval rate</td><td>74.7</td><td>percent</td><td>Overall supplied anonymised dataset (descriptive; not a forecast)</td></tr>
-<tr><td>Application-weighted mean processing time</td><td>21.7</td><td>days</td><td>Overall supplied anonymised dataset (reporting period not specified)</td></tr>
-<tr><td>Country groups</td><td>5</td><td>groups</td><td>India, Mainland China, Singapore, United Kingdom, United States</td></tr>
-<tr><td>Account type</td><td>Corporate</td><td>—</td><td>Corporate accounts only (no personal non-resident account cases)</td></tr>
+<div class="table-wrap"><table class="compare"><caption>Dataset summary</caption><thead><tr><th>Metric</th><th>Value</th><th>Unit</th><th>Scope</th></tr></thead><tbody>
+<tr><td data-label="Metric">Corporate application attempts</td><td data-label="Value">805</td><td data-label="Unit">attempts</td><td data-label="Scope">Overall supplied anonymised dataset</td></tr>
+<tr><td data-label="Metric">Anonymised company records</td><td data-label="Value">96</td><td data-label="Unit">companies</td><td data-label="Scope">Overall supplied anonymised dataset (no row-level identifiers)</td></tr>
+<tr><td data-label="Metric">Application-weighted approval rate</td><td data-label="Value">74.7</td><td data-label="Unit">percent</td><td data-label="Scope">Overall supplied anonymised dataset (descriptive; not a forecast)</td></tr>
+<tr><td data-label="Metric">Application-weighted mean processing time</td><td data-label="Value">21.7</td><td data-label="Unit">days</td><td data-label="Scope">Overall supplied anonymised dataset (reporting period not specified)</td></tr>
+<tr><td data-label="Metric">Country groups</td><td data-label="Value">5</td><td data-label="Unit">groups</td><td data-label="Scope">India, Mainland China, Singapore, United Kingdom, United States</td></tr>
+<tr><td data-label="Metric">Account type</td><td data-label="Value">Corporate</td><td data-label="Unit">—</td><td data-label="Scope">Corporate accounts only (no personal non-resident account cases)</td></tr>
 </tbody></table></div>
 <p class="note">The workbook supplied for analysis does not label the reporting quarter or year. Do not label these results as Q2 or Q3 2026 without confirming the source period.</p>
 
 <h2 id="country-results">Results by country of residence</h2>
 <p>The five country groups differ materially on both approval rate and processing time. The differences are descriptive: they correlate with country of residence but do not establish causation. Differences in documentation quality, sector mix, transaction profile and bank selection across the groups likely explain a meaningful share of the variation.</p>
-<div class="table-wrap"><table class="compare"><thead><tr><th>Country of residence</th><th class="num">Company records</th><th class="num">Application attempts</th><th class="num">Median of company-level medians (days)</th><th class="num">Application-weighted mean days</th><th class="num">Application-weighted approval rate</th></tr></thead><tbody>
-<tr><td>India</td><td class="num">20</td><td class="num">147</td><td class="num">53.5</td><td class="num">27.0</td><td class="num">64.9%</td></tr>
-<tr><td>Mainland China</td><td class="num">8</td><td class="num">36</td><td class="num">32.0</td><td class="num">27.0</td><td class="num">68.1%</td></tr>
-<tr><td>Singapore</td><td class="num">29</td><td class="num">225</td><td class="num">39.0</td><td class="num">16.3</td><td class="num">81.8%</td></tr>
-<tr><td>United Kingdom</td><td class="num">20</td><td class="num">214</td><td class="num">30.5</td><td class="num">28.2</td><td class="num">67.2%</td></tr>
-<tr><td>United States</td><td class="num">19</td><td class="num">183</td><td class="num">42.0</td><td class="num">15.5</td><td class="num">84.1%</td></tr>
+<div class="table-wrap"><table class="compare"><caption>Results by country of residence</caption><thead><tr><th>Country of residence</th><th class="num">Company records</th><th class="num">Application attempts</th><th class="num">Median of company-level medians (days)</th><th class="num">Application-weighted mean days</th><th class="num">Application-weighted approval rate</th></tr></thead><tbody>
+<tr><td data-label="Country of residence">India</td><td data-label="Company records" class="num">20</td><td data-label="Application attempts" class="num">147</td><td data-label="Median of company-level medians (days)" class="num">53.5</td><td data-label="Application-weighted mean days" class="num">27.0</td><td data-label="Application-weighted approval rate" class="num">64.9%</td></tr>
+<tr><td data-label="Country of residence">Mainland China</td><td data-label="Company records" class="num">8</td><td data-label="Application attempts" class="num">36</td><td data-label="Median of company-level medians (days)" class="num">32.0</td><td data-label="Application-weighted mean days" class="num">27.0</td><td data-label="Application-weighted approval rate" class="num">68.1%</td></tr>
+<tr><td data-label="Country of residence">Singapore</td><td data-label="Company records" class="num">29</td><td data-label="Application attempts" class="num">225</td><td data-label="Median of company-level medians (days)" class="num">39.0</td><td data-label="Application-weighted mean days" class="num">16.3</td><td data-label="Application-weighted approval rate" class="num">81.8%</td></tr>
+<tr><td data-label="Country of residence">United Kingdom</td><td data-label="Company records" class="num">20</td><td data-label="Application attempts" class="num">214</td><td data-label="Median of company-level medians (days)" class="num">30.5</td><td data-label="Application-weighted mean days" class="num">28.2</td><td data-label="Application-weighted approval rate" class="num">67.2%</td></tr>
+<tr><td data-label="Country of residence">United States</td><td data-label="Company records" class="num">19</td><td data-label="Application attempts" class="num">183</td><td data-label="Median of company-level medians (days)" class="num">42.0</td><td data-label="Application-weighted mean days" class="num">15.5</td><td data-label="Application-weighted approval rate" class="num">84.1%</td></tr>
 </tbody></table></div>
 <p class="note">Medians in this table are the median of the company-level median fields. A true pooled median for all 805 individual application attempts cannot be reconstructed from the aggregated company-level data alone.</p>
 
@@ -305,7 +307,7 @@
 <div class="faq-item"><p class="faq-q">How should a non-resident founder prepare before applying?</p><p class="faq-a">Use the founder pre-application checklist at the bottom of this article. It covers corporate documents, beneficial-owner identification, source-of-funds and source-of-wealth evidence, contracts and projected cash flow, sector-specific licences, and bank selection. The dataset does not establish whether preparation gaps caused individual declines.</p></div>
 
 <h2 id="related">Related guides</h2>
-<p>For the procedural side of opening a corporate bank account as a foreigner, see the <a href="/articles/how-to-open-hong-kong-bank-account-foreigner">How to Open a Hong Kong Bank Account as a Foreigner</a> guide. For the company-formation side, see <a href="/articles/hong-kong-company-registration-2026">How to Register a Hong Kong Company in 2026</a> and the broader <a href="/articles/hong-kong-company-formation-services-7-providers">Best Hong Kong Company Formation Services: 7 Providers Compared (2026)</a>. For the licensing question that often comes up before banking, see the <a href="/resources#tcsp-guide">TCSP licensing guide</a> in Founder Tools.</p>
+<p>For the procedural side of opening a corporate bank account as a foreigner, see the <a href="/articles/how-to-open-hong-kong-bank-account-foreigner">How to Open a Hong Kong Bank Account as a Foreigner</a> guide. For the company-formation side, see <a href="/articles/hong-kong-company-registration-2026">How to Register a Hong Kong Company in 2026</a> and the broader <a href="/articles/hong-kong-company-formation-services-7-providers">Best Hong Kong Company Formation Services: 7 Providers Compared (2026)</a>. For the licensing question that often comes up before banking, see the <a href="/resources/tcsp-licensing-guide">TCSP licensing guide</a> in Founder Tools.</p>
 
 <section class="sources">
 <h2>Official sources and related reading</h2>
