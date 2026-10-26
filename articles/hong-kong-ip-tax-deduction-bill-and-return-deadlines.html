@@ -632,23 +632,13 @@
 <style>
 .topic-cluster,.original-founder-tools{margin:2.5rem 0;padding:1.5rem;border:1px solid #dfe5ec;background:#fbfcfd}.topic-cluster h2,.original-founder-tools h2{margin-top:0}.topic-cluster ul,.original-founder-tools ol,.topic-cluster ul{padding-left:1.4rem}.article-review-note{font-size:.86rem;color:#667085;margin:1rem 0 2rem}.topic-cluster-label{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:#315b7d;font-weight:700}.faq h3{margin-top:22px}.faq h3:first-of-type{margin-top:0}
     </style>
+    <link rel="stylesheet" href="/assets/site.css">
+    <script src="/assets/site.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header class="site-header">
-        <div class="site-header__inner">
-            <a class="site-header__logo" href="/">Benjamin<em>.</em></a>
-            <button class="site-header__toggle" aria-label="Toggle navigation" aria-expanded="false" onclick="document.querySelector('.site-header__nav').classList.toggle('open');this.classList.toggle('open');this.setAttribute('aria-expanded', this.getAttribute('aria-expanded')==='true'?'false':'true')"><span></span><span></span><span></span></button>
-            <nav class="site-header__nav" aria-label="Primary navigation">
-                <a href="/articles/">Articles</a>
-                <a href="/resources">Guides</a>
-                <a href="/biography">Biography</a>
-                <a href="/about">About</a>
-                <a href="/press-media">Press &amp; Media</a>
-            </nav>
-        </div>
-    </header>
+    <header class="site-header" role="banner"><div class="site-header__inner"><a class="site-header__logo" href="/">Benjamin<span aria-hidden="true">.</span></a><button class="site-header__toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-site-nav-toggle><span></span><span></span><span></span></button><nav class="site-header__nav" aria-label="Primary navigation" data-site-nav><a href="/articles/">Articles</a><a href="/guides">Guides</a><a href="/resources">Founder Tools</a><a href="/biography">Biography</a><a href="/about">About</a><a href="/press-media">Press &amp; Media</a></nav></div></header>
 
     <header class="article-header">
         <div class="article-breadcrumb">
