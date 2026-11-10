@@ -322,6 +322,17 @@
             .article-header, .article-body { padding-left: 20px; padding-right: 20px; }
             .article-header { padding-top: 100px; padding-bottom: 32px; }
         }
+        .related-articles { margin: 48px 0; }
+        .related-articles h2 { font-size: 24px !important; }
+        .related-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 20px; }
+        .related-card { display: block; padding: 20px; border: 1px solid #e5e5e5; border-radius: 8px; text-decoration: none; color: inherit; }
+        .related-card:hover { border-color: #06f; box-shadow: 0 2px 8px rgba(6,102,255,.08); }
+        .related-card h3 { font-size: 16px; font-weight: 600; color: var(--black); margin: 0 0 8px; line-height: 1.35; }
+        .related-card p { font-size: 14px; color: var(--gray-500); margin: 0; line-height: 1.5; }
+        
+        @media (max-width: 768px) {
+            .related-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
