@@ -28,6 +28,58 @@ body{margin:0;color:var(--site-ink);font-family:Inter,Arial,sans-serif;line-heig
 .newsletter { max-width: 100%; overflow: hidden; }
 iframe.brevo-newsletter-embed { display: block; width: 100% !important; max-width: 100% !important; border: 0; }
 
+/* Shared base for the "Related Articles" block. Several articles carry their own
+   inline copy of these rules; the newest articles (CARF/CRS, the Pillar Two
+   tax briefing) shipped with the block markup but no styling, or with no block at
+   all. Declaring the base here guarantees every article renders identically.
+   Pages that define their own copy keep it — page styles load before site.css,
+   and site.css only adds what is missing rather than overriding. */
+.related-articles {
+  background: var(--site-soft, #f7f5f1);
+  border-radius: 12px;
+  padding: 48px 32px;
+  margin: 48px auto;
+  max-width: 720px;
+}
+.related-articles h2 {
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 24px;
+  color: var(--site-ink, #171717);
+}
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.related-card {
+  display: block;
+  background: var(--site-paper, #fff);
+  border: 1px solid var(--site-line, #e5e5e5);
+  border-radius: 8px;
+  padding: 20px;
+  text-decoration: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+.related-card:hover {
+  border-color: var(--site-accent, #06f);
+  box-shadow: 0 2px 8px rgba(6,102,255,.08);
+}
+.related-card h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--site-ink, #171717);
+  margin: 0 0 8px;
+  line-height: 1.4;
+}
+.related-card p {
+  font-size: 13px;
+  color: var(--site-muted, #666);
+  margin: 0;
+  line-height: 1.5;
+}
+
 /* Related-article cards are declared per-article as a 2-up grid with no mobile
    override, so on a 320px phone two ~143px columns overflowed the container by ~82px.
    Collapse to a single column on narrow viewports. */
@@ -63,6 +115,19 @@ iframe.brevo-newsletter-embed { display: block; width: 100% !important; max-widt
 @media (min-width: 721px) and (max-width: 1200px) {
   .article-body table thead { position: static; width: auto; height: auto; clip: auto; }
 }
+
+/* Tables that live OUTSIDE .article-body (e.g. .quick-facts on /biography and the
+   provider comparison on /resources/banking-comparison) are not covered by the
+   .article-body rules above, so their intrinsic width widened the document at
+   320px and dragged the fixed header along with it. Contain any table that is
+   not already inside a scroll container by making it scrollable in place. */
+@media (max-width: 760px) {
+  .quick-facts,
+  .bio-quick-facts table,
+  .wrap > table,
+  .article-body > table { display: block; max-width: 100%; overflow-x: auto; }
+}
+.bio-quick-facts { overflow-x: auto; max-width: 100%; }
 
 /* .table-wrap is the intended scroll container for wide tables. As a plain block it
    still let the table contribute to the document's scroll width (the fixed .site-header
