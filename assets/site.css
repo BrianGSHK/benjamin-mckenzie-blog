@@ -7,6 +7,34 @@ html{scroll-behavior:smooth;scroll-padding-top:80px}
 body{margin:0;color:var(--site-ink);font-family:Inter,Arial,sans-serif;line-height:1.7;-webkit-font-smoothing:antialiased}
 .skip-link{position:absolute;left:-9999px;top:8px;z-index:2000;padding:8px 12px;background:#fff;color:var(--site-accent);border:2px solid var(--site-accent)}
 .skip-link:focus{left:8px}
+/* Article hero image — shared guard. Pages that render .article-hero-image but supply no
+   rule for it let the <img> fall back to its intrinsic width (up to 1200px), which widens
+   the document, forces a horizontal scrollbar on phones, and drags the fixed header with it.
+   The image must never exceed its container. */
+.article-hero-image{width:100%;max-width:100%;overflow:hidden}
+.article-hero-image img{display:block;width:100%;max-width:100%;height:auto}
+@media (max-width:640px){.article-hero-image img{height:auto}}
+
+/* Bare URLs used as link text inside prose (e.g. "https://www.tcsp.cr.gov.hk/tcspls/index")
+   have no break opportunity and forced the document wider than the viewport on narrow
+   phones. Let long link text and long tokens wrap rather than overflow. */
+.article-body a { overflow-wrap: break-word; word-break: break-word; }
+.article-body p, .article-body li { overflow-wrap: break-word; }
+
+/* The Brevo newsletter embed sets its own width="300" at runtime from third-party
+   JavaScript, so it cannot be corrected in the markup. Inside a narrow .newsletter
+   section it overflowed the page by 44px and dragged the fixed header with it.
+   Force the embed to obey its container. */
+.newsletter { max-width: 100%; overflow: hidden; }
+iframe.brevo-newsletter-embed { display: block; width: 100% !important; max-width: 100% !important; border: 0; }
+
+/* Related-article cards are declared per-article as a 2-up grid with no mobile
+   override, so on a 320px phone two ~143px columns overflowed the container by ~82px.
+   Collapse to a single column on narrow viewports. */
+@media (max-width: 640px) {
+  .related-grid { grid-template-columns: 1fr !important; }
+  .related-card { min-width: 0; }
+}
 .site-header,.nav{position:fixed!important;inset:0 0 auto!important;width:100%!important;height:64px!important;z-index:1000!important;background:rgba(255,255,255,.95)!important;backdrop-filter:blur(20px);border-bottom:1px solid var(--site-line)!important}
 .site-header__inner,.nav-inner{width:100%!important;max-width:1120px!important;height:64px!important;margin:0 auto!important;padding:0 32px!important;display:flex!important;align-items:center!important;justify-content:space-between!important}
 .site-header__logo,.site-header__logo:visited,.nav-logo,.nav-logo:visited{display:inline-block!important;color:#0a0a0a!important;text-decoration:none!important;font:700 18px/18px Inter,Arial,sans-serif!important;letter-spacing:-.5px!important}
@@ -24,10 +52,35 @@ body{margin:0;color:var(--site-ink);font-family:Inter,Arial,sans-serif;line-heig
 
 .tool-explanation{margin:48px 0 0;padding:28px 0;border-top:1px solid var(--site-line)}.tool-explanation h2{margin:0 0 14px}.tool-explanation h3{font:600 20px/1.3 Georgia,serif;margin:24px 0 6px}.tool-explanation p{max-width:760px}.tool-faq{margin-top:18px}.tools-grid{margin-top:24px}.tools-grid .card{display:flex;flex-direction:column;min-height:220px;text-decoration:none}.tools-grid .card h3{margin:14px 0 8px}.tools-grid .card p{margin:0;color:var(--site-muted,#666)}.tools-grid .tag{align-self:flex-start}.tools-grid .card-link{margin-top:auto;padding-top:20px;color:var(--site-ink,#171717);font-weight:700}.tools-grid .card:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(23,23,23,.08)}@media(max-width:640px){.tools-grid{grid-template-columns:1fr}.tools-grid .card{min-height:0}}
 
+/* Wide comparison tables must never widen the document.
+   A 9-column .founder-table renders ~1148px wide inside a ~820px .article-body, which
+   pushed the page into horizontal scroll (and dragged the fixed header with it) at
+   viewport widths between 761px and ~1170px — i.e. on tablets and small laptops.
+   Contain the overflow in a scrollable wrapper instead of letting the table escape. */
+@media (min-width: 721px) {
+  .article-body table { display: block; max-width: 100%; overflow-x: auto; white-space: normal; }
+}
+@media (min-width: 721px) and (max-width: 1200px) {
+  .article-body table thead { position: static; width: auto; height: auto; clip: auto; }
+}
+
+/* .table-wrap is the intended scroll container for wide tables. As a plain block it
+   still let the table contribute to the document's scroll width (the fixed .site-header
+   then stretched to match, giving the whole page a phantom horizontal scrollbar).
+   Making it a grid container turns the table into a grid item that is clamped to the
+   track width, while overflow-x:auto still lets the reader scroll the table itself. */
+.table-wrap { display: grid; max-width: 100%; overflow-x: auto; }
+.table-wrap > table { width: 100%; }
+
 /* STACKED TABLES ON MOBILE - every <td> carries a data-label with its column name */
 @media (max-width: 720px) {
   .article-body table, .article-body tbody, .article-body tr, .article-body td { display: block; width: 100%; }
   .article-body thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  /* The thead is visually hidden, but its <th> cells still laid out at their intrinsic
+     width and inherited white-space:nowrap — which forced the table far wider than the
+     page (a "Delaware LLC (USA)" header pushed the document to 666px on a 360px screen).
+     Hide the cells with their header row and drop the nowrap. */
+  .article-body thead th { display: none !important; }
   .article-body tr { border-bottom: 1px solid var(--site-line, #e5e5e5); padding: 10px 0; }
   .article-body td { border: none; padding: 4px 0; }
   .article-body td::before {
